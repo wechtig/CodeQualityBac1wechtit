@@ -1,0 +1,22 @@
+\BOOKMARK [0][-]{chapter*.1}{Abbildungsverzeichnis}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{Tabellenverzeichnis}{}% 2
+\BOOKMARK [0][-]{chapter.1}{1 Einleitung}{}% 3
+\BOOKMARK [1][-]{section.1.1}{1.1 Problemstellung}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{1.2 Zielsetzung und Forschungsfragen}{chapter.1}% 5
+\BOOKMARK [0][-]{chapter.2}{2 Stand der Technik}{}% 6
+\BOOKMARK [1][-]{section.2.1}{2.1 Andere L\366sungen}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.2}{2.2 Statische Code Analyse}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.3}{2.3 Tools f\374r die Statische Code Analyse}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.4}{2.4 Anzeige der Analyse}{chapter.2}% 10
+\BOOKMARK [0][-]{chapter.3}{3 Concept}{}% 11
+\BOOKMARK [0][-]{chapter.4}{4 Umsetzung}{}% 12
+\BOOKMARK [1][-]{section.4.1}{4.1 Technologien und Tools f\374r Umsetzung }{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.2}{4.2 Infrastruktur und Aufbau der Applikationen}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.3}{4.3 Demo-Projekt und Bugreport}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.4}{4.4 Speichern der Daten}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.5}{4.5 Datenbank Importer Plugin}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.6}{4.6 Webapplikation}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.7}{4.7 Evaluierung der Visualisierung und der Webapplikation}{chapter.4}% 19
+\BOOKMARK [0][-]{chapter.5}{5 Ergebnisse}{}% 20
+\BOOKMARK [0][-]{chapter.6}{6 Conclusion and Outlook}{}% 21
+\BOOKMARK [0][-]{chapter*.8}{References}{}% 22

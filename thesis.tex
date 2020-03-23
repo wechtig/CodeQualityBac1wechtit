@@ -1,0 +1,123 @@
+%**********************************************************************
+% Base layout + including standard packages
+%**********************************************************************
+\documentclass[a4paper,12pt]{report}
+
+
+%**********************************************************************
+% TODO for EVERYONE:
+% READ "Instructions for composing degree papers" (E, short version)
+% READ "Richtlinien Pruefungs- u. Abschlussarbeiten" (D, long version)
+%**********************************************************************
+
+
+%**********************************************************************
+% YOUR SETTINGS - START
+%**********************************************************************
+
+% About your study degree programme
+\def \study{SWD} % possible options: ITM, SWD, IRM, IMS
+
+% More about you and your thesis:
+\def \title{Code Quality}
+\def \subtitle{}
+\def \yourName{Lukas Wechtitsch}
+\def \yourIdentifier{1710418051}
+\def \yourPlace{Kapfenberg}
+\def \submissionDate{Februar 2020}  % month year. e.g. June 2017
+\def \yourAdvisor{Johannes Feiner}  
+
+% ITM/SWD/IRM: you could possibly write in German.
+\def \yourLanguage{german} % po ssible options: german, english  
+
+%**********************************************************************
+% YOUR SETTINGS - END
+%**********************************************************************
+
+
+
+% LaTeX preamble = include a lot of packages, configure latex settings
+\include{chapters/00_preamble} 
+
+
+%**********************************************************************
+% Structure of thesis: inclusion of chapters
+%**********************************************************************
+\ifthenelse{\equal{\yourLanguage}{german}}{
+
+  \begin{document}\selectlanguage{german}
+
+}{ % else: default language = english
+
+  \begin{document}\selectlanguage{english}
+}
+
+\include{chapters/01_titlepage}
+\include{chapters/02_declaration}
+\include{chapters/03_abstract}
+% \include{chapters/04_acknowledge} % optional
+\chapterend
+
+\pagenumbering{roman}  	% roman page numbers for title pages
+
+
+
+
+
+\tableofcontents            % TOC = Table-of-Contents
+  
+% OPTIONALLY, adding single entries to TOC: 
+
+% Adding entry "List of Figures / Abbildungsverzeichnis" to TOC
+\clearpage
+\addcontentsline{toc}{chapter}{\listfigurename} 
+\listoffigures
+
+% Adding entry "List of Tables / Tabellenverzeichnis" to TOC
+\clearpage
+\addcontentsline{toc}{chapter}{\listtablename}
+\listoftables 
+
+% Adding entry "List of Code Snippets" to TOC
+% \clearpage
+% \addcontentsline{toc}{chapter}{List of Code Snippets}
+% \lstlistoflistings
+
+\chapterend
+
+
+
+
+
+\pagenumbering{arabic}  % ... for ordinary chapters
+\onehalfspacing
+
+% Add chapters as required. For example 
+
+\include{chapters/10_introduction}   % framing the problem 
+                                     % research questions
+                                     % hypothesis
+                                     % method
+
+\include{chapters/20_related}        % research related (to your!) work 
+\include{chapters/40_concept}        % concept/design of solution
+\include{chapters/60_implementation} % implementation, prototype
+\include{chapters/80_evaluation}     % evaluation of prototype
+\include{chapters/90_conclusion}     % summary, your conclusions/outlook
+
+%\appendix
+%\include{chapters/99_acronyms}       % optional
+
+%\TODO{Finally, check the bibliography. Are you sure, that everyone can find the given resources with the information you supplied? Besides author and  year, for books you need the publisher information and the ISBN, for IEEE/ACM research papers add the conference title, location and the DOI.}
+\printbibliography
+
+% Adding entry "References" to TOC
+% LaTeX-Note: this entry must be added after \printbibliography
+%             to get a working link in the TOC!
+\addcontentsline{toc}{chapter}{References}
+
+\end{document}
+
+
+%**********************************************************************
+%**********************************************************************

@@ -1,0 +1,6 @@
+tmp
+*.tmp
+.texpadtmp
+TODO
+*.bak
+thesis.pdf

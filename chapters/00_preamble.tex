@@ -1,0 +1,297 @@
+%**********************************************************************
+% Various LaTeX packages
+%**********************************************************************
+
+
+% 
+\usepackage{ifthen}
+
+% you might need some mathematical expressions:
+\usepackage{amsmath}
+
+% with package babel we allow to use language english and german
+\usepackage[english, german]{babel}
+
+% allows direct input of special chars
+\usepackage[utf8]{inputenc}  
+
+% permits to set space between lines
+\usepackage{setspace}  	
+
+% ensure proper appearance of all fonts in pdf:
+\usepackage[T1]{fontenc}
+
+% lmodern after T1 fontenc (_may_ be required)
+% lmodern = Latin Modern fonts
+%\usepackage{lmodern}  	
+
+%\usepackage{times} -- obsolete; use:
+% Times as default text font, maths support
+\usepackage{mathptmx}  	
+% provides bold font (required for syntax highlighting in listings)
+\usepackage{courier}  	
+
+% enables table cells to span multiple rows
+\usepackage{multirow}  
+% paragraphs: no indentation at beginning, but spacing between  
+\usepackage{parskip}  	
+
+% for figures
+\usepackage[pdftex]{graphicx}
+% implicit file name extensions for embedded figures 
+% so we do not need to specify the extension on inclusion
+\DeclareGraphicsExtensions{.pdf,.jpg,.png}
+
+% for flexible tables (e.g. auto resizing to page width) 
+\usepackage{tabularx}
+
+%**********************************************************************
+% Including non-standard packages
+%**********************************************************************
+
+\usepackage{acronym}
+
+% http://en.wikibooks.org/wiki/LaTeX/Colors
+\usepackage[usenames,dvipsnames,table]{xcolor}
+% we define a few custom colors  
+\definecolor{gray20}{gray}{0.8}
+\definecolor{gray5}{gray}{0.95}
+\definecolor{olivegreen30}{RGB}{155,187,89}  
+
+\usepackage{alltt}
+
+% for code snippets, embedded as "listings"
+\usepackage{listings}
+% we set a few defaults:
+\lstset{numbers=left, 
+        basicstyle=\footnotesize\ttfamily,  
+        showstringspaces=false,
+        % numbers=none           % line numbering
+        captionpos=b,            % caption at bottom
+        breaklines=false, 
+        numbersep=5pt
+}
+  
+% the page layout (geometry), as defined by FH guidelines:
+\usepackage[top=3cm, 
+            bottom=3cm, 
+            left=3.5cm, 
+            right=3cm]
+           {geometry}
+
+\usepackage[super]{nth}     % 1st, 2nd, 3rd,...
+
+%\usepackage{paralist}   	% inline lists
+%\usepackage{mdwlist}
+\usepackage{enumitem}
+
+% e.g. for "floating" listings (no fixed anchor in text)
+\usepackage{float}     
+\floatstyle{plain}
+\restylefloat{figure}
+% e.g. to show two (floating) images side-by-side
+\usepackage{subfig}
+
+% add copyright information to figures
+\usepackage{copyrightbox} 
+
+
+
+% symbols such as \texttimes and \texteuro
+\usepackage{textcomp}  
+% math. symbols from the American Mathematical Society  
+%\usepackage{amssymb}  	
+
+
+% chapter heading styles
+\usepackage[Lenny]{fncychap}  
+
+% for \enquote, \textquote, \blockquote...
+\usepackage{csquotes}       
+\graphicspath{ {images/} }
+% how to create simple helper commands (LaTeX "macros"):
+% e.g. in text you will write ... \TODO{add reference} ...
+\newcommand{\TODO}[1]
+{
+{\textcolor{red}{[TODO: #1]}}
+}
+
+
+% how to create/style more complex new commands:
+% e.g. \chapquote{Phone home!}{by E.T.}
+% BEGIN: chapquote
+\newcommand{\chapquote}[2]  
+{%
+\begin{quote}
+\emph{%
+``#1''%
+}%
+\begin{flushright}
+{\scriptsize \sffamily [#2]}%
+\end{flushright}
+\end{quote}
+}
+% END: chapquote
+
+% Biblatex = bibliography for LaTeX
+% ---------------------------------------------------------------------
+% context sensitive quotation; recommended for usage with Biblatex
+\usepackage{csquotes}  	
+% Note: \date, \origdate, \eventdate, and \urldate 
+%       require "yyyy-mm-dd" format,
+%       so "dd" or "mm-dd" may be omitted
+\usepackage[backend=biber,
+            urldate=long,  	        % default: short, e.g. 08/15/2010
+            style=authoryear-icomp, % Harvard citation style
+            backref,                % if you like (cit. on p. 2)
+            % sorting=nty  	        % this is default: sort by name, title, year
+            % sortlocale=de_DE      % set according to your needs
+            natbib=true,  	        % use natbib compatible citation commands
+                                    % do _not_ use package natbib!
+            maxbibnames=1000,  	    % show all authors in the bibliography
+]{biblatex}
+% Note the default option: ibidpage=true for ibid / ebd ("ebenda")
+
+% We enforce strict Harvard style: 
+% The URL date default is "(Visited on ...);" => so:
+%     BibTeX entries such as:
+%      url = {http://...},
+%      urldate = {2015-03},
+%       urldate = {2015},
+%       urldate = {2015-03-31},
+%     shall be printed as
+%      Available from: <http://...> [March 2015]
+\DeclareFieldFormat{urldate}{\mkbibbrackets{#1}}
+\DeclareFieldFormat{url}{Available\space from\addcolon\space \url{#1}}
+
+% Add one (or multiple) file(s) with bibliography entries:
+\addbibresource{references.bib}
+
+
+% ---------------------------------------------------------------------
+
+\usepackage[  	      % hyperref should be last package loaded
+    pdftex,  	      % driver
+    pdftitle={<Title of Your Thesis>},
+    pdfsubject={Master's Thesis},
+    pdfauthor={<your name>},
+    breaklinks,  	  % permits line breaks for long links
+    bookmarks,  	      % create Adobe bookmarks
+    bookmarksnumbered,% ... and include section numbers
+    linktocpage,  	  % the page number (not the text) is link on TOC
+    colorlinks,  	  % 
+    linkcolor=black,  % normal internal links;
+    anchorcolor=black,% don't make scientific papers too colourful
+    citecolor=black,
+    urlcolor=blue,  	  % quite common
+    pdfstartview={Fit},  % "Fit" fits the page to the window
+    pdfpagemode=UseOutlines,  % open bookmarks in Acrobat
+    plainpages=false, % avoids duplicate page number problem
+    pdfpagelabels,
+  ]{hyperref}
+
+%**********************************************************************
+% Layout adjustments
+%**********************************************************************
+
+% page layout (header/footer and page numbers)
+%\pagestyle{empty}
+\pagestyle{headings}
+%\pagestyle{fancy}
+
+% settings for structure and numbering 
+%  we allow three levels within text:  1.2.1 
+\setcounter{secnumdepth}{3}
+%  but we show two levels in TOC: 1.2
+\setcounter{tocdepth}{1}
+
+% footnotes: no indent, hanging
+\usepackage[hang,flushmargin]{footmisc}
+
+%**********************************************************************
+% LaTeX macros and commands
+%**********************************************************************
+
+% new command to start a chapter (no page number)
+\newcommand{\chapterstart}{\thispagestyle{empty}}
+
+% command "\chapterend" to close a chapter 
+% (flush, i.e. print remaining figures and tables)
+\newcommand{\chapterend}
+           {\newpage{
+              \pagestyle{empty}
+               \cleardoublepage
+             }
+           }
+
+% You might define support for further programming languages
+% when using listings
+\usepackage{color}
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+\lstdefinelanguage{JavaScript}{
+  keywords={break, case, catch, continue, debugger, default, delete, do, else, false, finally, for, function, if, in, instanceof, new, null, return, switch, this, throw, true, try, typeof, var, void, while, with},
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]',
+  morestring=[b]",
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywordstyle=\color{darkgray}\bfseries,
+  identifierstyle=\color{black},
+  commentstyle=\color{purple}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  sensitive=true
+}
+
+
+% new environment for smaller paragraphs
+% e.g. \begin{spar}A paragraph with some indentation.\end{spar}
+\newenvironment{spar}
+{\begingroup \leftskip 0.7cm \rightskip\leftskip}
+{\par \endgroup}
+% ^^^ must be set here (or use empty line)
+
+%**********************************************************************
+% Special hyphenation rules
+%**********************************************************************
+
+\hyphenation{JOANNEUM}  	% extend to your needs
+
+
+%**********************************************************************
+% Different settings for ITM / SWD / IRM / IMS
+%**********************************************************************
+
+
+% ITM = Internettechnik
+% ------------------------
+\ifthenelse{\equal{\study}{ITM}}{
+  \def \theStudyProgramme {Internettechnik}
+  \def \isBachelorThesis {}
+}
+%\fi
+
+% SWD = Software Design
+% ------------------------
+\ifthenelse{\equal{\study}{SWD}}{
+  \def \theStudyProgramme {Software Design}
+  \def \isBachelorThesis {}
+}
+
+% IRM = IT-Recht & Management
+% -------------------------------
+\ifthenelse{\equal{\study}{IRM}}{
+  \def \theStudyProgramme {IT-Recht \& Management}
+  \def \isMasterThesis {}
+}
+
+% IMS = IT & Mobile Security
+% ------------------------------
+\ifthenelse{\equal{\study}{IMS}}{
+  \def \theStudyProgramme {IT \& Mobile Security}
+  \def \isMasterThesis {}
+}
+
+

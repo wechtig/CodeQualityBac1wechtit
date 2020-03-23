@@ -1,0 +1,6 @@
+CHANGELOG:
+==========
+2017-07-17 jf: different text for ITM/SWD/IRM and IMS
+2017-06-15 jf: updated formal declaration with text from FH template (can be found in secretary section)
+2017-06-15 jf: corrected {\huge line spacing for title with \par}
+2016-12-16 jf: put this latex template (created by Diethard Ohrt) into git repo

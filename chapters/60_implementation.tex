@@ -1,0 +1,348 @@
+
+\chapter{Umsetzung}
+\section{Technologien und Tools für Umsetzung } 
+
+\subsubsection{Java} 
+Die drei Teilprojekte der Arbeit wurden in Java entwickelt. Die verwendete Java Version ist Java 11. 
+
+\subsubsection{Spring} 
+Spring Boot ist ein Java Framework, das im Zuge der Projektarbeit zur Entwicklung der Web-Applikation verwendet wurde.
+
+\subsubsection{Maven} 
+Maven ist ein Versionsverwaltungstool mit dem Abhängigkeiten und JARs verwaltet und heruntergeladen werden können.
+
+\subsubsection{FindBugs/SpotBugs} 
+ERGÄNZEN ERGÄNZEN ERGÄNZEN 
+
+\subsubsection{Checkstyle} 
+Checkstyle ist ein open-source Tool für die Statische Code Analyse. Checkstyle ist für die Verwendung in Java Applikation entwickelt worden. Hierbei werden eine Vielzahl an Fehler und Bugs analysiert und beachtet. Checkstyle kann konfiguriert und an spezifische Probleme angepasst werden
+
+\subsubsection{MongoDB} 
+Als Datenbank wird MongoDB verwendet. Es ist ein nicht-relationales Datenbankmanagementsystem. Es gehört zu den dokumentorientierten Datenbanken.
+MongoDB kann über die offiziele Website heruntergeladen und installiert werden. Um MongoDB zu starten, muss im \textit{/bin} Folder der Befehl \textit{mongo} ausgeführt werden.
+\cite{mongoDbManual}
+
+\subsubsection{MongoDB Java Driver}
+Der MongoDB Java Driver wird für die Kommunikation (Synchronisation und asynchrone Interaktion) mit MongoDB eingesetzt. Als Alternative kann Jongo (https://jongo.org/) oder  Morphia (https://morphia.dev/) eingesetzt werden. 
+
+\subsubsection{JavaScript und Frameworks}
+Für das Frontend der Webapplikation wird JavaScript eingesetzt. Um zusätzliche Funktionen verwenden zu können, werden folgende JavaScript-Plugins, Frameworks und Libraries verwendet: 
+\begin{itemize}
+\item JQuery 
+\item Bootstrap
+\item DataTables \\ Bietet automatische Pagination und Sortierfunktionen für Tabellen 
+\item Chart.js \\ Unterstützt das Erstellen von Diagrammen. 
+\end{itemize}
+
+\subsubsection{IntelliJ}
+IntelliJ wurde als Entwicklungsumgebung für das Backend und Frontend verwendet. 
+
+\section{Infrastruktur und Aufbau der Applikationen} 
+Im Rahmen dieser Arbeit wurde mehrere Applikationen und Systeme verwendet. Die Arbeit setzt sich aus folgenden Teilen zusammen:
+
+\begin{figure}[tp]
+  \centering
+  \includegraphics[height=8cm]{images/infrastruktur.PNG}
+  % The short caption should be capitalised
+  % The full caption should hold a full sentence. 
+ \caption[Aufbau der Teilsysteme und Projekte der Arbeit]{Aufbau der Teilsysteme und Projekte der Arbeit.}
+  \label{fig:engine}
+\end{figure}
+
+Das \textit{Project} ist das Softwareprojekt, welches analysiert werden soll. In diesem Projekt wird auch ein Tool für die Statische Code Analyse eingesetzt. Dieses Tool speichert die Daten (Errors, Warnungen, Informationen) extern. Um diese Daten für die Analyse verwenden zu können, wurde im Rahmen der Arbeit ein \textit{Plugin}, welches das Projekt einsetzten kann, entwickelt. Dieses Plugin greift auf die Daten Statische Code Analyse zu. der Um das Plugin verwenden zu können, muss auch eine \textit{Datenbank} angegeben werden, in welche das Plugin die Daten der Statische Code Analyse des Projekts speichern kann. Die nicht-relationale Datenbank wird auf einem Server gehostet. Um in der Weboberfläche die Daten der Datenbank anzeigen zu können, wird auch ein \textit{Backend} benötigt. Das Backend liest die Daten aus und gibt sie an die Weboberfläche weiter. In der \textit{Weboberfläche} werden die Daten in verschiedenen Diagrammen und Tabellen ausgewertet. Auch ein PDF-Export ist möglich. 
+
+
+\section{Demo-Projekt und Bugreport}
+suppress message
+%https://checkstyle.sourceforge.io/config_filters.html
+
+\subsection{Entwicklungsumgebung Build-in}
+
+\subsection{Maven Plugins}
+Viele Tools für die Statische Code Analyse bieten die Möglichkeit, XML-Reports zu genieren. Dies ist möglich mit dem Verwenden der spezifischen Maven-Plugins. \cite{spotBugsUsage} \cite{checkstylePlugin} \cite{spotBugsUsage}
+Diese Plugins bieten build-Optionen an, mit dem die XML oder Doc-Reports generiert werden können.
+\subsubsection{XML generieren mit CheckStyle}
+\begin{verbatim}
+mvn checkstyle:checkstyle
+\end{verbatim}
+Das generierte XML-File wird im /target Ordner abgelegt. 
+
+\subsubsection{XML generieren mit SpotBugs}
+ERGÄNZEN TESTEN
+\begin{verbatim}
+mvn site
+\end{verbatim}
+Der Speicherort des generierten XML-Files kann in der Plugin-Konfiguration angegeben werden.
+
+
+\section{Speichern der Daten} 
+
+Zum Speichern der Daten wird eine Datenbank benötigt. Aufgrund der stark variierenden Daten und da es bei großen Projekten auf einem längeren Zeitraum viele Fehler und Warnungen gefunden werden, wird eine nicht-relationale Datenbank (NoSQL) verwendet. 
+
+\subsection{Vorteil vom Einsatz einer nicht-relationalen Datenbank gegenüber einer relationalen Datenbanke }
+Der Vorteil einer nicht-relationalen Datenbank wie MongoDB besteht in der unterschiedlichen Lösung des CAP-Theorem. CAP ist eine für Abkürzung:
+
+\begin{itemize}
+\item C = Consistency (Konsistenz)
+\item A = Abailability (Verfügbarkeit) 
+\item P = Partition Tolerance (Fehlertoleranz))
+\end{itemize}
+
+Das CAP-Theorem besagt, dass nur zwei dieser Eigenschaften gleichzeitig gelten können. 
+Relationale Datenbanken sind im CA Bereich beheimatet, sie legen einen hohen Wert auf Konsistenz. Bei NoSQL und Big Data muss  auf die Fehlertoleranz geachten werden und gleicherweise müssen die Datenbanken hochverfügbar sein, so sind sie im AP Bereich beheimatet. Das garantiert eine hohe Verfügbarkeit und Fehlertoleranz. Konsistenz ist bei den vielen Analysen der Statischen Code Analyse weniger von nutzen, da die Daten der verschiedenen Tools auch stark varrieren. Zusätzlich garantiert die Verwendung einer nicht-relationalen Datenbank eine einfache Query-Language und ein freies Schema.\\
+Die Verwendung von nicht-relationalen Datenbanken stellt daher eine Möglichkeit da, die Herausforderungen im Bereich von BigData zu lösen:
+\begin{itemize}
+\item Größe der Daten (Volume) 
+\item Geschwindigkeit der Verarbeitung (Velocity)
+\item Strukturierung der Daten (Variety)
+\end{itemize}
+
+
+\subsection{Typen der nicht-relationale Datenbanken}
+NoSQL bedeutet nicht \emph{Kein SQL}, sondern \emph{Not only SQL}. Der Aufbau ist hierbei nicht auf relationale Datenbanken beschränkt, sondern kann seine Datenbankstruktur erweitert. 
+So gibt es in diesem Umfeld viele Anbieter von NoSQL Lösungen. Diese Lösungen für Datenbanken werden in folgende Kategorien unterteilt:
+
+\begin{itemize}
+\item Key Value Datenbanken: Abfragen nur über einen Schlüssel
+\item Spaltenorientierte Datenbanken (Dynamische Spalten)
+\item Graph-Datenbanken (Verwaltung und Arbeiten mit Knoten)
+\item Dokumentorientierte Datenbanken: Besteht aus mehreren Dokumenten (JSONs)
+\end{itemize}
+
+Da die Analyseergebnisse der Statischen Code Analyse mehrere Informationen beinhalten, die leicht in JSONs gespeichert werden können, wird die dokumentorientierte Datenbank MongoDB verwendet. 
+
+\subsection{Aufbau der Datenbank}
+MongoDB benutzt schemafreie Collections um Daten zu speichern. Schemafreiheit ist nur ein technischer Aspekt. Eine Collection kann Dokumente mit beliebiger Struktur speichern und jedes dieser Dokumente kann sich von den anderen Dokumenten unterscheiden. Trotzdem sollen nicht stark unterschiedliche Dokumente in einer Collection gespeichert werden, da es in der Verwaltung bei einer starken Abweichung einen großen zusätzlichen Aufwand gibt. 
+
+Für die Analyseergbnisse wird eine Collection verwendet, die folgende Felder beinhalten kann: \textit{id, project, file, line, message, source, severity, date}
+
+Beispiel eines JSON-Datensatzs in der Collection:
+
+\begin{verbatim}
+{ "_id" : ObjectId("5e1209881a2dff20ab6ee6c6"), 
+"project" : "importerProject", 
+"file" : "Sender.java", 
+"line" : 72, 
+"message" : "Not closed!", 
+"source" : "checkstyle.checks.blocks.AvoidNestedBlocksCheck", 
+"severity" : "error", 
+"date" : ISODate("2020-01-05T00:00:00Z") }
+\end{verbatim}
+
+In einer relationalen Datenbanken mit einem starken Schema und einer ausgeprägten Konsistenz, könnte dieser Datensatz in mehrere Tabellen verteilt gespeichert werden, zum Beispiel eine eigene Tabelle für \textit{severity}. Aufgrund der schwachen Konsistenz in nicht-relationalen Datenbanken wird hierbei nur eine Collection (Tabelle) verwendet. So können in dieser Collection auch Datensätze gespeichert werden, die keine \textit{severity} besitzen: NULL-Werte können so nicht auftreten. \\
+Die Datensätze können mit dem Mongo-Service ausgelesen werden: 
+
+\begin{verbatim}
+// Lesen aller Daten:
+db.findings.find({})
+
+// Lesen eines bestimmten Datensatzes:
+db.findings.find({"_id" : ObjectId("5e1209881a2dff20ab6ee6c6")})
+\end{verbatim}
+
+Eine zweite Collection \textit{recommendations} wird für das Speichern der Vorschläge für die Fehler und Warnungen verwendet. Benutzer können hierbei über die Webapplikation Tutorials und nützliche Links zu den einzelnen Fehlern und Warnungen speichern.
+In dieser Collection werden daher Objekte mit nur zwei Datenfeldern gespeichert: \textit{error} und \textit{link}. \\
+In einer dritten Collection \textit{ignoredFindings} werden Errors und Warnungen gespeichert, die von der Anzeige im Frontend ausgenommen werden. In den Objekten gibt es nur ein Datenfeld \textit{message}, für die ausgenommen Meldungen.
+\section{Datenbank Importer Plugin} 
+Die Statischen Code Analyse wird auf dem Rechner des Entwicklers oder der Entwicklerin ausgeführt. Diese Daten müssen in der Datenbank gespeichert werden, um sie in einem längeren Zeitraum einsehen und auswerten zu können. Eine eigene Lösung wird daher benötigt, um die Daten in der Datenbank zu speichern. 
+\subsection{Apache Maven Plugin}
+Mit Apache Maven können verschiedene Plugins verwendet und im Projekt genutzt werden. Apache Maven bietet aber auch die Möglichkeit, eigene Plugins zu entwickeln.\cite{anardu2014maven}
+
+Die Dependency \textit{maven-plugin-api} gibt Klassen und Funktionen vor, die benutzt werden können um ein eigenes Plugin zu entwickeln
+\begin{verbatim}
+ <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-plugin-api</artifactId>
+      <version>3.6.0</version>
+      <scope>provided</scope>
+ </dependency>
+\end{verbatim}
+
+Mit dieser Dependency kann nun eine Mojo-Klasse erstellt. (\textit{MainExecuter.java}) Sie stellt den Kern des Plugins da, die der Verwendung des Plugins zuerst ausgeführt wird. \cite{gonzalezMavenTutorial}
+
+\lstset{
+  caption={Kopf der Executor-Klasse: Sie wird mit dem Aufruf des Plugins zuerst gestartet.}, 
+  basicstyle=\small\ttfamily, 
+  label=lst:main, 
+  %float=tbhp, % float image to top/bottom/here/page
+  language=Java,
+  frame=single,
+  breaklines=true, % break long source code lines, and add arrow
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+  %  basewidth={0.55em}, 
+  % fontadjust}  % adjust these for more appealing appearance
+}
+
+% listing with some settings, such as float, for this listing only
+\begin{samepage}% with samepage we keep a FLOATing listing on one page
+	\begin{lstlisting}[float=tbhp]
+@Mojo(name = "import", defaultPhase = LifecyclePhase.INSTALL)
+public class MainExecutor extends AbstractMojo {
+
+    @Parameter(property = "dbName",defaultValue = "findings")
+    private String dbName;
+	\end{lstlisting}
+\end{samepage}
+	
+
+Um die Klasse \textit{MainExecuter.java} als Mojo-Klasse zu kennzeichen, muss von \textit{AbstractMojo} abgeleitet und mit \textit{@Mojo} annotiert werden.
+
+%\includegraphics{/dbpluginConnect.PNG}
+
+Mit der Option \textit{defaultPhase} kann festgelegt werden, in welcher Maven-Lifecycle-Phase das Plugin ausgeführt werden soll. Mit dieser Einstellung wird das Plugin während des install-Prozesses ausgeführt. Weitere Möglichkeiten sind unter anderen die Phasen  \textit{deploy},  \textit{clean} und  \textit{compile}. \\
+
+Das Plugin wird mit bestimmten Parametern aufgerufen. Diese können beim Einbinden des Plugins angegeben werden. Folgende Parameter werden benötigt, um das Plugin auszuführen:
+
+\begin{itemize}
+\item \textit{dbName}: Name der Datenbank, indem die Ergebnisse der Statischen Code Analyse gespeichert werden. 
+\item \textit{dbUrl}: URL für die Datenbank
+\item \textit{xmlFile}: Name des generierten XML-Files
+\end{itemize}
+  
+% \includegraphics{dbpluginParameter}    
+
+In der Mojo-Klasse muss die Methode \textit{execute} implementiert werden, die zum Beginn ausgeführt wird. Mithilfe der oben definierten Parameter und des Projektnamens, der mit dem Maven-Lifecycle ausgelesen werden kann, wird nun der Import in die Datenbank gestartet. 
+
+\subsection{MongoDB-Java-Driver und Datenbank-Import}
+Der Importer speichert die Daten des XML-Reports in Datenbanken. Dazu wird das XML-File ausgelesen und die einzelnen gefundenen Fehler und Informationen werden in Java-Objekte umgewandelt. Das Speichern der Java-Objekte in den Collections ist ohne Konvertierung, im Vergleich zu anderen herkömmlichen Tools wie Hibernate, nicht möglich. Um Daten zu speichern, müssen die Java-Objekte in Dokumente umgewandelt werden. Daher muss ein Konverter implementiert werden: \textit{DBObjectConverter}
+Bei steigender Komplexität und Größe der Datenbank können die Konverter sehr komplex werden. Der Typ \textit{org.bson.Document} wird vom MongoDB-Java-Driver vorgegeben. Ein BSON-Dokument unterscheidet sich nur von der Kodierung zu Json-Objekte. (BSON=Binary Json) 
+Diese Dokumente können nun für die Datenbank-Transaktionen verwendet werden. \\
+
+Um die Dokumente speichern zu können, muss eine Verbindung zur Datenbank mit den eingegebenen Parametern erstellt werden. Dazu müssen Objekte mit den Typen \textit{MongoClient}, \textit{MongoDatabase} und \textit{MongoCollection} initialisiert und verwendet werden:
+
+\lstset{
+  caption={Benötigte Attribute, um sich mit der Datenbank verbinden und die Collections verwenden.}, 
+  basicstyle=\small\ttfamily, 
+  label=lst:main, 
+  %float=tbhp, % float image to top/bottom/here/page
+  language=Java,
+  frame=single,
+  breaklines=true, % break long source code lines, and add arrow
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+  %  basewidth={0.55em}, 
+  % fontadjust}  % adjust these for more appealing appearance
+}
+
+% listing with some settings, such as float, for this listing only
+\begin{samepage}% with samepage we keep a FLOATing listing on one page
+	\begin{lstlisting}[float=tbhp]
+	
+mongoClient = new MongoClient(new MongoClientURI(dbUrl));
+db = mongoClient.getDatabase(databaseName);
+db = mongoClient.getDatabase(databaseName);
+
+	\end{lstlisting}
+\end{samepage}
+
+Der Typ \textit{MongoCollection<Document>} kann nun verwendet werden um Dokumente zu speichern, löschen oder auszulesen. Diese Operationen werden beim MongoDB-Java-Driver direkt auf die betreffenden Collections angewendet. Ein Commit oder eine andere Operation ist dabei nicht notwendig.
+
+% \includegraphics{dbpluginSave}    
+
+\section{Webapplikation} 
+Die Webapplikation bildet den zentralen Teil der Applikation. Das Ziel ist es, die gespeicherten Daten für die Benutzerinnen und Benutzer übersichtlich und einfach aufzubereiten. 
+\subsection{Backend}
+Im Backend werden die Daten aus der Datenbank in Services ausgelesen. Die ausgelesen Daten werden in Beans umgewandelt. Über die REST-Schnittstelle können Daten an das Frontend übergeben werden. Das Backend bzw. die Webapplikation verwendet das Framework Spring-Boot als Alternative zu Java EE. \cite{walls2016spring} Spring Boot bietet einen Standalone-Server und kann daher ohne Konfigurationen verwendet werden. Zusätzlich bietet Spring Boot die Möglichkeit zur Erstellung von Spring Beans und REST-Controller.  
+
+\subsubsection{Struktur}
+
+\subsubsection{API und Controller}
+Über den Controller können HTTP-Requests an das Backend geschickt werden. Mit Spring können die Controller als \textit{RestController} annotiert und verwendet werden. Die einzelnen Methoden des Controllers werden zusätzlich annotiert um die Methode (GET, POST, DELETE, PUT, ...) und den Pfad zu definieren. Im Pfad können zusätzlich Parameter als \textit{PathVariable} definiert werden. Im Controller werden  Methoden verwendet um bestimmte Projektanalysedaten auszulesen, Daten als PDF zu exportieren und um Vorschläge zu speichern und auszulesen. 
+\subsubsection{Services und MongoDB-Java-Driver}
+In den Services werden Methoden bereitgestellt, die die Daten der Datenbank auslesen. Dies geschieht mit dem MongoDB-Java-Driver. Für das Verwenden des MongoDB-Java-Driver ist ein spezifischer Converter notwendig. Das Mapping der Java-Objekte mit den Collections ist ohne konvertierung, im Vergleich zu Hibernate, nicht möglich. Um Daten zu speichern, müssen die Java-Objekte  in Dokumente umgewandelt werden und um ausgelesene Dokumente zu verwenden, müssen die Dokumente in Java Objekte umgewandelt werden. Daher muss ein Konverter verwendet werden: \textit{DBObjectConverter.java}
+Bei steigender Komplexität und Größe der Datenbank werden auch die Konverter komplexer.
+
+\lstset{
+  caption={Um die Datenbank benutzen können, müssen die Java-Objekte bzw. die Datenbank-JSON-Objekte konvertiert werden.}, 
+  basicstyle=\small\ttfamily, 
+  label=lst:main, 
+  %float=tbhp, % float image to top/bottom/here/page
+  language=Java,
+  frame=single,
+  breaklines=true, % break long source code lines, and add arrow
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+  %  basewidth={0.55em}, 
+  % fontadjust}  % adjust these for more appealing appearance
+}
+
+% listing with some settings, such as float, for this listing only
+\begin{samepage}% with samepage we keep a FLOATing listing on one page
+	\begin{lstlisting}[float=tbhp]
+public static Finding convertToObject(Document e) {
+    String project = (String) e.get("project");
+    String file = (String) e.get("file");    
+    ...
+
+public static Document convertToDocument(Recommendation rec) {
+    org.bson.Document recDoc = new Document();
+    recDoc.append("error", rec.getError());
+    recDoc.append("link", rec.getLink());
+    ...
+	\end{lstlisting}
+\end{samepage}
+
+Der Konverter wird in allen Service-Methoden verwendet, wo Daten aus den Collections mit dem MongoDB-Java-Driver ausgelesen, gespeichert oder gelöscht werden. Um diese Operation zu verwenden, müssen die Methoden \textit{find}, \textit{deleteOne} und \textit{insertOne} verwendet werden. Um bestimmte Daten auszuwählen, wird in der Methode \textit{find} ein Query-Parameter übergeben: In den entsprechenden Services ein Projektname oder ein Datum. Die Ergebnisse werden mit einem Iterator iteriert und an den Konverter übergeben.
+
+\subsubsection{IText und PDF-Export}
+Der PDF-Export ist eine weitere Funktion, die das Backend bietet.
+Dazu wird das Tool IText zur Erstellung von Reports verwendet.  \cite{lowagie2011itext} Um IText zu verwenden, kann aus verschiedenen Preismodellen gewählt werden, eine kostenlose Version wird aber auch zur Verfügung gestellt und in dieser Arbeit verwendet.  \\
+Ein PDF-Export kann für ein bestimmtes Projekt in einem bestimmten Zeitraum erstellt werden. Über das Service liest der PDF-Generator die angegeben Daten aus.
+
+\lstset{
+  caption={Initialisierung des Writers um im Dokument einen Paragraph zu erstellen.}, 
+  basicstyle=\small\ttfamily, 
+  label=lst:main, 
+  %float=tbhp, % float image to top/bottom/here/page
+  language=Java,
+  frame=single,
+  breaklines=true, % break long source code lines, and add arrow
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+  %  basewidth={0.55em}, 
+  % fontadjust}  % adjust these for more appealing appearance
+}
+
+% listing with some settings, such as float, for this listing only
+\begin{samepage}% with samepage we keep a FLOATing listing on one page
+	\begin{lstlisting}[float=tbhp]
+PdfWriter writer = PdfWriter.getInstance(
+   document, byteArrayOutputStream);
+document.open();
+document.add(new Paragraph(
+  "Findings PDF Export. - " +LocalDate.now(), titleFont));
+
+	\end{lstlisting}
+\end{samepage}
+
+Für alle im Service ausgelesen Daten wird ein eigener Paragraph(Zeile) erstellt. Um die Überschrift und die Daten entsprechend zu formatieren, kann mittels \textit{IText} auch ein Font erstellt werden. Mit der \textit{FontFactory} wird hierbei ein Font mit bestimmter Schriftart, Schriftgröße und Farbe erstellt.
+Nach der Erstellung des PDF-Dokument muss es weiter an den Client zu schicken. Um das PDF-Dokumente im \textit{Response} zu übertragen, wird das Dokument in ein \textit{byte-array} übertragen. Dies geschieht mit der Verwendung des \textit{ByteArrayOutputStream} und dessen Methode \textit{toByteArray}. 
+
+\begin{figure}[tp]
+  \centering
+  \includegraphics[height=8cm]{images/seqGeneratePdf.PNG}
+  % The short caption should be capitalised
+  % The full caption should hold a full sentence. 
+ \caption[Sequenzdiagramm für den Download eines PDF-Exports]{Sequenzdiagramm für den Download eines PDF-Exports.}
+  \label{fig:engine}
+\end{figure}
+
+\subsection{Frontend}
+Im Frontend werden die Daten in verschiedenen Formen aufbereitet und den Entwicklerinnen und Entwicklern präsentiert, dazu dient eine OnePage-HTML Seite.
+\subsubsection{Kommunikation mit dem Backend}
+
+\subsubsection{Präsentation der Daten}
+
+\subsubsection{Recommendations}
+
+auf algorithmus problem eingehen!
+
+\subsubsection{Ignorieren von Meldungen}
+
+
+auf algorithmus problem eingehen!
+
+\subsubsection{Chart.js und das Erstellen von Grafiken}
+
+\subsection{Nachteile gegenüber herkömmlichen Lösungen} 
+hinsichtlich der Linienmarkierung in Entwicklungsumgebungen
+vergleichen auch mit SpotBugs GUI
+mehrere Entwickler verfälschen ergebnis
+\section{Evaluierung der Visualisierung und der Webapplikation} 

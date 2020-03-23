@@ -1,0 +1,127 @@
+%**********************************************************************
+% right side, if two-sided
+\chapterend
+
+\begin{titlepage}
+
+\begin{center}
+% scale image according to the actual logo you use
+% official JPG ist way too large, so [height=2.5cm] is required
+% official EPS, converted to PDF:
+\includegraphics[height=1cm]{images/engine.jpg}
+\hfill
+
+% the actual title
+\mbox{}\vfill
+
+  \large
+
+  {\huge\bf \title \par}
+  \subtitle
+  \vspace{2.0cm}
+  
+\ifdefined\isMasterThesis % MA
+
+  \ifthenelse{\equal{\yourLanguage}{german}}{ % German Version 
+
+   {\bf Masterarbeit}\\
+    zur Erlangung des akademischen Grades\\
+   
+    \ifthenelse{\equal{\study}{IRM}}{ % IRM Master of Arts
+  
+      {\bf Master of Arts in Business (MA)}\\
+      eingereicht am\\
+      Fachhochschul-Studiengang {\bf \theStudyProgramme \\}
+  
+    }{  % else: IMS = Master of Science
+      
+      {\bf Master of Science in Engineering (MSc)}\\
+      eingereicht am\\
+      Fachhochschul-Studiengang {\bf \theStudyProgramme \\}
+      
+   }
+
+  }{ % English Version 
+
+    {\bf Master Thesis}\\
+    submitted in conformity with the requirements for the degree of\\
+   
+    \ifthenelse{\equal{\study}{IRM}}{ % IRM Master of Arts
+  
+      {\bf Master of Arts in Business (MA)}\\
+      Master's degree programme {\bf \theStudyProgramme \\}
+  
+    }{  % else: IMS = Master of Science
+      
+      {\bf Master of Science in Engineering (MSc)}\\
+      Master's degree programme {\bf \theStudyProgramme \\}
+      
+   }
+
+  } 
+\else % BA
+  
+  \ifthenelse{\equal{\yourLanguage}{german}}{ % German Version 
+  
+  {\bf Bachelorarbeit}\\
+  zur Erlangung des akademischen Grades\\
+  {\bf Bachelor of Science in Engineering (BSc)}\\
+  
+  eingereicht am\\
+  Fachhochschul-Studiengang {\bf \theStudyProgramme \\}
+
+  }{ % English Version 
+  
+  {\bf Bachelor Thesis}\\
+  submitted in conformity with the requirements for the degree of\\
+  {\bf Bachelor of Science in Engineering (BSc)}\\
+  Bachelor's degree programme {\bf \theStudyProgramme \\}
+
+  }
+
+\fi
+  
+  \vspace{0.5cm}
+
+ FH JOANNEUM  (University of Applied Sciences), Kapfenberg
+
+  \vspace{1.5cm}
+
+  \mbox{}
+
+  \ifthenelse{\equal{\yourLanguage}{german}}{ % German Version
+
+  {\bf Betreuer/in: \yourAdvisor\\
+   % Zweit-/Firmenbetreuer/in: <Vorname Zuname; Firmenname>
+
+  eingereicht von: \yourName\\
+  Personenkennzahl: \yourIdentifier}
+  
+  
+  }{ % English Version 
+
+  {\bf supervisor: \yourAdvisor\\ 
+  % second supervisor: <firstname lastname; company>
+
+  submitted by: \yourName\\
+  personal identifier: \yourIdentifier}
+  
+  }
+
+  \vspace{1.5cm}
+
+   \submissionDate
+  
+  \vspace{1.5cm}
+
+
+\end{center}
+
+\vfill\mbox{}
+
+
+\end{titlepage}
+
+
+
+%**********************************************************************

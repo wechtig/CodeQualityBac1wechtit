@@ -1,0 +1,593 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{anardu2014maven}{book}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=0c825b968e84f9a150d2895e0dec89d0}{%
+           family={Anardu},
+           familyi={A\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e71491243f7727efa9794e1b8b9a17c2}{%
+           family={Baldi},
+           familyi={B\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c04595cc2e0d015ced62c5f817f85cbd}{%
+           family={Cicero},
+           familyi={C\bibinitperiod},
+           given={Umberto\bibnamedelima Antonio},
+           giveni={U\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f52585e01d96fabd88b67ee2d9a7def}{%
+           family={Giomi},
+           familyi={G\bibinitperiod},
+           given={Riccardo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d9718e17b9c76426bb27b4462f1ac02}{%
+           family={Veneri},
+           familyi={V\bibinitperiod},
+           given={Giacomo},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Packt Publishing Ltd}%
+      }
+      \strng{namehash}{799e195e4ae7daffb880b45a7f4d6af5}
+      \strng{fullhash}{0e79098bdde32cf31cb1dee6e56dd7a8}
+      \strng{bibnamehash}{0e79098bdde32cf31cb1dee6e56dd7a8}
+      \strng{authorbibnamehash}{0e79098bdde32cf31cb1dee6e56dd7a8}
+      \strng{authornamehash}{799e195e4ae7daffb880b45a7f4d6af5}
+      \strng{authorfullhash}{0e79098bdde32cf31cb1dee6e56dd7a8}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Maven Build Customization}
+      \field{year}{2014}
+    \endentry
+    \entry{checkstylePlugin}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{title}{Apache Maven Checkstyle Plugin}
+      \verb{urlraw}
+      \verb https://maven.apache.org/plugins/maven-checkstyle-plugin/
+      \endverb
+      \verb{url}
+      \verb https://maven.apache.org/plugins/maven-checkstyle-plugin/
+      \endverb
+    \endentry
+    \entry{comparativeAnalysisTools}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=37d4ea611536c1d660bcc1a75b8e32cc}{%
+           family={Ashfaq},
+           familyi={A\bibinitperiod},
+           given={Qirat},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=efa205ab2812ec5d6f509b13aa247580}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Rimsha},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cef31eacc3de1f8b03836d4addd2a5aa}{%
+           family={Farooq},
+           familyi={F\bibinitperiod},
+           given={Sehrish},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e5f1268f5fe07f5d6fe64765bd4fdfe9}
+      \strng{fullhash}{e5f1268f5fe07f5d6fe64765bd4fdfe9}
+      \strng{bibnamehash}{e5f1268f5fe07f5d6fe64765bd4fdfe9}
+      \strng{authorbibnamehash}{e5f1268f5fe07f5d6fe64765bd4fdfe9}
+      \strng{authornamehash}{e5f1268f5fe07f5d6fe64765bd4fdfe9}
+      \strng{authorfullhash}{e5f1268f5fe07f5d6fe64765bd4fdfe9}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{03}
+      \field{title}{A Comparative Analysis of Static Code Analysis Tools that check Java Code Adherence to Java Coding Standards}
+      \field{year}{2019}
+      \field{pages}{98\bibrangedash 103}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/C-CODE.2019.8681007
+      \endverb
+    \endentry
+    \entry{bommer2016softwarewartung}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f309abaa0c7af077080fc73038bbce91}{%
+           family={Bommer},
+           familyi={B\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f745561d25cf2ab8ae654be0d373eb61}{%
+           family={Spindler},
+           familyi={S\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=102442c5259ced4ed513008d0cdbcdd8}{%
+           family={Barr},
+           familyi={B\bibinitperiod},
+           given={Volkert},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {dpunkt. verlag}%
+      }
+      \strng{namehash}{7cb0ec1f54c10c1f219de133fcd66261}
+      \strng{fullhash}{7cb0ec1f54c10c1f219de133fcd66261}
+      \strng{bibnamehash}{7cb0ec1f54c10c1f219de133fcd66261}
+      \strng{authorbibnamehash}{7cb0ec1f54c10c1f219de133fcd66261}
+      \strng{authornamehash}{7cb0ec1f54c10c1f219de133fcd66261}
+      \strng{authorfullhash}{7cb0ec1f54c10c1f219de133fcd66261}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-89864-482-2}
+      \field{title}{Softwarewartung: Grundlagen, Management und Wartungstechniken}
+      \field{year}{2016}
+    \endentry
+    \entry{sonarQubeHeise}{online}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://m.heise.de/developer/artikel/Einsatz-von-SonarQube-zur-Qualitaetssicherung-in-heterogenen-Projekten-1953460.html}
+      \field{title}{Einsatz von SonarQube zur QualitÃ¤tssicherung in heterogenen Projekten}
+      \verb{urlraw}
+      \verb https://m.heise.de/developer/artikel/Einsatz-von-SonarQube-zur-Qualitaetssicherung-in-heterogenen-Projekten-1953460.html
+      \endverb
+      \verb{url}
+      \verb https://m.heise.de/developer/artikel/Einsatz-von-SonarQube-zur-Qualitaetssicherung-in-heterogenen-Projekten-1953460.html
+      \endverb
+    \endentry
+    \entry{gomes2009overview}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=5bd1034b634ef5604fcf23fd3da06400}{%
+           family={Gomes},
+           familyi={G\bibinitperiod},
+           given={Ivo},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a017c300b03feff2c48df7a7ece38e1}{%
+           family={Morgado},
+           familyi={M\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9b990b1af7f0f2dec9d194a9f2705f1a}{%
+           family={Gomes},
+           familyi={G\bibinitperiod},
+           given={Tiago},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e85653863ea239b37b1069eb33abfdc2}{%
+           family={Moreira},
+           familyi={M\bibinitperiod},
+           given={Rodrigo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b70f94a30da5f248c4b815c0885c7b45}
+      \strng{fullhash}{bae122ec831428050b6306b8e7416efa}
+      \strng{bibnamehash}{bae122ec831428050b6306b8e7416efa}
+      \strng{authorbibnamehash}{bae122ec831428050b6306b8e7416efa}
+      \strng{authornamehash}{b70f94a30da5f248c4b815c0885c7b45}
+      \strng{authorfullhash}{bae122ec831428050b6306b8e7416efa}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An overview on the static code analysis approach in software development}
+    \endentry
+    \entry{gonzalezMavenTutorial}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2c58f59b5b94b6a07c061ac07f0b0efa}{%
+           family={Gonzalez},
+           familyi={G\bibinitperiod},
+           given={Marcos\bibnamedelima Lopez},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2c58f59b5b94b6a07c061ac07f0b0efa}
+      \strng{fullhash}{2c58f59b5b94b6a07c061ac07f0b0efa}
+      \strng{bibnamehash}{2c58f59b5b94b6a07c061ac07f0b0efa}
+      \strng{authorbibnamehash}{2c58f59b5b94b6a07c061ac07f0b0efa}
+      \strng{authornamehash}{2c58f59b5b94b6a07c061ac07f0b0efa}
+      \strng{authorfullhash}{2c58f59b5b94b6a07c061ac07f0b0efa}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{How to Create a Maven Plugin}
+      \verb{urlraw}
+      \verb https://www.baeldung.com/maven-plugin
+      \endverb
+      \verb{url}
+      \verb https://www.baeldung.com/maven-plugin
+      \endverb
+    \endentry
+    \entry{goseva2015capability}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d979a456f8b596d98cc5bf4cc6a778b8}{%
+           family={Goseva-Popstojanova},
+           familyi={G\bibinithyphendelim P\bibinitperiod},
+           given={Katerina},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=698469c3c4b878429e735cfc04240ac8}{%
+           family={Perhinschi},
+           familyi={P\bibinitperiod},
+           given={Andrei},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ffb01c4572eb3e4bd142d4099d7c91b7}
+      \strng{fullhash}{ffb01c4572eb3e4bd142d4099d7c91b7}
+      \strng{bibnamehash}{ffb01c4572eb3e4bd142d4099d7c91b7}
+      \strng{authorbibnamehash}{ffb01c4572eb3e4bd142d4099d7c91b7}
+      \strng{authornamehash}{ffb01c4572eb3e4bd142d4099d7c91b7}
+      \strng{authorfullhash}{ffb01c4572eb3e4bd142d4099d7c91b7}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Information and Software Technology}
+      \field{title}{On the capability of static code analysis to detect security vulnerabilities}
+      \field{volume}{68}
+      \field{year}{2015}
+      \field{pages}{18\bibrangedash 33}
+      \range{pages}{16}
+    \endentry
+    \entry{grigorenkoDynTest}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bbc0b238480132668cbf2f6734d32e29}{%
+           family={Grigorenko},
+           familyi={G\bibinitperiod},
+           given={Elena},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00d266fec8b3e3f942bd1ec4614b7ddc}{%
+           family={Sternberg},
+           familyi={S\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ed1955472bead1fa17629e26fcb2aa54}
+      \strng{fullhash}{ed1955472bead1fa17629e26fcb2aa54}
+      \strng{bibnamehash}{ed1955472bead1fa17629e26fcb2aa54}
+      \strng{authorbibnamehash}{ed1955472bead1fa17629e26fcb2aa54}
+      \strng{authornamehash}{ed1955472bead1fa17629e26fcb2aa54}
+      \strng{authorfullhash}{ed1955472bead1fa17629e26fcb2aa54}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychological Bulletin}
+      \field{month}{07}
+      \field{title}{Dynamic Testing}
+      \field{volume}{124}
+      \field{year}{1998}
+      \field{pages}{75\bibrangedash 111}
+      \range{pages}{37}
+      \verb{doi}
+      \verb 10.1037/0033-2909.124.1.75
+      \endverb
+    \endentry
+    \entry{iqbalCodeQualityApproach}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=15c008b2796647296b20119a94ffca51}{%
+           family={{Iqbal}},
+           familyi={I\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c63bdef63b74a9a83c28e620647b7a94}{%
+           family={{Iqbal}},
+           familyi={I\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=637551760227362d40b9e836a88952e4}{%
+           family={{Asad}},
+           familyi={A\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5faa0905ce9e85252fbed0529647d36d}{%
+           family={{Khan}},
+           familyi={K\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6ab53c24a041a9e77f10b9531dc23353}
+      \strng{fullhash}{cd394400a1e4e8cee3ed4bdd17048818}
+      \strng{bibnamehash}{cd394400a1e4e8cee3ed4bdd17048818}
+      \strng{authorbibnamehash}{cd394400a1e4e8cee3ed4bdd17048818}
+      \strng{authornamehash}{6ab53c24a041a9e77f10b9531dc23353}
+      \strng{authorfullhash}{cd394400a1e4e8cee3ed4bdd17048818}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2016 10th International Conference on Software, Knowledge, Information Management Applications (SKIMA)}
+      \field{issn}{null}
+      \field{month}{12}
+      \field{title}{A source code quality analysis approach}
+      \field{year}{2016}
+      \field{pages}{142\bibrangedash 145}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/SKIMA.2016.7916211
+      \endverb
+      \keyw{C++ language;software quality;source code (software);source code quality analysis;C++ programs;Biological system modeling;Analytical models;Software;Hardware;ISO Standards;IEC Standards;Reliability;source code analysis;quality source coding;source code testing;analyzing source code}
+    \endentry
+    \entry{jung2014sensitive}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=abd232ace1c44dcb3765fc975b9269ea}{%
+           family={Jung},
+           familyi={J\bibinitperiod},
+           given={Jaeyeon},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a4cc60974837e41def809152b6f9b88}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Google Patents}%
+      }
+      \strng{namehash}{7e3485e83fa948e4eefc323d57192621}
+      \strng{fullhash}{7e3485e83fa948e4eefc323d57192621}
+      \strng{bibnamehash}{7e3485e83fa948e4eefc323d57192621}
+      \strng{authorbibnamehash}{7e3485e83fa948e4eefc323d57192621}
+      \strng{authornamehash}{7e3485e83fa948e4eefc323d57192621}
+      \strng{authorfullhash}{7e3485e83fa948e4eefc323d57192621}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11~18}
+      \field{note}{US Patent 8,893,280}
+      \field{title}{Sensitive data tracking using dynamic taint analysis}
+      \field{year}{2014}
+    \endentry
+    \entry{lowagie2011itext}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f4f8c0d31dbb114981e607f3c2c84b1e}{%
+           family={Lowagie},
+           familyi={L\bibinitperiod},
+           given={Bruno},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Manning}%
+      }
+      \strng{namehash}{f4f8c0d31dbb114981e607f3c2c84b1e}
+      \strng{fullhash}{f4f8c0d31dbb114981e607f3c2c84b1e}
+      \strng{bibnamehash}{f4f8c0d31dbb114981e607f3c2c84b1e}
+      \strng{authorbibnamehash}{f4f8c0d31dbb114981e607f3c2c84b1e}
+      \strng{authornamehash}{f4f8c0d31dbb114981e607f3c2c84b1e}
+      \strng{authorfullhash}{f4f8c0d31dbb114981e607f3c2c84b1e}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{iText in Action}
+      \field{year}{2011}
+    \endentry
+    \entry{sonarLint}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7d65c5060b3dfe9e403b9836c2bf57c9}{%
+           family={Meyer-Janson},
+           familyi={M\bibinithyphendelim J\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7d65c5060b3dfe9e403b9836c2bf57c9}
+      \strng{fullhash}{7d65c5060b3dfe9e403b9836c2bf57c9}
+      \strng{bibnamehash}{7d65c5060b3dfe9e403b9836c2bf57c9}
+      \strng{authorbibnamehash}{7d65c5060b3dfe9e403b9836c2bf57c9}
+      \strng{authornamehash}{7d65c5060b3dfe9e403b9836c2bf57c9}
+      \strng{authorfullhash}{7d65c5060b3dfe9e403b9836c2bf57c9}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Statische Codeanalyse mit unmittelbarem Feedback in der IDE mit SonarLint und SonarQube}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://blog.oio.de/2019/06/18/statische-codeanalyse-in-der-ide-mit-sonarlint-und-sonarqube/
+      \endverb
+      \verb{url}
+      \verb https://blog.oio.de/2019/06/18/statische-codeanalyse-in-der-ide-mit-sonarlint-und-sonarqube/
+      \endverb
+      \warn{\item Entry 'sonarLint' (references.bib): Invalid format '20.02.2020' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{mongoDbManual}{online}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://docs.mongodb.com/manual/}
+      \field{title}{MongoDB Manual}
+      \verb{urlraw}
+      \verb https://docs.mongodb.com/manual/
+      \endverb
+      \verb{url}
+      \verb https://docs.mongodb.com/manual/
+      \endverb
+    \endentry
+    \entry{spotBugsUsage}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{title}{SpotBugs Maven Plugin - Usage}
+      \verb{urlraw}
+      \verb https://spotbugs.github.io/spotbugs-maven-plugin/usage.html
+      \endverb
+      \verb{url}
+      \verb https://spotbugs.github.io/spotbugs-maven-plugin/usage.html
+      \endverb
+    \endentry
+    \entry{veracodeDig}{online}{}
+      \field{sortinit}{V}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{title}{Veracode Application Security Testing (AST)}
+      \verb{urlraw}
+      \verb https://www.digitalmarketplace.service.gov.uk/g-cloud/services/943072060331402
+      \endverb
+      \verb{url}
+      \verb https://www.digitalmarketplace.service.gov.uk/g-cloud/services/943072060331402
+      \endverb
+    \endentry
+    \entry{walls2016spring}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=229fc5bee84302022868b790118e1d78}{%
+           family={Walls},
+           familyi={W\bibinitperiod},
+           given={Craig},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Manning Publications}%
+      }
+      \strng{namehash}{229fc5bee84302022868b790118e1d78}
+      \strng{fullhash}{229fc5bee84302022868b790118e1d78}
+      \strng{bibnamehash}{229fc5bee84302022868b790118e1d78}
+      \strng{authorbibnamehash}{229fc5bee84302022868b790118e1d78}
+      \strng{authornamehash}{229fc5bee84302022868b790118e1d78}
+      \strng{authorfullhash}{229fc5bee84302022868b790118e1d78}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Spring Boot in action}
+      \field{year}{2016}
+    \endentry
+    \entry{zampetti2017open}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=9f26881606b33421acb3ab5da8de4711}{%
+           family={Zampetti},
+           familyi={Z\bibinitperiod},
+           given={Fiorella},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e8319e956848e35a7b05e7dbbbca9a61}{%
+           family={Scalabrino},
+           familyi={S\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ebbd5f36c9d746916bb6b816286162d1}{%
+           family={Oliveto},
+           familyi={O\bibinitperiod},
+           given={Rocco},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=138a955c0679f7b6720b4dfafbc72683}{%
+           family={Canfora},
+           familyi={C\bibinitperiod},
+           given={Gerardo},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=23b369e7cc1f828c942c8ba8778a7fdb}{%
+           family={Di\bibnamedelima Penta},
+           familyi={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Massimiliano},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{aec3ad9d3e0929aa99d3468885cc2301}
+      \strng{fullhash}{78f5cedde0aec43c40d1d91285ca09ae}
+      \strng{bibnamehash}{78f5cedde0aec43c40d1d91285ca09ae}
+      \strng{authorbibnamehash}{78f5cedde0aec43c40d1d91285ca09ae}
+      \strng{authornamehash}{aec3ad9d3e0929aa99d3468885cc2301}
+      \strng{authorfullhash}{78f5cedde0aec43c40d1d91285ca09ae}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 IEEE/ACM 14th International Conference on Mining Software Repositories (MSR)}
+      \field{title}{How open source projects use static code analysis tools in continuous integration pipelines}
+      \field{year}{2017}
+      \field{pages}{334\bibrangedash 344}
+      \range{pages}{11}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

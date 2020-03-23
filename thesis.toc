@@ -1,0 +1,132 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {german}{}
+\babel@toc {german}{}
+\babel@toc {english}{}
+\babel@toc {german}{}
+\babel@toc {german}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Abbildungsverzeichnis}{ii}{chapter*.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Tabellenverzeichnis}{iii}{chapter*.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Problemstellung}{1}{section.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Zielsetzung und Forschungsfragen}{1}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.1}Methodik}{2}{subsection.1.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.2}Kriterien}{2}{subsection.1.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Stand der Technik}{3}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Andere Lösungen}{3}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}Entwicklungsumgebungen}{3}{subsection.2.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.2}Build-Server und Continuous Integration (CI)-Pipeline}{4}{subsection.2.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.3}SonarQube}{4}{subsection.2.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.4}Veracode}{5}{subsection.2.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Statische Code Analyse}{5}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Unterschiede zu dynamischen Tests}{6}{subsection.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Tools für die Statische Code Analyse}{6}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Anzeige der Analyse}{8}{section.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.1}Probleme}{8}{subsection.2.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.1.1}Keine dauerhafte Anzeige}{8}{subsubsection.2.4.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.1.2}Keine Verbesserung des Entwicklers}{8}{subsubsection.2.4.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.1.3}Unübersichtliche Anzeige}{8}{subsubsection.2.4.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Concept}{10}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Umsetzung}{11}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Technologien und Tools für Umsetzung }{11}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.0.1}Java}{11}{subsubsection.4.1.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.0.2}Spring}{11}{subsubsection.4.1.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.0.3}Maven}{11}{subsubsection.4.1.0.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.0.4}FindBugs/SpotBugs}{11}{subsubsection.4.1.0.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.0.5}Checkstyle}{11}{subsubsection.4.1.0.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.0.6}MongoDB}{12}{subsubsection.4.1.0.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.0.7}MongoDB Java Driver}{12}{subsubsection.4.1.0.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.0.8}JavaScript und Frameworks}{12}{subsubsection.4.1.0.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.0.9}IntelliJ}{12}{subsubsection.4.1.0.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Infrastruktur und Aufbau der Applikationen}{12}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Demo-Projekt und Bugreport}{13}{section.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}Entwicklungsumgebung Build-in}{13}{subsection.4.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}Maven Plugins}{13}{subsection.4.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.2.1}XML generieren mit CheckStyle}{14}{subsubsection.4.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.2.2}XML generieren mit SpotBugs}{14}{subsubsection.4.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Speichern der Daten}{14}{section.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.1}Vorteil vom Einsatz einer nicht-relationalen Datenbank gegenüber einer relationalen Datenbanke }{14}{subsection.4.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.2}Typen der nicht-relationale Datenbanken}{15}{subsection.4.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.3}Aufbau der Datenbank}{15}{subsection.4.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Datenbank Importer Plugin}{16}{section.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.1}Apache Maven Plugin}{17}{subsection.4.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.2}MongoDB-Java-Driver und Datenbank-Import}{18}{subsection.4.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Webapplikation}{19}{section.4.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6.1}Backend}{19}{subsection.4.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.6.1.1}Struktur}{19}{subsubsection.4.6.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.6.1.2}API und Controller}{19}{subsubsection.4.6.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.6.1.3}Services und MongoDB-Java-Driver}{19}{subsubsection.4.6.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.6.1.4}IText und PDF-Export}{20}{subsubsection.4.6.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6.2}Frontend}{21}{subsection.4.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.6.2.1}Kommunikation mit dem Backend}{21}{subsubsection.4.6.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.6.2.2}Präsentation der Daten}{21}{subsubsection.4.6.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.6.2.3}Recommendations}{21}{subsubsection.4.6.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.6.2.4}Ignorieren von Meldungen}{21}{subsubsection.4.6.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.6.2.5}Chart.js und das Erstellen von Grafiken}{22}{subsubsection.4.6.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6.3}Nachteile gegenüber herkömmlichen Lösungen}{22}{subsection.4.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.7}Evaluierung der Visualisierung und der Webapplikation}{22}{section.4.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Ergebnisse}{23}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{24}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{References}{26}{chapter*.8}%

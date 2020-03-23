@@ -1,0 +1,58 @@
+%**********************************************************************
+
+%---------------------------------------------------
+% NOTE:
+% English version of the abstract is always required 
+% (even for German BA/MAs)
+%---------------------------------------------------
+
+% right side/flush
+\chapterend
+
+\begin{titlepage}
+
+\begin{otherlanguage}{english} 
+\begin{abstract} % Abstract
+
+%Write your abstract here.\ldots
+%Note, that the abstract\footnote{Learn from others. For examples, read the abstract of paper \url{https://arxiv.org/abs/1609.03677}. Did you mention the \emph{current status}, the \emph{problem}, the \emph{innovation}, the \emph{approach and method} as well as the \emph{results} and the \emph{improvements achieved}?} should contain the whole work, including the outcome, the results.
+%\\
+%\TODO{Final check for the abstract:%
+%	\begin{itemize}
+%		\item English \& German Version (250 – 350 words each)
+%		\item includes background / motivation / problem statement 
+%		\item includes methods / procedure / approach
+%		\item includes results / findings / product
+%		\item includes conclusion and implications
+%	\end{itemize}
+%}
+
+\end{abstract}
+\end{otherlanguage}
+
+
+\end{titlepage}
+
+
+%---------------------------------------------------
+% NOTE:
+% German version of the abstract "Zusammenfassung"
+% is ONLY required (for German BA/MAs)
+%---------------------------------------------------
+
+\ifthenelse{\equal{\yourLanguage}{german}}{
+\begin{titlepage}
+\begin{otherlanguage}{german}
+\begin{abstract}  % Zusammenfassung
+
+%Zusammenfassung. (Sollte das gesamte Werk enthalten, also das spannende Problem, den gewählten --neuartigen-- Lösungsansatz und natürlich vor allem die erreichten Resultate).
+
+\end{abstract}
+\end{otherlanguage}
+\end{titlepage}
+
+}{ % English Version 
+% already inserted above
+}
+
+%**********************************************************************

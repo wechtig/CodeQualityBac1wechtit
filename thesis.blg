@@ -1,0 +1,20 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'thesis.blg'
+[65] biber-MSWIN64:322> INFO - === 
+[182] Biber.pm:415> INFO - Reading 'thesis.bcf'
+[322] Biber.pm:943> INFO - Found 18 citekeys in bib section 0
+[345] Biber.pm:4256> INFO - Processing section 0
+[345] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[356] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[371] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[373] bibtex.pm:1653> INFO - LaTeX decoding ...
+[401] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[421] Utils.pm:304> WARN - Entry 'sonarLint' (references.bib): Invalid format '20.02.2020' of date field 'urldate' - ignoring
+[482] Utils.pm:304> WARN - month field '11~18' in entry 'jung2014sensitive' is not an integer - this will probably not sort properly.
+[548] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[548] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[548] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'de-DE'
+[548] Biber.pm:4090> INFO - No sort tailoring available for locale 'de-DE'
+[580] bbl.pm:652> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[590] bbl.pm:755> INFO - Output to thesis.bbl
+[591] Biber.pm:128> INFO - WARNINGS: 2
