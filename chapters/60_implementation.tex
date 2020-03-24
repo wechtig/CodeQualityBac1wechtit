@@ -35,7 +35,7 @@ Für das Frontend der Webapplikation wird JavaScript eingesetzt. Um zusätzliche
 \end{itemize}
 
 \subsubsection{IntelliJ}
-IntelliJ wurde als Entwicklungsumgebung für das Backend und Frontend verwendet. 
+IntelliJ IDEA wurde als Entwicklungsumgebung für das Backend und Frontend verwendet. 
 
 \section{Infrastruktur und Aufbau der Applikationen} 
 Im Rahmen dieser Arbeit wurde mehrere Applikationen und Systeme verwendet. Die Arbeit setzt sich aus folgenden Teilen zusammen:
@@ -246,10 +246,10 @@ Im Backend werden die Daten aus der Datenbank in Services ausgelesen. Die ausgel
 \subsubsection{Struktur}
 
 \subsubsection{API und Controller}
-Über den Controller können HTTP-Requests an das Backend geschickt werden. Mit Spring können die Controller als \textit{RestController} annotiert und verwendet werden. Die einzelnen Methoden des Controllers werden zusätzlich annotiert um die Methode (GET, POST, DELETE, PUT, ...) und den Pfad zu definieren. Im Pfad können zusätzlich Parameter als \textit{PathVariable} definiert werden. Im Controller werden  Methoden verwendet um bestimmte Projektanalysedaten auszulesen, Daten als PDF zu exportieren und um Vorschläge zu speichern und auszulesen. 
+Über den Controller können HTTP-Requests an das Backend geschickt werden. Mit Spring können die Controller als \textit{RestController} annotiert und verwendet werden. Die einzelnen Methoden des Controllers werden zusätzlich annotiert um die Methode (GET, POST, DELETE, PUT, ...) und den Pfad zu definieren. Im Pfad können zusätzlich Parameter als \textit{PathVariable} definiert werden. Im Controller werden  Methoden verwendet um bestimmte Projektanalysedaten auszulesen, Daten als PDF zu exportieren und um Vorschläge zu speichern und auszulesen. Im \textit{FindingsController} werden die Anfragen aus dem Frontend bearbeitet und Daten an des Frontend übermittelt. Im Controller sind dazu die verschiedenen Services eingebunden.
 \subsubsection{Services und MongoDB-Java-Driver}
 In den Services werden Methoden bereitgestellt, die die Daten der Datenbank auslesen. Dies geschieht mit dem MongoDB-Java-Driver. Für das Verwenden des MongoDB-Java-Driver ist ein spezifischer Converter notwendig. Das Mapping der Java-Objekte mit den Collections ist ohne konvertierung, im Vergleich zu Hibernate, nicht möglich. Um Daten zu speichern, müssen die Java-Objekte  in Dokumente umgewandelt werden und um ausgelesene Dokumente zu verwenden, müssen die Dokumente in Java Objekte umgewandelt werden. Daher muss ein Konverter verwendet werden: \textit{DBObjectConverter.java}
-Bei steigender Komplexität und Größe der Datenbank werden auch die Konverter komplexer.
+Bei steigender Komplexität und Größe der Datenbank werden auch die Konverter komplexer. 
 
 \lstset{
   caption={Um die Datenbank benutzen können, müssen die Java-Objekte bzw. die Datenbank-JSON-Objekte konvertiert werden.}, 
@@ -280,7 +280,7 @@ public static Document convertToDocument(Recommendation rec) {
 	\end{lstlisting}
 \end{samepage}
 
-Der Konverter wird in allen Service-Methoden verwendet, wo Daten aus den Collections mit dem MongoDB-Java-Driver ausgelesen, gespeichert oder gelöscht werden. Um diese Operation zu verwenden, müssen die Methoden \textit{find}, \textit{deleteOne} und \textit{insertOne} verwendet werden. Um bestimmte Daten auszuwählen, wird in der Methode \textit{find} ein Query-Parameter übergeben: In den entsprechenden Services ein Projektname oder ein Datum. Die Ergebnisse werden mit einem Iterator iteriert und an den Konverter übergeben.
+Der Konverter wird in allen Service-Methoden verwendet, wo Daten aus den Collections mit dem MongoDB-Java-Driver ausgelesen, gespeichert oder gelöscht werden. Um diese Operation zu verwenden, müssen die Methoden \textit{find}, \textit{deleteOne} und \textit{insertOne} verwendet werden. Um bestimmte Daten auszuwählen, wird in der Methode \textit{find} ein Query-Parameter übergeben: In den entsprechenden Services ein Projektname oder ein Datum. Die Ergebnisse werden mit einem Iterator iteriert und an den Konverter übergeben. Eigene Services gibt es für alle Datenbank Collections: Findings, Recommendation, IgnoredMessages.
 
 \subsubsection{IText und PDF-Export}
 Der PDF-Export ist eine weitere Funktion, die das Backend bietet.
@@ -325,9 +325,42 @@ Nach der Erstellung des PDF-Dokument muss es weiter an den Client zu schicken. U
 \end{figure}
 
 \subsection{Frontend}
-Im Frontend werden die Daten in verschiedenen Formen aufbereitet und den Entwicklerinnen und Entwicklern präsentiert, dazu dient eine OnePage-HTML Seite.
+Im Frontend werden die Daten in verschiedenen Formen aufbereitet und den Entwicklerinnen und Entwicklern präsentiert, dazu dient eine OnePage-HTML Seite. Die Daten im Frontend werden aus dem Backend abgefragt.
 \subsubsection{Kommunikation mit dem Backend}
+Die Kommunikation zwischen Frontend und Backend geschieht mittels HTTP-Calls. Die im Frontend gesendeten HTTP-Calls werden im Backend-Controller verarbeitet.  Mit der JavaScript Schnittstelle \textit{XMLHttpRequest} werden HTTP-Methoden (POST, GET) abgeschickt. Ein Vorteil von \textit{XMLHttpRequest} ist die Möglichkeit der Asynchronen-Ausführung der Requests. Daher können auch dynamische Daten abgerufen werden.  \cite{ajaxOnJava}
+\lstset{
+  caption={Erstellung eines GET-Request für Projektdaten mit der Schnittstelle XMLHttpRequest.}, 
+  basicstyle=\small\ttfamily, 
+  label=lst:main, 
+  %float=tbhp, % float image to top/bottom/here/page
+  language=Java,
+  frame=single,
+  breaklines=true, % break long source code lines, and add arrow
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+  %  basewidth={0.55em}, 
+  % fontadjust}  % adjust these for more appealing appearance
+}
 
+% listing with some settings, such as float, for this listing only
+\begin{samepage}% with samepage we keep a FLOATing listing on one page
+	\begin{lstlisting}[float=tbhp]
+var request = new XMLHttpRequest();
+request.open("GET", "http://localhost:8084/projects");
+request.onload = function () {
+   var projectData = document.getElementById("projects");
+   if (request.status >= 200 && request.status < 300) {
+     var json_data = JSON.parse(request.response);
+     var result = [];
+     for (var i in json_data)
+       result.push([i, json_data [i]]);
+...
+request.send();
+
+	\end{lstlisting}
+\end{samepage}
+
+Im oberen Listing werden allgemeine Daten der Projekte abgefragt. Da bei der Abfrage keine Daten am Server verändert werden, wird ein GET-Requests erstellt. Mit der if-Anweisung \textit{request.status >= 200} wird geprüft, ob die Abfrage erfolgreich ist (Status 200 = OK). Ist die Abfrage erfolgreich, wird der Response als JSON verwendet. Um die Daten verwenden zu können, werden die einzelnen JSON-Objekte in einem Result-Array gespeichert. Mit der Anweisung \textit{request.send()} wird der Request abgeschickt. \\
+Im Gegensatz zum GET-Request steht der POST-Request. Hierbei werden Daten an den Server übermittelt. Im Frontend werden diese Anfragen für das Erstellen von Recommendations und zum Ignorieren von Meldungen verwendetet. Bei einem POST-Request können die Daten beim Versenden angegeben werden: \textit{recRequest.send(message)}
 \subsubsection{Präsentation der Daten}
 
 \subsubsection{Recommendations}

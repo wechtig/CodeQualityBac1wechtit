@@ -2192,17 +2192,19 @@
     <bcf:citekey order="6">iqbalCodeQualityApproach</bcf:citekey>
     <bcf:citekey order="7">grigorenkoDynTest</bcf:citekey>
     <bcf:citekey order="8">bommer2016softwarewartung</bcf:citekey>
-    <bcf:citekey order="9">goseva2015capability</bcf:citekey>
-    <bcf:citekey order="10">jung2014sensitive</bcf:citekey>
-    <bcf:citekey order="11">comparativeAnalysisTools</bcf:citekey>
-    <bcf:citekey order="12">mongoDbManual</bcf:citekey>
-    <bcf:citekey order="13">spotBugsUsage</bcf:citekey>
-    <bcf:citekey order="14">checkstylePlugin</bcf:citekey>
-    <bcf:citekey order="15">spotBugsUsage</bcf:citekey>
-    <bcf:citekey order="16">anardu2014maven</bcf:citekey>
-    <bcf:citekey order="17">gonzalezMavenTutorial</bcf:citekey>
-    <bcf:citekey order="18">walls2016spring</bcf:citekey>
-    <bcf:citekey order="19">lowagie2011itext</bcf:citekey>
+    <bcf:citekey order="9">palomba2014they</bcf:citekey>
+    <bcf:citekey order="10">goseva2015capability</bcf:citekey>
+    <bcf:citekey order="11">jung2014sensitive</bcf:citekey>
+    <bcf:citekey order="12">comparativeAnalysisTools</bcf:citekey>
+    <bcf:citekey order="13">mongoDbManual</bcf:citekey>
+    <bcf:citekey order="14">spotBugsUsage</bcf:citekey>
+    <bcf:citekey order="15">checkstylePlugin</bcf:citekey>
+    <bcf:citekey order="16">spotBugsUsage</bcf:citekey>
+    <bcf:citekey order="17">anardu2014maven</bcf:citekey>
+    <bcf:citekey order="18">gonzalezMavenTutorial</bcf:citekey>
+    <bcf:citekey order="19">walls2016spring</bcf:citekey>
+    <bcf:citekey order="20">lowagie2011itext</bcf:citekey>
+    <bcf:citekey order="21">ajaxOnJava</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

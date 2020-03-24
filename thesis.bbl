@@ -403,7 +403,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{11~18}
+      \field{month}{11}
       \field{note}{US Patent 8,893,280}
       \field{title}{Sensitive data tracking using dynamic taint analysis}
       \field{year}{2014}
@@ -479,6 +479,87 @@
       \verb{url}
       \verb https://docs.mongodb.com/manual/
       \endverb
+    \endentry
+    \entry{ajaxOnJava}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f487cdcd5a1e834ca421086d7602c50c}{%
+           family={Olson},
+           familyi={O\bibinitperiod},
+           given={Steven\bibnamedelima Douglas},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly}%
+      }
+      \strng{namehash}{f487cdcd5a1e834ca421086d7602c50c}
+      \strng{fullhash}{f487cdcd5a1e834ca421086d7602c50c}
+      \strng{bibnamehash}{f487cdcd5a1e834ca421086d7602c50c}
+      \strng{authorbibnamehash}{f487cdcd5a1e834ca421086d7602c50c}
+      \strng{authornamehash}{f487cdcd5a1e834ca421086d7602c50c}
+      \strng{authorfullhash}{f487cdcd5a1e834ca421086d7602c50c}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Ajax on Java: The Essentials of XMLHttpRequest and XML Programming with Java}
+      \field{year}{2007}
+    \endentry
+    \entry{palomba2014they}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=b55e247c53ee6ca1acadfe03ce3549c1}{%
+           family={Palomba},
+           familyi={P\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0d2cf4bc3dbc5d09d9d74296b8f60d57}{%
+           family={Bavota},
+           familyi={B\bibinitperiod},
+           given={Gabriele},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=23b369e7cc1f828c942c8ba8778a7fdb}{%
+           family={Di\bibnamedelima Penta},
+           familyi={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Massimiliano},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ebbd5f36c9d746916bb6b816286162d1}{%
+           family={Oliveto},
+           familyi={O\bibinitperiod},
+           given={Rocco},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc20672efd512f34f360f67a9124e537}{%
+           family={De\bibnamedelima Lucia},
+           familyi={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{bb68299459d361763027b5138e863eea}
+      \strng{fullhash}{71f3c4737b5b5d2a8a7da88e9b8fa578}
+      \strng{bibnamehash}{71f3c4737b5b5d2a8a7da88e9b8fa578}
+      \strng{authorbibnamehash}{71f3c4737b5b5d2a8a7da88e9b8fa578}
+      \strng{authornamehash}{bb68299459d361763027b5138e863eea}
+      \strng{authorfullhash}{71f3c4737b5b5d2a8a7da88e9b8fa578}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2014 IEEE International Conference on Software Maintenance and Evolution}
+      \field{title}{Do they really smell bad? a study on developers' perception of bad code smells}
+      \field{year}{2014}
+      \field{pages}{101\bibrangedash 110}
+      \range{pages}{10}
     \endentry
     \entry{spotBugsUsage}{online}{}
       \field{sortinit}{S}

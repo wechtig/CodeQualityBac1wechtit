@@ -43,6 +43,8 @@ Für die Statische Code Analyse gibt es eine Vielzahl an Anwendungen und Program
 
 \begin{itemize}
 \item \textbf{Code-Qualität} beschreibt, ob das Programm seine Funktionen richtig und effizient ausführt. Aber auch Leerzeichen und die Länge von Methoden und Klassen fallen in diese Kategorie. Tools für diese Einsatzbereiche sind CheckStyle oder FindBugs. Aber auch der Faktor der Wiederverwendbarkeit (Hinzufügen von neuen Features, Verwendbarkeit des Codes für andere Entwicklerinnen und Entwickler) fällt in diese Kategorie. Die Tools Jalopy und Jar analyser testen den Code auf die Möglichkeit der Wiederverwendbarkeit. 
+\item  \textbf{Code-Smells}
+Ein Code-Smell (Bad-Smell) ist kein Compiler-Error oder Programmfehler. Als Code-Smells werden Codeteile bezeichnet, welche überarbeitet werden müssen. Auch das Design-Konzept kann als Bad-Smell bezeichnet werden. Beispiele von Code-Smells sind: Long Method, Temporary Field, Feature Envy, Complex Method und Duplicated Code. Werden Code-Smells nicht überarbeitet, kann es zu Strukturproblemen oder zu Problemen beim Refectoring kommen. Auch die Wiederverwendbarkeit des Codes wird dadurch beeinträchtigt. Code-Smells können durch Tools wie Checkstyle oder PMD identifiziert werden. \cite{palomba2014they}
 \item \textbf{Nebenläufigkeit}
 beschreibt die Möglichkeit, mehrere Funktionen zur selben Zeit auszuführen. Tools wie Sonar oder CheckThread untersuchen den Code hierbei auf Probleme, wie zum Beispiel ein falsches Thread-Handling. 
 \item \textbf{Abhängigkeiten}
