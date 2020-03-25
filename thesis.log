@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  24 MAR 2020 20:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  25 MAR 2020 19:07
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1065,10 +1065,10 @@ LaTeX Warning: Label `lst:main' multiply defined.
 LaTeX Warning: Label `lst:main' multiply defined.
 
 
-LaTeX Warning: Label `lst:main' multiply defined.
-
-
 LaTeX Warning: Label `fig:engine' multiply defined.
+
+
+LaTeX Warning: Label `lst:main' multiply defined.
 
 
 LaTeX Warning: Label `lst:main' multiply defined.
@@ -1216,25 +1216,17 @@ LaTeX Info: Redefining \nameref on input line 53.
 
 \openout2 = `chapters/01_titlepage.aux'.
 
- (chapters/01_titlepage.tex
-<images/engine.jpg, id=94, 192.72pt x 144.54pt>
-File: images/engine.jpg Graphic file (type jpg)
-<use images/engine.jpg>
-Package pdftex.def Info: images/engine.jpg  used on input line 11.
-(pdftex.def)             Requested size: 37.93459pt x 28.45274pt.
- [1
+ (chapters/01_titlepage.tex [1
 
 
 
 
 
-{C:/Users/luweh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/en
-gine.jpg>])
+{C:/Users/luweh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
 \openout2 = `chapters/02_declaration.aux'.
 
-
-(chapters/02_declaration.texpdfTeX warning (ext4): destination with the same id
-entifier (name{page.1}) has been already used, duplicate ignored
+ (chapters/02_declaration.texpdfTeX warning (ext4): destination with the same i
+dentifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.83 \end{titlepage}
@@ -1362,7 +1354,7 @@ l.97 \include{chapters/10_introduction}
 
 (chapters/20_related.tex
 Kapitel 2.
-<images/ideChecks.PNG, id=167, 289.08pt x 170.88844pt>
+<images/ideChecks.PNG, id=166, 289.08pt x 170.88844pt>
 File: images/ideChecks.PNG Graphic file (type png)
 <use images/ideChecks.PNG>
 Package pdftex.def Info: images/ideChecks.PNG  used on input line 10.
@@ -1377,7 +1369,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
  (D:\MikTex\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<images/sonarQube.PNG, id=179, 951.555pt x 676.02562pt>
+<images/sonarQube.PNG, id=178, 951.555pt x 676.02562pt>
 File: images/sonarQube.PNG Graphic file (type png)
 <use images/sonarQube.PNG>
 Package pdftex.def Info: images/sonarQube.PNG  used on input line 23.
@@ -1420,83 +1412,100 @@ Overfull \hbox (28.5544pt too wide) in paragraph at lines 26--27
 a-ti-ve kann Jon-go (htt-ps://jongo.org/)
  []
 
-<images/infrastruktur.PNG, id=251, 824.32968pt x 563.10374pt>
+<images/infrastruktur.PNG, id=250, 824.32968pt x 563.10374pt>
 File: images/infrastruktur.PNG Graphic file (type png)
 <use images/infrastruktur.PNG>
 Package pdftex.def Info: images/infrastruktur.PNG  used on input line 45.
 (pdftex.def)             Requested size: 333.2102pt x 227.62204pt.
-[12] [13 <./images/infrastruktur.PNG>]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 65
+[12]
+Overfull \hbox (101.65479pt too wide) in paragraph at lines 60--62
+\T1/ptm/m/n/12 eingehen auf ver-wen-de-te ide und tools; in-tel-lij in-spec-ti-
+on build in https://www.jetbrains.com/help/idea/code-
+ []
+
+[13 <./images/infrastruktur.PNG>]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 68
 .
  (D:\MikTex\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-[14] [15]
-Overfull \hbox (26.63484pt too wide) in paragraph at lines 130--130
+(D:\MikTex\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
+ [14] [15]
+Overfull \hbox (26.63484pt too wide) in paragraph at lines 166--166
 []\T1/pcr/m/n/12 "source" : "checkstyle.checks.blocks.AvoidNestedBlocksCheck",[
 ] 
  []
 
-
-Overfull \hbox (48.23483pt too wide) in paragraph at lines 141--141
+[16]
+Overfull \hbox (48.23483pt too wide) in paragraph at lines 177--177
 []\T1/pcr/m/n/12 db.findings.find({"_id" : ObjectId("5e1209881a2dff20ab6ee6c6")
 })[] 
  []
 
 
-Overfull \hbox (36.75235pt too wide) in paragraph at lines 149--150
+Overfull \hbox (36.75235pt too wide) in paragraph at lines 185--186
 \T1/ptm/m/n/12 wer-den. Apa-che Ma-ven bie-tet aber auch die Mög-lich-keit, ei-
 ge-ne Plug-ins zu ent-wickeln.[][]Anardu
  []
 
-[16] (D:\MikTex\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2019/09/10 1.8c listings language file
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 179.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 179.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 179.
-
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
-
- []
-
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 207--210
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
-[18]
-Overfull \hbox (2.93103pt too wide) in paragraph at lines 249--250
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--246
+
+ []
+
+[18] [19]
+Overfull \hbox (2.93103pt too wide) in paragraph at lines 285--286
 \T1/ptm/m/n/12 ein-zel-nen Me-tho-den des Con-trol-lers wer-den zu-sätz-lich an
 -no-tiert um die Me-tho-de (GET,
  []
 
-[19] [20]
-<images/seqGeneratePdf.PNG, id=363, 472.76625pt x 247.67531pt>
+[20] [21]
+<images/seqGeneratePdf.PNG, id=378, 472.76625pt x 247.67531pt>
 File: images/seqGeneratePdf.PNG Graphic file (type png)
 <use images/seqGeneratePdf.PNG>
-Package pdftex.def Info: images/seqGeneratePdf.PNG  used on input line 320.
+Package pdftex.def Info: images/seqGeneratePdf.PNG  used on input line 356.
 (pdftex.def)             Requested size: 434.48854pt x 227.62204pt.
 
-Overfull \hbox (21.92357pt too wide) in paragraph at lines 320--323
+Overfull \hbox (21.92357pt too wide) in paragraph at lines 356--359
  [][] 
  []
 
 
-Overfull \hbox (15.48685pt too wide) in paragraph at lines 330--343
+Overfull \hbox (15.48685pt too wide) in paragraph at lines 368--381
 \T1/ptm/m/n/12 GET) ab-ge-schickt. Ein Vor-teil von \T1/ptm/m/it/12 XML-Htt-pRe
 -quest \T1/ptm/m/n/12 ist die Mög-lich-keit der Asynchronen-
  []
 
-[21 <./images/seqGeneratePdf.PNG>]) [22] [23]
+
+Overfull \hbox (13.02571pt too wide) in paragraph at lines 400--402
+\T1/ptm/m/n/12 Request kön-nen die Da-ten beim Ver-sen-den an-ge-ge-ben wer-den
+: \T1/ptm/m/it/12 re-cRe-quest.send(message) 
+ []
+
+[22 <./images/seqGeneratePdf.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 415--421
+
+ []
+
+[23]) [24]
 \openout2 = `chapters/80_evaluation.aux'.
 
  (chapters/80_evaluation.tex
 Kapitel 5.
-) [24
+) [25
 
 
 
@@ -1505,7 +1514,7 @@ Kapitel 5.
 
  (chapters/90_conclusion.tex
 Kapitel 6.
-[25
+[26
 
 
 
@@ -1528,11 +1537,11 @@ tm/m/it/12 tssicherung in he-te-ro-ge-nen Pro-jek-ten \T1/ptm/m/n/12 (o.D.). Av
 aila-
  []
 
-[26
+[27
 
 
 
-] [27]
+] [28]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
  (thesis.aux (chapters/01_titlepage.aux) (chapters/02_declaration.aux) (chapter
@@ -1542,9 +1551,15 @@ s/03_abstract.aux) (chapters/10_introduction.aux)
 (chapters/90_conclusion.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A9FD362B606BFEE856449145C85B8C93;1482.
 
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: A9FD362B606BFEE856449145C85B8C93;1482
+(rerunfilecheck)             After:  443D693AD0E8ED79DFD74778F9AEB319;1483.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1557,21 +1572,24 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30127 strings out of 480900
- 541199 string characters out of 2917036
- 1314089 words of memory out of 3000000
- 45192 multiletter control sequences out of 15000+200000
+ 30151 strings out of 480900
+ 541510 string characters out of 2917036
+ 1313083 words of memory out of 3000000
+ 45200 multiletter control sequences out of 15000+200000
  590110 words of font info for 97 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
  73i,7n,68p,1205b,2093s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/MikTex/fonts/enc/dvips/base/8r.enc}<D:/MikTex/fonts/type1/urw/courier/ucr
-b8a.pfb><D:/MikTex/fonts/type1/urw/courier/ucrr8a.pfb><D:/MikTex/fonts/type1/ur
-w/helvetic/uhvr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/MikTex/fo
-nts/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/
-MikTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (34 pages, 546327 bytes).
+pdfTeX warning (dest): name{chapter*.9} has been referenced but does not exis
+t, replaced by a fixed one
+
+{D:/MikTex/fonts/enc/dvips/base/8r.enc}<D:/MikTex/fonts/type1/urw/courier/ucrb8
+a.pfb><D:/MikTex/fonts/type1/urw/courier/ucrr8a.pfb><D:/MikTex/fonts/type1/urw/
+helvetic/uhvr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/MikTex/font
+s/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/Mi
+kTex/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (35 pages, 392511 bytes).
 PDF statistics:
- 516 PDF objects out of 1000 (max. 8388607)
- 164 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 537 PDF objects out of 1000 (max. 8388607)
+ 182 named destinations out of 1000 (max. 500000)
+ 209 words of extra memory for PDF output out of 10000 (max. 10000000)
 
