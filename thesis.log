@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  25 MAR 2020 19:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  25 MAR 2020 19:11
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1065,10 +1065,13 @@ LaTeX Warning: Label `lst:main' multiply defined.
 LaTeX Warning: Label `lst:main' multiply defined.
 
 
-LaTeX Warning: Label `fig:engine' multiply defined.
+LaTeX Warning: Label `lst:main' multiply defined.
 
 
 LaTeX Warning: Label `lst:main' multiply defined.
+
+
+LaTeX Warning: Label `fig:engine' multiply defined.
 
 
 LaTeX Warning: Label `lst:main' multiply defined.
@@ -1551,45 +1554,32 @@ s/03_abstract.aux) (chapters/10_introduction.aux)
 (chapters/90_conclusion.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 443D693AD0E8ED79DFD74778F9AEB319;1483.
 
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: A9FD362B606BFEE856449145C85B8C93;1482
-(rerunfilecheck)             After:  443D693AD0E8ED79DFD74778F9AEB319;1483.
 
 LaTeX Warning: There were multiply-defined labels.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
 
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30151 strings out of 480900
- 541510 string characters out of 2917036
+ 30150 strings out of 480900
+ 541501 string characters out of 2917036
  1313083 words of memory out of 3000000
  45200 multiletter control sequences out of 15000+200000
  590110 words of font info for 97 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
  73i,7n,68p,1205b,2093s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{chapter*.9} has been referenced but does not exis
-t, replaced by a fixed one
-
-{D:/MikTex/fonts/enc/dvips/base/8r.enc}<D:/MikTex/fonts/type1/urw/courier/ucrb8
-a.pfb><D:/MikTex/fonts/type1/urw/courier/ucrr8a.pfb><D:/MikTex/fonts/type1/urw/
-helvetic/uhvr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/MikTex/font
-s/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/Mi
-kTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (35 pages, 392511 bytes).
+{D:/MikTex/fonts/enc/dvips/base/8r.enc}<D:/MikTex/fonts/type1/urw/courier/ucr
+b8a.pfb><D:/MikTex/fonts/type1/urw/courier/ucrr8a.pfb><D:/MikTex/fonts/type1/ur
+w/helvetic/uhvr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/MikTex/fo
+nts/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/
+MikTex/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (35 pages, 392474 bytes).
 PDF statistics:
- 537 PDF objects out of 1000 (max. 8388607)
- 182 named destinations out of 1000 (max. 500000)
+ 536 PDF objects out of 1000 (max. 8388607)
+ 181 named destinations out of 1000 (max. 500000)
  209 words of extra memory for PDF output out of 10000 (max. 10000000)
 
