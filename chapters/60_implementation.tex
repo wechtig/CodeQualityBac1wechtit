@@ -180,9 +180,9 @@ Eine zweite Collection \textit{recommendations} wird für das Speichern der Vors
 In dieser Collection werden daher Objekte mit nur zwei Datenfeldern gespeichert: \textit{error} und \textit{link}. \\
 In einer dritten Collection \textit{ignoredFindings} werden Errors und Warnungen gespeichert, die von der Anzeige im Frontend ausgenommen werden. In den Objekten gibt es nur ein Datenfeld \textit{message}, für die ausgenommen Meldungen.
 \section{Datenbank Importer Plugin} 
-Die Statischen Code Analyse wird auf dem Rechner des Entwicklers oder der Entwicklerin ausgeführt. Diese Daten müssen in der Datenbank gespeichert werden, um sie in einem längeren Zeitraum einsehen und auswerten zu können. Eine eigene Lösung wird daher benötigt, um die Daten in der Datenbank zu speichern. 
+Die Statischen Code Analyse wird auf dem Rechner des Entwicklers oder der Entwicklerin ausgeführt. Diese Daten müssen in der Datenbank gespeichert werden, um sie in einem längeren Zeitraum einsehen und auswerten zu können. Eine eigene Lösung wird daher benötigt, um die Daten in der Datenbank speichern zu können. 
 \subsection{Apache Maven Plugin}
-Mit Apache Maven können verschiedene Plugins verwendet und im Projekt genutzt werden. Apache Maven bietet aber auch die Möglichkeit, eigene Plugins zu entwickeln.\cite{anardu2014maven}
+Mit Apache Maven können verschiedene Plugins eingebunden und im Projekt verwendet werden. Apache Maven bietet aber auch die Möglichkeit, eigene Plugins zu entwickeln.\cite{anardu2014maven}
 
 Die Dependency \textit{maven-plugin-api} gibt Klassen und Funktionen vor, die benutzt werden können um ein eigenes Plugin zu entwickeln
 \begin{verbatim}
@@ -237,7 +237,7 @@ Das Plugin wird mit bestimmten Parametern aufgerufen. Diese können beim Einbind
   
 % \includegraphics{dbpluginParameter}    
 
-In der Mojo-Klasse muss die Methode \textit{execute} implementiert werden, die zum Beginn ausgeführt wird. Mithilfe der oben definierten Parameter und des Projektnamens, der mit dem Maven-Lifecycle ausgelesen werden kann, wird nun der Import in die Datenbank gestartet. 
+In der Mojo-Klasse muss die Methode \textit{execute} implementiert werden, die zu Beginn, beim Start des Plugins, ausgeführt wird. Mithilfe der oben definierten Parameter und des Projektnamens, der mit dem Maven-Lifecycle ausgelesen werden kann, wird nun der Import in die Datenbank gestartet. 
 
 \subsection{MongoDB-Java-Driver und Datenbank-Import}
 Der Importer speichert die Daten des XML-Reports in Datenbanken. Dazu wird das XML-File ausgelesen und die einzelnen gefundenen Fehler und Informationen werden in Java-Objekte umgewandelt. Das Speichern der Java-Objekte in den Collections ist ohne Konvertierung, im Vergleich zu anderen herkömmlichen Tools wie Hibernate, nicht möglich. Um Daten zu speichern, müssen die Java-Objekte in Dokumente umgewandelt werden. Daher muss ein Konverter implementiert werden: \textit{DBObjectConverter}
@@ -349,7 +349,7 @@ document.add(new Paragraph(
 \end{samepage}
 
 Für alle im Service ausgelesen Daten wird ein eigener Paragraph(Zeile) erstellt. Um die Überschrift und die Daten entsprechend zu formatieren, kann mittels \textit{IText} auch ein Font erstellt werden. Mit der \textit{FontFactory} wird hierbei ein Font mit bestimmter Schriftart, Schriftgröße und Farbe erstellt.
-Nach der Erstellung des PDF-Dokument muss es weiter an den Client geschickt werden. Um das PDF-Dokumente im \textit{Response} zu übertragen, wird das Dokument in ein \textit{byte-array} konvertiert. Dies geschieht mit der Verwendung des \textit{ByteArrayOutputStream} und dessen Methode \textit{toByteArray}. 
+Nach der Erstellung des PDF-Dokument muss das Ergebnis weiter an den Client geschickt werden. Um das PDF-Dokumente im \textit{Response} der HTTP-Anfrage zu übertragen, wird das Dokument in ein \textit{byte-array} konvertiert. Dies geschieht mit der Verwendung des \textit{ByteArrayOutputStream} und dessen Methode \textit{toByteArray}. 
 
 \begin{figure}[tp]
   \centering
