@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  25 MAR 2020 19:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  28 MAR 2020 17:47
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1050,14 +1050,8 @@ File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
 ) (thesis.aux
 (chapters/01_titlepage.aux) (chapters/02_declaration.aux)
 (chapters/03_abstract.aux) (chapters/10_introduction.aux)
-(chapters/20_related.aux
-
-LaTeX Warning: Label `fig:engine' multiply defined.
-
-) (chapters/40_concept.aux) (chapters/60_implementation.aux
-
-LaTeX Warning: Label `fig:engine' multiply defined.
-
+(chapters/20_related.aux) (chapters/40_concept.aux)
+(chapters/60_implementation.aux
 
 LaTeX Warning: Label `lst:main' multiply defined.
 
@@ -1187,6 +1181,12 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
  (thesis.bbl
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'veracodeSecurity':
+(biblatex)                - Entry 'veracodeSecurity' (references.bib): Invalid 
+format '22.02.2019' of date field 'urldate' - ignoring.
+
 
 Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'sonarLint':
@@ -1357,7 +1357,7 @@ l.97 \include{chapters/10_introduction}
 
 (chapters/20_related.tex
 Kapitel 2.
-<images/ideChecks.PNG, id=166, 289.08pt x 170.88844pt>
+<images/ideChecks.PNG, id=167, 289.08pt x 170.88844pt>
 File: images/ideChecks.PNG Graphic file (type png)
 <use images/ideChecks.PNG>
 Package pdftex.def Info: images/ideChecks.PNG  used on input line 10.
@@ -1371,23 +1371,28 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
 9.
  (D:\MikTex\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-<images/sonarQube.PNG, id=178, 951.555pt x 676.02562pt>
+) [4 <./images/ideChecks.PNG>]
+<images/sonarQube.PNG, id=188, 951.555pt x 676.02562pt>
 File: images/sonarQube.PNG Graphic file (type png)
 <use images/sonarQube.PNG>
 Package pdftex.def Info: images/sonarQube.PNG  used on input line 23.
 (pdftex.def)             Requested size: 320.3882pt x 227.62204pt.
- [4 <./images/ideChecks.PNG>]
+
+Overfull \hbox (7.9037pt too wide) in paragraph at lines 31--32
+\T1/ptm/m/n/12 ble-men un-ter-sucht. Die-se Security-Lags Über-prü-fun-gen bein
+-hal-ten un-ter an-de-rem Open-
+ []
+
 [5 <./images/sonarQube.PNG>] [6]
-Overfull \hbox (0.43451pt too wide) in paragraph at lines 48--50
+Overfull \hbox (0.43451pt too wide) in paragraph at lines 49--51
 []\T1/ptm/b/n/12 Nebenläufigkeit \T1/ptm/m/n/12 be-schreibt die Mög-lich-keit, 
 meh-re-re Funk-tio-nen zur sel-ben Zeit
  []
 
 
-Overfull \hbox (2.30583pt too wide) in paragraph at lines 53--54
-[]\T1/ptm/b/n/12 Kompatibilität \T1/ptm/m/n/12 Rich-ti-ge Kom-pa-ti-bi-li-tät z
-wi-schen Source- und Bi-na-ry Co-de kann
+Overfull \hbox (0.21138pt too wide) in paragraph at lines 53--54
+\T1/ptm/m/n/12 te-re Ope-ra-tio-nen auf-ge-nom-men und wei-ter-ge-ge-ben wer-de
+n. Hier-bei kön-nen Feh-
  []
 
 [7] [8]) [9]
@@ -1415,7 +1420,7 @@ Overfull \hbox (28.5544pt too wide) in paragraph at lines 26--27
 a-ti-ve kann Jon-go (htt-ps://jongo.org/)
  []
 
-<images/infrastruktur.PNG, id=250, 824.32968pt x 563.10374pt>
+<images/infrastruktur.PNG, id=258, 824.32968pt x 563.10374pt>
 File: images/infrastruktur.PNG Graphic file (type png)
 <use images/infrastruktur.PNG>
 Package pdftex.def Info: images/infrastruktur.PNG  used on input line 45.
@@ -1453,12 +1458,6 @@ Overfull \hbox (48.23483pt too wide) in paragraph at lines 177--177
 })[] 
  []
 
-
-Overfull \hbox (36.75235pt too wide) in paragraph at lines 185--186
-\T1/ptm/m/n/12 wer-den. Apa-che Ma-ven bie-tet aber auch die Mög-lich-keit, ei-
-ge-ne Plug-ins zu ent-wickeln.[][]Anardu
- []
-
 [17]
 Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
@@ -1476,7 +1475,7 @@ Overfull \hbox (2.93103pt too wide) in paragraph at lines 285--286
  []
 
 [20] [21]
-<images/seqGeneratePdf.PNG, id=378, 472.76625pt x 247.67531pt>
+<images/seqGeneratePdf.PNG, id=386, 472.76625pt x 247.67531pt>
 File: images/seqGeneratePdf.PNG Graphic file (type png)
 <use images/seqGeneratePdf.PNG>
 Package pdftex.def Info: images/seqGeneratePdf.PNG  used on input line 356.
@@ -1534,6 +1533,12 @@ Overfull \hbox (10.8402pt too wide) in paragraph at lines 113--113
  []
 
 
+Overfull \hbox (3.60464pt too wide) in paragraph at lines 113--113
+[][]\T1/ptm/m/n/12 Burman, Bry-an (o.D.). \T1/ptm/m/it/12 The State of Soft-wa-
+re Se-cu-ri-ty, As Re-por-ted By Ver-a-co-de\T1/ptm/m/n/12 . Availa-
+ []
+
+
 Overfull \hbox (10.21971pt too wide) in paragraph at lines 113--113
 [][]\T1/ptm/m/it/12 Einsatz von So-nar-Qube zur Qua-litÃ\TS1/ptm/m/it/12 ¤\T1/p
 tm/m/it/12 tssicherung in he-te-ro-ge-nen Pro-jek-ten \T1/ptm/m/n/12 (o.D.). Av
@@ -1555,7 +1560,7 @@ s/03_abstract.aux) (chapters/10_introduction.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 443D693AD0E8ED79DFD74778F9AEB319;1483.
+(rerunfilecheck)             Checksum: 68982A106DB18085A77B837CDCF4690A;1480.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1565,21 +1570,21 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30150 strings out of 480900
- 541501 string characters out of 2917036
- 1313083 words of memory out of 3000000
- 45200 multiletter control sequences out of 15000+200000
+ 30170 strings out of 480900
+ 542031 string characters out of 2917036
+ 1314481 words of memory out of 3000000
+ 45217 multiletter control sequences out of 15000+200000
  590110 words of font info for 97 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 73i,7n,68p,1205b,2093s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 73i,7n,68p,1318b,2093s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/MikTex/fonts/enc/dvips/base/8r.enc}<D:/MikTex/fonts/type1/urw/courier/ucr
 b8a.pfb><D:/MikTex/fonts/type1/urw/courier/ucrr8a.pfb><D:/MikTex/fonts/type1/ur
 w/helvetic/uhvr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/MikTex/fo
 nts/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/
 MikTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (35 pages, 392474 bytes).
+Output written on thesis.pdf (35 pages, 396166 bytes).
 PDF statistics:
- 536 PDF objects out of 1000 (max. 8388607)
- 181 named destinations out of 1000 (max. 500000)
+ 549 PDF objects out of 1000 (max. 8388607)
+ 184 named destinations out of 1000 (max. 500000)
  209 words of extra memory for PDF output out of 10000 (max. 10000000)
 

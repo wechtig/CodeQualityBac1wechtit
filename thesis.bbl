@@ -125,6 +125,60 @@
       \verb 10.1109/C-CODE.2019.8681007
       \endverb
     \endentry
+    \entry{al2011software}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=d56fcf86d184046f97c787025d5c0ae5}{%
+           family={Al-Badareen},
+           familyi={A\bibinithyphendelim B\bibinitperiod},
+           given={Anas\bibnamedelima Bassam},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=da70f51e35dbd0029a36551338d63fb5}{%
+           family={Selamat},
+           familyi={S\bibinitperiod},
+           given={Mohd\bibnamedelima Hasan},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d9ed5ac3ccf44cd6ed66f99379bfaa84}{%
+           family={Jabar},
+           familyi={J\bibinitperiod},
+           given={Marzanah\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0279739d316ee36ac1450d5d79189964}{%
+           family={Din},
+           familyi={D\bibinitperiod},
+           given={Jamilah},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a8eb7748c5796b31eb11d912e5c40f55}{%
+           family={Turaev},
+           familyi={T\bibinitperiod},
+           given={Sherzod},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{58b03cfb2a3222ddf0fed917a6358f94}
+      \strng{fullhash}{5675872c34704bcbcc80f3cea8df707e}
+      \strng{bibnamehash}{5675872c34704bcbcc80f3cea8df707e}
+      \strng{authorbibnamehash}{5675872c34704bcbcc80f3cea8df707e}
+      \strng{authornamehash}{58b03cfb2a3222ddf0fed917a6358f94}
+      \strng{authorfullhash}{5675872c34704bcbcc80f3cea8df707e}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Software Engineering and Computer Systems}
+      \field{title}{Software quality models: A comparative study}
+      \field{year}{2011}
+      \field{pages}{46\bibrangedash 55}
+      \range{pages}{10}
+    \endentry
     \entry{bommer2016softwarewartung}{book}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=f309abaa0c7af077080fc73038bbce91}{%
@@ -164,6 +218,64 @@
       \field{isbn}{978-3-89864-482-2}
       \field{title}{Softwarewartung: Grundlagen, Management und Wartungstechniken}
       \field{year}{2016}
+    \endentry
+    \entry{boukouchiModels}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7fe7a282e97580c331c1b0bee7f5bc14}{%
+           family={Boukouchi},
+           familyi={B\bibinitperiod},
+           given={Youness},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7fe7a282e97580c331c1b0bee7f5bc14}
+      \strng{fullhash}{7fe7a282e97580c331c1b0bee7f5bc14}
+      \strng{bibnamehash}{7fe7a282e97580c331c1b0bee7f5bc14}
+      \strng{authorbibnamehash}{7fe7a282e97580c331c1b0bee7f5bc14}
+      \strng{authornamehash}{7fe7a282e97580c331c1b0bee7f5bc14}
+      \strng{authorfullhash}{7fe7a282e97580c331c1b0bee7f5bc14}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Computer Science Issues}
+      \field{month}{11}
+      \field{title}{Comparative Study of Software Quality Models}
+      \field{volume}{10}
+      \field{year}{2013}
+      \field{pages}{309\bibrangedash 314}
+      \range{pages}{6}
+    \endentry
+    \entry{veracodeSecurity}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=95ee707d2f4d5b319b39691cd3a46408}{%
+           family={Burman},
+           familyi={B\bibinitperiod},
+           given={Bryan},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{95ee707d2f4d5b319b39691cd3a46408}
+      \strng{fullhash}{95ee707d2f4d5b319b39691cd3a46408}
+      \strng{bibnamehash}{95ee707d2f4d5b319b39691cd3a46408}
+      \strng{authorbibnamehash}{95ee707d2f4d5b319b39691cd3a46408}
+      \strng{authornamehash}{95ee707d2f4d5b319b39691cd3a46408}
+      \strng{authorfullhash}{95ee707d2f4d5b319b39691cd3a46408}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The State of Software Security, As Reported By Veracode}
+      \verb{urlraw}
+      \verb https://www.twelve21.io/the-state-of-software-security-as-reported-by-veracode/
+      \endverb
+      \verb{url}
+      \verb https://www.twelve21.io/the-state-of-software-security-as-reported-by-veracode/
+      \endverb
+      \warn{\item Entry 'veracodeSecurity' (references.bib): Invalid format '22.02.2019' of date field 'urldate' - ignoring}
     \endentry
     \entry{sonarQubeHeise}{online}{}
       \field{sortinit}{E}

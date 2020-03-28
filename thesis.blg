@@ -1,19 +1,20 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'thesis.blg'
-[229] biber-MSWIN64:322> INFO - === 
-[286] Biber.pm:415> INFO - Reading 'thesis.bcf'
-[559] Biber.pm:943> INFO - Found 20 citekeys in bib section 0
-[604] Biber.pm:4256> INFO - Processing section 0
-[605] Utils.pm:75> INFO - Globbing data source 'references.bib'
-[629] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
-[663] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
-[669] bibtex.pm:1653> INFO - LaTeX decoding ...
-[742] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
-[794] Utils.pm:304> WARN - Entry 'sonarLint' (references.bib): Invalid format '20.02.2020' of date field 'urldate' - ignoring
-[1065] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1066] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1066] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'de-DE'
-[1066] Biber.pm:4090> INFO - No sort tailoring available for locale 'de-DE'
-[1142] bbl.pm:652> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[1170] bbl.pm:755> INFO - Output to thesis.bbl
-[1170] Biber.pm:128> INFO - WARNINGS: 1
+[66] biber-MSWIN64:322> INFO - === 
+[84] Biber.pm:415> INFO - Reading 'thesis.bcf'
+[181] Biber.pm:943> INFO - Found 23 citekeys in bib section 0
+[242] Biber.pm:4256> INFO - Processing section 0
+[243] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[253] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[268] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[270] bibtex.pm:1653> INFO - LaTeX decoding ...
+[298] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[318] Utils.pm:304> WARN - Entry 'sonarLint' (references.bib): Invalid format '20.02.2020' of date field 'urldate' - ignoring
+[328] Utils.pm:304> WARN - Entry 'veracodeSecurity' (references.bib): Invalid format '22.02.2019' of date field 'urldate' - ignoring
+[449] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[449] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[449] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'de-DE'
+[449] Biber.pm:4090> INFO - No sort tailoring available for locale 'de-DE'
+[478] bbl.pm:652> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[491] bbl.pm:755> INFO - Output to thesis.bbl
+[491] Biber.pm:128> INFO - WARNINGS: 2
