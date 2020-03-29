@@ -37,15 +37,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Tools für die Statische Code Analyse}{7}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Visualisierungen}{8}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Visualisierungen}{9}{section.2.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.1}Probleme}{9}{subsection.2.4.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.4.1.1}Keine dauerhafte Anzeige}{9}{subsubsection.2.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.1.2}Keine Verbesserung des Entwicklers}{9}{subsubsection.2.4.1.2}%
+\contentsline {subsubsection}{\numberline {2.4.1.2}Keine Verbesserung der Kenntnisse und des Codestils des Entwicklers}{9}{subsubsection.2.4.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.4.1.3}Unübersichtliche Anzeige}{9}{subsubsection.2.4.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.1.4}Keine weiteren Analysen}{9}{subsubsection.2.4.1.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Konzept}{10}{chapter.3}%
 \defcounter {refsection}{0}\relax 
@@ -121,7 +123,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.6.2.5}Erstellen von Grafiken}{23}{subsubsection.4.6.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.2.6}Präsentation der Daten}{24}{subsubsection.4.6.2.6}%
+\contentsline {subsubsection}{\numberline {4.6.2.6}Präsentation der Daten}{23}{subsubsection.4.6.2.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.6.3}Vergleiche mit herkömmlichen Lösungen}{24}{subsection.4.6.3}%
 \defcounter {refsection}{0}\relax 

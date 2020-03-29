@@ -18,9 +18,8 @@ ERGÄNZEN ERGÄNZEN ERGÄNZEN
 Checkstyle ist ein open-source Tool für die Statische Code Analyse. Checkstyle ist für die Verwendung in Java Applikation entwickelt worden. Hierbei werden eine Vielzahl an Fehler und Bugs analysiert und beachtet. Checkstyle kann konfiguriert und an spezifische Probleme angepasst werden
 
 \subsubsection{MongoDB} 
-Als Datenbank wird MongoDB verwendet. Es ist ein nicht-relationales Datenbankmanagementsystem. Es gehört zu den dokumentorientierten Datenbanken.
-MongoDB kann über die offiziele Website heruntergeladen und installiert werden. Um MongoDB zu starten, muss im \textit{/bin} Folder der Befehl \textit{mongo} ausgeführt werden.
-\cite{mongoDbManual}
+Als Datenbank wird die nicht-relationale Lösung MongoDB verwendet, da es verschiedene Vorteile gegenüber relationales Datenbankmanagementsystem bietet. (siehe Punkt 4.4.1) Es gehört zu den dokumentorientierten Datenbanken.
+MongoDB kann über die offiziele Website heruntergeladen und installiert werden. \cite{mongoDbManual}
 
 \subsubsection{MongoDB Java Driver}
 Der MongoDB Java Driver wird für die Kommunikation (Synchronisation und asynchrone Interaktion) mit MongoDB eingesetzt. Als Alternative kann Jongo (https://jongo.org/) oder  Morphia (https://morphia.dev/) eingesetzt werden. 
@@ -28,14 +27,14 @@ Der MongoDB Java Driver wird für die Kommunikation (Synchronisation und asynchr
 \subsubsection{JavaScript und Frameworks}
 Für das Frontend der Webapplikation wird JavaScript eingesetzt. Um zusätzliche Funktionen verwenden zu können, werden folgende JavaScript-Plugins, Frameworks und Libraries verwendet: 
 \begin{itemize}
-\item JQuery 
-\item Bootstrap
-\item DataTables \\ Bietet automatische Pagination und Sortierfunktionen für Tabellen 
-\item Chart.js \\ Unterstützt das Erstellen von Diagrammen. 
+\item \textbf{JQuery} bietet vorgefertigte Funktionen und Animationen die eine vereinfachte Entwicklung gewährleisten. Im Frontend der Arbeit wird JQuery zum Erstellen von Animationen verwendet, wie der Auswahl eines Datums oder das Öffnen eines Tooltips.
+\item \textbf{Bootstrap} liefert vorgefertigte Styles, die im Frontend bei Tabellen, Buttons und Texten verwendet werden können.
+\item \textbf{DataTables} bietet automatische Pagination und Sortierfunktionen für Tabellen.
+\item \textbf{Chart.js} unterstützt das Erstellen von Diagrammen. 
 \end{itemize}
 
 \subsubsection{IntelliJ}
-IntelliJ IDEA wurde als Entwicklungsumgebung für das Backend und Frontend verwendet. 
+IntelliJ IDEA wurde als Entwicklungsumgebung für das Backend und Frontend verwendet, da es mehrere Programmiersprachen und Frameworks unterstützt.
 
 \section{Infrastruktur und Aufbau der Applikationen} 
 Im Rahmen dieser Arbeit wurde mehrere Applikationen und Systeme verwendet. Die Arbeit setzt sich aus folgenden Teilen zusammen:
@@ -49,7 +48,7 @@ Im Rahmen dieser Arbeit wurde mehrere Applikationen und Systeme verwendet. Die A
   \label{fig:engine}
 \end{figure}
 
-Das \textit{Project} ist das Softwareprojekt, welches analysiert werden soll. In diesem Projekt wird auch ein Tool für die Statische Code Analyse eingesetzt. Dieses Tool speichert die Daten (Errors, Warnungen, Informationen) extern. Um diese Daten für die Analyse verwenden zu können, wurde im Rahmen der Arbeit ein \textit{Plugin}, welches das Projekt einsetzten kann, entwickelt. Dieses Plugin greift auf die Daten Statische Code Analyse zu. der Um das Plugin verwenden zu können, muss auch eine \textit{Datenbank} angegeben werden, in welche das Plugin die Daten der Statische Code Analyse des Projekts speichern kann. Die nicht-relationale Datenbank wird auf einem Server gehostet. Um in der Weboberfläche die Daten der Datenbank anzeigen zu können, wird auch ein \textit{Backend} benötigt. Das Backend liest die Daten aus und gibt sie an die Weboberfläche weiter. In der \textit{Weboberfläche} werden die Daten in verschiedenen Diagrammen und Tabellen ausgewertet. Auch ein PDF-Export ist möglich. 
+Das \textit{Project} ist das Softwareprojekt, welches analysiert werden soll. In diesem Projekt wird auch ein Tool für die Statische Code Analyse eingesetzt. Dieses Tool speichert die Daten (Errors, Warnungen, Informationen) extern. Um diese Daten für die Analyse verwenden zu können, wurde im Rahmen der Arbeit ein \textit{Plugin}, welches das Projekt einsetzten kann, entwickelt. Dieses Plugin greift auf die Daten Statische Code Analyse zu. der Um das Plugin verwenden zu können, muss auch eine \textit{Datenbank} angegeben werden, in welche das Plugin die Daten der Statische Code Analyse des Projekts speichern kann. Die nicht-relationale Datenbank wird auf einem Server gehostet. Um in der Weboberfläche die Daten der Datenbank anzeigen zu können, wird auch ein \textit{Backend} benötigt. Das Backend liest die Daten aus und gibt sie an die Weboberfläche weiter. In der \textit{Weboberfläche} werden die Daten in verschiedenen Diagrammen und Tabellen ausgewertet. Auch ein PDF-Export ist möglich. (siehe Punkt 4.6.2.6 Präsentation der Daten)
 
 
 \section{Demo-Projekt und Bugreport}
@@ -61,8 +60,8 @@ eingehen auf verwendete ide und tools; intellij inspection build in
 https://www.jetbrains.com/help/idea/code-inspection.html
 
 \subsection{Maven Plugins}
-Viele Tools für die Statische Code Analyse bieten die Möglichkeit, XML-Reports zu genieren. Dies ist möglich mit dem Verwenden der spezifischen Maven-Plugins. \cite{spotBugsUsage} \cite{checkstylePlugin} 
-Diese Plugins bieten build-Optionen an, mit dem die XML oder Doc-Reports generiert werden können.
+Viele Tools für die Statische Code Analyse bieten die Möglichkeit, XML-Reports zu genieren. Dies ist möglich mit dem Verwenden der spezifischen Maven-Plugins. ~\parencite{spotBugsUsage} \cite{checkstylePlugin} 
+Diese Plugins bieten build-Optionen an, mit dem die XML oder Doc-Reports generiert werden können. Die daraus entstehenden XML-Reports bilden die Datengrundlagen für die Analysen und Visualisierungen im Frontend.
 \subsubsection{CheckStyle-Plugin}
 Um Checkstyle verwenden zu können, muss das CheckStyle-Plugin nicht verwendet werden. Das Plugin dient zum Export der Daten als XML. Dieses generierte XML bildet den Grundstock für die unterschiedlichen Präsentationen der Daten im Frontend gibt. Um die Daten zu exportieren muss folgender Befehl ausgeführt werden:
 \begin{verbatim}
@@ -101,8 +100,6 @@ Dieser Befehl muss von der Benutzerin oder dem Benutzer manuell ausgeführt werd
 </plugin>
 	\end{lstlisting}
 \end{samepage}
-
-Das generierte XML-File wird im /target Ordner abgelegt.
 \subsubsection{SpotBugs-Plugin}
 ERGÄNZEN TESTEN
 \begin{verbatim}
@@ -113,14 +110,14 @@ Der Speicherort des generierten XML-Files kann in der Plugin-Konfiguration angeg
 
 \section{Speichern der Daten} 
 
-Zum Speichern der Daten wird eine Datenbank benötigt. Aufgrund der stark variierenden Daten und da es bei großen Projekten auf einem längeren Zeitraum viele Fehler und Warnungen gefunden werden, wird eine nicht-relationale Datenbank (NoSQL) verwendet. 
+Zum Speichern der Daten wird eine Datenbank benötigt. Aufgrund der stark variierenden Daten und da es bei großen Projekten auf einem längeren Zeitraum große Datenmengen an Fehler und Warnungen gefunden werden, wird eine nicht-relationale Datenbank (NoSQL) verwendet. 
 
 \subsection{Vorteil vom Einsatz einer nicht-relationalen Datenbank gegenüber einer relationalen Datenbanke }
 Der Vorteil einer nicht-relationalen Datenbank wie MongoDB besteht in der unterschiedlichen Lösung des CAP-Theorem. CAP ist eine für Abkürzung:
 
 \begin{itemize}
 \item C = Consistency (Konsistenz)
-\item A = Abailability (Verfügbarkeit) 
+\item A = Availability (Verfügbarkeit) 
 \item P = Partition Tolerance (Fehlertoleranz))
 \end{itemize}
 
@@ -194,12 +191,12 @@ Die Dependency \textit{maven-plugin-api} gibt Klassen und Funktionen vor, die be
  </dependency>
 \end{verbatim}
 
-Mit dieser Dependency kann nun eine Mojo-Klasse erstellt. (\textit{MainExecuter.java}) Sie stellt den Kern des Plugins da, die der Verwendung des Plugins zuerst ausgeführt wird. \cite{gonzalezMavenTutorial}
+Mit dieser Dependency kann nun eine Mojo-Klasse erstellt (siehe Listing  \ref{lst:mainexecuter}). Die Klasse \textit{MainExecuter.java} stellt den Kern des Plugins da, die der Verwendung des Plugins zuerst ausgeführt wird.  \cite{gonzalezMavenTutorial}
 
 \lstset{
   caption={Kopf der Executor-Klasse: Sie wird mit dem Aufruf des Plugins zuerst gestartet.}, 
   basicstyle=\small\ttfamily, 
-  label=lst:main, 
+  label=lst:mainexecuter, 
   %float=tbhp, % float image to top/bottom/here/page
   language=Java,
   frame=single,
@@ -242,14 +239,15 @@ In der Mojo-Klasse muss die Methode \textit{execute} implementiert werden, die z
 \subsection{MongoDB-Java-Driver und Datenbank-Import}
 Der Importer speichert die Daten des XML-Reports in Datenbanken. Dazu wird das XML-File ausgelesen und die einzelnen gefundenen Fehler und Informationen werden in Java-Objekte umgewandelt. Das Speichern der Java-Objekte in den Collections ist ohne Konvertierung, im Vergleich zu anderen herkömmlichen Tools wie Hibernate, nicht möglich. Um Daten zu speichern, müssen die Java-Objekte in Dokumente umgewandelt werden. Daher muss ein Konverter implementiert werden: \textit{DBObjectConverter}
 Bei steigender Komplexität und Größe der Datenbank können die Konverter sehr komplex werden. Der Typ \textit{org.bson.Document} wird vom MongoDB-Java-Driver vorgegeben. Ein BSON-Dokument unterscheidet sich nur von der Kodierung zu Json-Objekte. (BSON=Binary Json) 
-Diese Dokumente können nun für die Datenbank-Transaktionen verwendet werden. \\
+Diese Dokumente können nun für die Datenbank-Transaktionen verwendet werden. Bei steigender Komplexität und Größe der Datenbank werden auch die Konverter komplexer, da alle Felder, Datentypen und Object-Arrays beachtet werden müssen.
+ \\
 
-Um die Dokumente speichern zu können, muss eine Verbindung zur Datenbank mit den eingegebenen Parametern erstellt werden. Dazu müssen Objekte mit den Typen \textit{MongoClient}, \textit{MongoDatabase} und \textit{MongoCollection} initialisiert und verwendet werden:
+Um die Dokumente speichern zu können, muss eine Verbindung zur Datenbank mit den eingegebenen Parametern erstellt werden. Dazu müssen Objekte mit den Typen \textit{MongoClient}, \textit{MongoDatabase} und \textit{MongoCollection} initialisiert und verwendet werden (siehe Listing \ref{lst:mongoAtr}).
 
 \lstset{
   caption={Benötigte Attribute, um sich mit der Datenbank verbinden und die Collections verwenden.}, 
   basicstyle=\small\ttfamily, 
-  label=lst:main, 
+  label=lst:mongoAtr, 
   %float=tbhp, % float image to top/bottom/here/page
   language=Java,
   frame=single,
@@ -277,16 +275,14 @@ Der Typ \textit{MongoCollection<Document>} kann nun verwendet werden um Dokument
 \section{Webapplikation} 
 Die Webapplikation bildet den zentralen Teil der Applikation. Das Ziel ist es, die gespeicherten Daten für die Benutzerinnen und Benutzer übersichtlich und einfach aufzubereiten. 
 \subsection{Backend}
-Im Backend werden die Daten aus der Datenbank in Services ausgelesen. Die ausgelesen Daten werden in Beans umgewandelt. Über die REST-Schnittstelle können Daten an das Frontend übergeben werden. Das Backend bzw. die Webapplikation verwendet das Framework Spring-Boot als Alternative zu Java EE. \cite{walls2016spring} Spring Boot bietet einen Standalone-Server und kann daher ohne Konfigurationen verwendet werden. Zusätzlich bietet Spring Boot die Möglichkeit zur Erstellung von Spring Beans und REST-Controller.  
+Im Backend werden die Daten aus der Datenbank in Services ausgelesen. Die ausgelesen Daten werden in Beans umgewandelt. Über die REST-Schnittstelle können Daten an das Frontend übergeben werden. Das Backend bzw. die Webapplikation verwendet das Framework Spring-Boot als Alternative zu Java EE. ~\parencite{walls2016spring} Spring Boot bietet einen Standalone-Server und kann daher ohne Konfigurationen verwendet werden. Zusätzlich bietet Spring Boot die Möglichkeit zur Erstellung von Spring Beans und REST-Controller.  
 
 \subsubsection{Struktur}
 aufbau der packages und files; image
 \subsubsection{API und Controller}
 Über den Controller können HTTP-Requests an das Backend geschickt werden. Mit Spring können die Controller als \textit{RestController} annotiert und verwendet werden. Die einzelnen Methoden des Controllers werden zusätzlich annotiert um die Methode (GET, POST, DELETE, PUT, ...) und den Pfad zu definieren. Im Pfad können zusätzlich Parameter als \textit{PathVariable} definiert werden. Im Controller werden  Methoden verwendet um bestimmte Projektanalysedaten auszulesen, Daten als PDF zu exportieren und um Vorschläge zu speichern und auszulesen. Im \textit{FindingsController} werden die Anfragen aus dem Frontend bearbeitet und Daten an des Frontend übermittelt. Im Controller sind dazu die verschiedenen Services eingebunden.
 \subsubsection{Services und MongoDB-Java-Driver}
-In den Services werden Methoden bereitgestellt, die die Daten der Datenbank auslesen. Dies geschieht mit dem MongoDB-Java-Driver. Für das Verwenden des MongoDB-Java-Driver ist ein spezifischer Converter notwendig. Das Mapping der Java-Objekte mit den Collections ist ohne konvertierung, im Vergleich zu Hibernate, nicht möglich. Um Daten zu speichern, müssen die Java-Objekte  in Dokumente umgewandelt werden und um ausgelesene Dokumente zu verwenden, müssen die Dokumente in Java Objekte umgewandelt werden. Daher muss ein Konverter verwendet werden: \textit{DBObjectConverter.java}
-Bei steigender Komplexität und Größe der Datenbank werden auch die Konverter komplexer. 
-
+In den Services werden Methoden bereitgestellt, die die Daten der Datenbank auslesen. Dies geschieht mit dem MongoDB-Java-Driver. Für das Verwenden des MongoDB-Java-Driver ist ein spezifischer Converter notwendig. Wie im Importer-Plugin müssen die Daten konvertiert werden, daher wird ein Konverter \textit{DBObjectConverter.java} auch im Backend verwendet.
 \lstset{
   caption={Um die Datenbank benutzen können, müssen die Java-Objekte bzw. die Datenbank-JSON-Objekte konvertiert werden.}, 
   basicstyle=\small\ttfamily, 
@@ -348,7 +344,7 @@ document.add(new Paragraph(
 	\end{lstlisting}
 \end{samepage}
 
-Für alle im Service ausgelesen Daten wird ein eigener Paragraph(Zeile) erstellt. Um die Überschrift und die Daten entsprechend zu formatieren, kann mittels \textit{IText} auch ein Font erstellt werden. Mit der \textit{FontFactory} wird hierbei ein Font mit bestimmter Schriftart, Schriftgröße und Farbe erstellt.
+Für alle im Service ausgelesen Daten wird ein eigener Paragraph erstellt. Um die Überschrift und die Daten entsprechend zu formatieren, kann mittels \textit{IText} auch ein Font erstellt werden. Mit der \textit{FontFactory} wird hierbei ein Font mit bestimmter Schriftart, Schriftgröße und Farbe erstellt.
 Nach der Erstellung des PDF-Dokument muss das Ergebnis weiter an den Client geschickt werden. Um das PDF-Dokumente im \textit{Response} der HTTP-Anfrage zu übertragen, wird das Dokument in ein \textit{byte-array} konvertiert. Dies geschieht mit der Verwendung des \textit{ByteArrayOutputStream} und dessen Methode \textit{toByteArray}. 
 
 \begin{figure}[tp]
@@ -365,7 +361,7 @@ Im Frontend werden die Daten in verschiedenen Formen aufbereitet und den Entwick
 \subsubsection{Struktur}
 aufbau der ordner und files; image
 \subsubsection{Kommunikation mit dem Backend}
-Die Kommunikation zwischen Frontend und Backend geschieht mittels HTTP-Calls. Die im Frontend gesendeten HTTP-Calls werden im Backend-Controller verarbeitet.  Mit der JavaScript Schnittstelle \textit{XMLHttpRequest} werden HTTP-Methoden (POST, GET) abgeschickt. Ein Vorteil von \textit{XMLHttpRequest} ist die Möglichkeit der Asynchronen-Ausführung der Requests. Daher können auch dynamische Daten abgerufen werden.  \cite{ajaxOnJava}
+Die Kommunikation zwischen Frontend und Backend geschieht mittels HTTP-Calls. Die im Frontend gesendeten HTTP-Calls werden im Backend-Controller verarbeitet.  Mit der JavaScript Schnittstelle \textit{XMLHttpRequest} werden HTTP-Methoden (POST, GET) abgeschickt. Ein Vorteil von \textit{XMLHttpRequest} ist die Möglichkeit der asynchronen Ausführung der Requests. Daher können auch dynamische Daten abgerufen werden.  \cite{ajaxOnJava}
 \lstset{
   caption={Erstellung eines GET-Request für Projektdaten mit der Schnittstelle XMLHttpRequest.}, 
   basicstyle=\small\ttfamily, 

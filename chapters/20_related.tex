@@ -54,9 +54,9 @@ Beschreibt die Abhängigkeit eines Software-Moduls zu einem anderen Modul. In ei
 \item \textbf{Kompatibilität} Darunter versteht man die Kompatibilität unter verschiedenen Versionen, unter auch zwischen Source- und Binary Code.  Clirr ist ein Tool das die Kompatibilität bei unterschiedlichen Java-Versionen untersucht. 
 \item \textbf{Code-Style} Unter Style werden bestimmte Regeln und Coding-Conventions verstanden. Unter anderem gehören dazu Bestimmungen zu Leerzeichen, Klammern und Namenskonventionen. Für die Überprüfung des Code-Styles können Tools wie CheckStyle oder PMD eingesetzt werden.
 \item \textbf{Speicherlecks}
-Bei einem Speicherleck (memory leak) sind Daten im Arbeitsspeicher gespeichert,  welche aber nicht verwendet oder gelöscht werden. Tools wie Coverity können das Entstehen von Speicherlecks verhindern.
+Bei einem Speicherleck (memory leak) sind Daten im Arbeitsspeicher gespeichert,  welche aber nicht verwendet oder gelöscht werden. Tools wie Valgrind und Coverity können das Entstehen von Speicherlecks verhindern, indem sie mögliche Fehlerquellen wie Pointer oder Speicherzuweisungen untersuchen.
 \item \textbf{Race Conditions}
-Bei einer Race Condition greifen zwei verschiedene Services auf eine Ressource oder Methode zu. Deswegen kann nur eine der beiden Services das Ziel verwenden. Das andere Service kann die Ressource nicht verwenden, was zu einem Fehler oder einem unerwünschten Ergebnis führen kann. Dieses Problem kann bei Threads auftreten. Tools wie JLint oder ConTest können ein Race Condition-Problem feststellen.
+Bei einer Race Condition greifen zwei verschiedene Services auf eine Ressource oder Methode zu. Da zwei Services nicht gleichzeitig die  gleiche Ressource verwenden können, kann nur eine der beiden Services auf das Ziel zugreifen. Das andere Service kann die Ressource nicht verwenden, was zu einem Fehler oder einem unerwünschten Ergebnis führen kann. Dieses Problem kann bei Threads auftreten. Tools wie JLint oder ConTest können ein Race Condition-Problem feststellen.
 \item \textbf{Security}
 Security ist ein wichtiger Punkt in Programmen. Tools wie FindBugs, Protecode und Xanitizer analysieren den Code und können Sicherheitsprobleme aufdecken, beispielsweise hard coded Passwörter, (Command) Injection und Response Splitting. \cite{goseva2015capability} Eine hierbei verwendete Technik ist die Taint-Analyse, wo der Datenfluss einer Dateneingaben überprüft wird. \cite{jung2014sensitive}
 \end{itemize}
@@ -68,11 +68,14 @@ xml report, ide anzeige,
 \subsection{Probleme} 
 
 \subsubsection{Keine dauerhafte Anzeige} 
-Der Fokus der Anzeige der Analyse der Statischen Code Analyse in Entwicklungsumgebungen liegt auf die Fehlerausbesserung. Die Fehler und Informationen werden daher nach der Ausbesserung nicht mehr angezeigt. Die Entwicklerin oder der Entwickler kann die ausgebesserten Fehler nicht mehr einsehen.
+Der Fokus der Ergebnisanzeige der Statischen Code Analyse in Entwicklungsumgebungen liegt auf das Ausbessern der gefunden Fehler. Die Fehler und Informationen werden daher nach der Ausbesserung nicht mehr angezeigt. Die Entwicklerin oder der Entwickler kann die ausgebesserten Fehler nicht mehr einsehen.
 
-\subsubsection{Keine Verbesserung des Entwicklers} 
+\subsubsection{Keine Verbesserung der Kenntnisse und des Codestils des Entwicklers} 
 Da die Fehler nicht dauerhaft angezeigt werden, kommt es zu keiner Verbesserung der Programmierkenntnisse der Entwickler und Entwicklerinnen. Weiters kann in Entwicklungsumgebungen die automatische Ausbesserung getätigt werden, sodass der Entwickler oder die Entwicklerin oft den Fehler nicht bewusst überdenken und selber ausbessern wird. 
 Die selben Fehler häufen sich daher immer wieder. Dies geschieht auch, weil besonders unerfahrenere Entwickler einige Fehlerwarnung nicht nachvollziehen und verstehen können, da es keine Möglichkeit gibt die Bugs genauer einsehen zu können. 
 
 \subsubsection{Unübersichtliche Anzeige} 
-In großen Klassen, wo sich viele Fehler und Informationen befinden, gehen die einzelnen Fehler in der kleinen Übersichtsanzeige oft unter. In der Zeile, wo sich der Fehler befindet, kann der Fehler nur mit einem Hover über die Warnung angezeigt werden. 
+In großen Klassen, wo sich viele Fehler und Informationen befinden, gehen die einzelnen Fehler in der kleinen Übersichtsanzeige oft unter. In der Zeile, wo sich der Fehler befindet, kann der Fehler nur mit einem Mouseover über die Warnung angezeigt werden. 
+
+\subsubsection{Keine weiteren Analysen}
+Weitere Informationen wie Zusammenhänge der Fehler, Analyse der Fehlerquellen, Häufigkeitsverteilungen und zeitliche Veränderungen werden nicht angezeigt. So gehen wichtige Informationen für den Entwickler verloren.

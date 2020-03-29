@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  28 MAR 2020 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  29 MAR 2020 18:08
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1059,12 +1059,6 @@ LaTeX Warning: Label `lst:main' multiply defined.
 LaTeX Warning: Label `lst:main' multiply defined.
 
 
-LaTeX Warning: Label `lst:main' multiply defined.
-
-
-LaTeX Warning: Label `lst:main' multiply defined.
-
-
 LaTeX Warning: Label `fig:engine' multiply defined.
 
 
@@ -1415,24 +1409,24 @@ Kapitel 4.
 
 
 ]
-Overfull \hbox (28.5544pt too wide) in paragraph at lines 26--27
+Overfull \hbox (28.5544pt too wide) in paragraph at lines 25--26
 \T1/ptm/m/n/12 chro-ne In-ter-ak-ti-on) mit Mon-goDB ein-ge-setzt. Als Al-ter-n
 a-ti-ve kann Jon-go (htt-ps://jongo.org/)
  []
 
-<images/infrastruktur.PNG, id=258, 824.32968pt x 563.10374pt>
+<images/infrastruktur.PNG, id=259, 329.73187pt x 237.13594pt>
 File: images/infrastruktur.PNG Graphic file (type png)
 <use images/infrastruktur.PNG>
-Package pdftex.def Info: images/infrastruktur.PNG  used on input line 45.
-(pdftex.def)             Requested size: 333.2102pt x 227.62204pt.
+Package pdftex.def Info: images/infrastruktur.PNG  used on input line 44.
+(pdftex.def)             Requested size: 316.51382pt x 227.62204pt.
 [12]
-Overfull \hbox (101.65479pt too wide) in paragraph at lines 60--62
+Overfull \hbox (101.65479pt too wide) in paragraph at lines 59--61
 \T1/ptm/m/n/12 eingehen auf ver-wen-de-te ide und tools; in-tel-lij in-spec-ti-
 on build in https://www.jetbrains.com/help/idea/code-
  []
 
 [13 <./images/infrastruktur.PNG>]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 68
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 67
 .
  (D:\MikTex\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -1441,64 +1435,64 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
  [14] [15]
-Overfull \hbox (26.63484pt too wide) in paragraph at lines 166--166
+Overfull \hbox (26.63484pt too wide) in paragraph at lines 163--163
 []\T1/pcr/m/n/12 "source" : "checkstyle.checks.blocks.AvoidNestedBlocksCheck",[
 ] 
  []
 
 [16]
-Overfull \hbox (48.23483pt too wide) in paragraph at lines 177--177
+Overfull \hbox (48.23483pt too wide) in paragraph at lines 174--174
 []\T1/pcr/m/n/12 db.findings.find({"_id" : ObjectId("5e1209881a2dff20ab6ee6c6")
 })[] 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--246
+Underfull \hbox (badness 10000) in paragraph at lines 240--244
 
  []
 
 [18] [19]
-Overfull \hbox (2.93103pt too wide) in paragraph at lines 285--286
+Overfull \hbox (2.93103pt too wide) in paragraph at lines 283--284
 \T1/ptm/m/n/12 ein-zel-nen Me-tho-den des Con-trol-lers wer-den zu-sätz-lich an
 -no-tiert um die Me-tho-de (GET,
  []
 
-[20] [21]
-<images/seqGeneratePdf.PNG, id=386, 472.76625pt x 247.67531pt>
+[20]
+<images/seqGeneratePdf.PNG, id=363, 472.76625pt x 247.67531pt>
 File: images/seqGeneratePdf.PNG Graphic file (type png)
 <use images/seqGeneratePdf.PNG>
-Package pdftex.def Info: images/seqGeneratePdf.PNG  used on input line 356.
+Package pdftex.def Info: images/seqGeneratePdf.PNG  used on input line 352.
 (pdftex.def)             Requested size: 434.48854pt x 227.62204pt.
 
-Overfull \hbox (21.92357pt too wide) in paragraph at lines 356--359
+Overfull \hbox (21.92357pt too wide) in paragraph at lines 352--355
  [][] 
  []
 
-
-Overfull \hbox (15.48685pt too wide) in paragraph at lines 368--381
+[21]
+Overfull \hbox (15.48685pt too wide) in paragraph at lines 364--377
 \T1/ptm/m/n/12 GET) ab-ge-schickt. Ein Vor-teil von \T1/ptm/m/it/12 XML-Htt-pRe
 -quest \T1/ptm/m/n/12 ist die Mög-lich-keit der Asynchronen-
  []
 
 
-Overfull \hbox (13.02571pt too wide) in paragraph at lines 400--402
+Overfull \hbox (13.02571pt too wide) in paragraph at lines 396--398
 \T1/ptm/m/n/12 Request kön-nen die Da-ten beim Ver-sen-den an-ge-ge-ben wer-den
 : \T1/ptm/m/it/12 re-cRe-quest.send(message) 
  []
 
 [22 <./images/seqGeneratePdf.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 415--421
+Underfull \hbox (badness 10000) in paragraph at lines 411--417
 
  []
 
@@ -1565,15 +1559,19 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30170 strings out of 480900
- 542031 string characters out of 2917036
- 1314481 words of memory out of 3000000
- 45217 multiletter control sequences out of 15000+200000
+ 30173 strings out of 480900
+ 542084 string characters out of 2917036
+ 1314708 words of memory out of 3000000
+ 45219 multiletter control sequences out of 15000+200000
  590110 words of font info for 97 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
  73i,7n,68p,1318b,2093s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1582,9 +1580,9 @@ b8a.pfb><D:/MikTex/fonts/type1/urw/courier/ucrr8a.pfb><D:/MikTex/fonts/type1/ur
 w/helvetic/uhvr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/MikTex/fo
 nts/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/
 MikTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (35 pages, 396166 bytes).
+Output written on thesis.pdf (35 pages, 360776 bytes).
 PDF statistics:
- 549 PDF objects out of 1000 (max. 8388607)
- 184 named destinations out of 1000 (max. 500000)
+ 551 PDF objects out of 1000 (max. 8388607)
+ 185 named destinations out of 1000 (max. 500000)
  209 words of extra memory for PDF output out of 10000 (max. 10000000)
 
