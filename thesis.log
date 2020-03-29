@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  29 MAR 2020 18:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  29 MAR 2020 18:56
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1336,20 +1336,19 @@ LaTeX Warning: Font shape declaration has incorrect series value `mc'.
                It should not contain an `m'! Please correct it.
                Found on input line 47.
 
-))pdfTeX warning (ext4): destination with the same identifier (name{page.1}) ha
-s been already used, duplicate ignored
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.97 \include{chapters/10_introduction}
-                                          % framing the problem [1
+l.13 
+      [1
 
 
 
-] [2]
+]) [2]
 \openout2 = `chapters/20_related.aux'.
 
-
-(chapters/20_related.tex
+ (chapters/20_related.tex
 Kapitel 2.
 <images/ideChecks.PNG, id=167, 289.08pt x 170.88844pt>
 File: images/ideChecks.PNG Graphic file (type png)
@@ -1480,12 +1479,6 @@ Overfull \hbox (21.92357pt too wide) in paragraph at lines 352--355
  []
 
 [21]
-Overfull \hbox (15.48685pt too wide) in paragraph at lines 364--377
-\T1/ptm/m/n/12 GET) ab-ge-schickt. Ein Vor-teil von \T1/ptm/m/it/12 XML-Htt-pRe
--quest \T1/ptm/m/n/12 ist die Mög-lich-keit der Asynchronen-
- []
-
-
 Overfull \hbox (13.02571pt too wide) in paragraph at lines 396--398
 \T1/ptm/m/n/12 Request kön-nen die Da-ten beim Ver-sen-den an-ge-ge-ben wer-den
 : \T1/ptm/m/it/12 re-cRe-quest.send(message) 
@@ -1559,10 +1552,6 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
@@ -1580,7 +1569,7 @@ b8a.pfb><D:/MikTex/fonts/type1/urw/courier/ucrr8a.pfb><D:/MikTex/fonts/type1/ur
 w/helvetic/uhvr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/MikTex/fo
 nts/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/
 MikTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (35 pages, 360776 bytes).
+Output written on thesis.pdf (35 pages, 362059 bytes).
 PDF statistics:
  551 PDF objects out of 1000 (max. 8388607)
  185 named destinations out of 1000 (max. 500000)
