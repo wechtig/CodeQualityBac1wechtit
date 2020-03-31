@@ -2,29 +2,29 @@
 \chapter{Umsetzung}
 \section{Technologien und Tools für Umsetzung } 
 
-\subsubsection{Java} 
-Die drei Teilprojekte der Arbeit wurden in Java entwickelt. Die verwendete Java Version ist Java 11. 
+\subsection{Java} 
+Die drei Teilprojekte der Arbeit wurden in Java entwickelt. Die verwendete Java Version ist Java 11. Java wird als Sprache in der Arbeit verwendet, da eine große Anzahl von Tools für die Statische Code Analyse auf Java passieren und eine plattformunabhängige und robuste Programmiersprache ist. Als Alternative zu Java könnte C-Sharp oder eine JavaScript basierende Webserver-Lösung wie Node.js fungieren.
 
-\subsubsection{Spring} 
+\subsection{Spring} 
 Spring Boot ist ein Java Framework, das im Zuge der Projektarbeit zur Entwicklung der Web-Applikation verwendet wurde.
 
-\subsubsection{Maven} 
+\subsection{Maven} 
 Maven ist ein Versionsverwaltungstool mit dem Abhängigkeiten und JARs verwaltet und heruntergeladen werden können.
 
-\subsubsection{FindBugs/SpotBugs} 
+\subsection{FindBugs/SpotBugs} 
 ERGÄNZEN ERGÄNZEN ERGÄNZEN 
 
-\subsubsection{Checkstyle} 
+\subsection{Checkstyle} 
 Checkstyle ist ein open-source Tool für die Statische Code Analyse. Checkstyle ist für die Verwendung in Java Applikation entwickelt worden. Hierbei werden eine Vielzahl an Fehler und Bugs analysiert und beachtet. Checkstyle kann konfiguriert und an spezifische Probleme angepasst werden
 
-\subsubsection{MongoDB} 
+\subsection{MongoDB} 
 Als Datenbank wird die nicht-relationale Lösung MongoDB verwendet, da es verschiedene Vorteile gegenüber relationales Datenbankmanagementsystem bietet. (siehe Punkt 4.4.1) Es gehört zu den dokumentorientierten Datenbanken.
 MongoDB kann über die offiziele Website heruntergeladen und installiert werden. \cite{mongoDbManual}
 
-\subsubsection{MongoDB Java Driver}
+\subsection{MongoDB Java Driver}
 Der MongoDB Java Driver wird für die Kommunikation (Synchronisation und asynchrone Interaktion) mit MongoDB eingesetzt. Als Alternative kann Jongo (https://jongo.org/) oder  Morphia (https://morphia.dev/) eingesetzt werden. 
 
-\subsubsection{JavaScript und Frameworks}
+\subsection{JavaScript und Frameworks}
 Für das Frontend der Webapplikation wird JavaScript eingesetzt. Um zusätzliche Funktionen verwenden zu können, werden folgende JavaScript-Plugins, Frameworks und Libraries verwendet: 
 \begin{itemize}
 \item \textbf{JQuery} bietet vorgefertigte Funktionen und Animationen die eine vereinfachte Entwicklung gewährleisten. Im Frontend der Arbeit wird JQuery zum Erstellen von Animationen verwendet, wie der Auswahl eines Datums oder das Öffnen eines Tooltips.
@@ -33,7 +33,7 @@ Für das Frontend der Webapplikation wird JavaScript eingesetzt. Um zusätzliche
 \item \textbf{Chart.js} unterstützt das Erstellen von Diagrammen. 
 \end{itemize}
 
-\subsubsection{IntelliJ}
+\subsection{IntelliJ}
 IntelliJ IDEA wurde als Entwicklungsumgebung für das Backend und Frontend verwendet, da es mehrere Programmiersprachen und Frameworks unterstützt.
 
 \section{Infrastruktur und Aufbau der Applikationen} 
@@ -397,8 +397,23 @@ Im Listing werden allgemeine Daten der Projekte abgefragt. Da bei der Abfrage ke
 Im Gegensatz zum GET-Request steht der POST-Request. Hierbei werden Daten an den Server übermittelt. Im Frontend werden diese Anfragen für das Erstellen von Recommendations und zum Ignorieren von Meldungen verwendetet. Bei einem POST-Request können die Daten beim Versenden angegeben werden: \textit{recRequest.send(message)}
 
 \subsubsection{Recommendations}
+In der Weboberfläche können gezielt Vorschläge (Recommendations) für einzelne Fehlermeldungen und Warnungen hinterlegt werden. Um eine Recommendation zu erstellen, muss in der Weboberfläche in der Recommendations-Section ein neuer Eintrag mit einer Fehlermeldung und einem Link auf eine Lösung hinterlegt werden. Diese Lösungen können beispielsweise Tutorials, Dokumentationen oder andere gezielte Hilfsstellungen für die Meldung sein. Diese Recommendations werden in der Datenbank gespeichert.
 
-auf algorithmus problem eingehen!
+Um zur einer bestimmte Meldung einen Link zu speichern, muss nicht die ganze Meldung gespeichert werden. Es kann auch nur ein Teil aus der Meldung gespeichert werden. Diese Funktionalität unterstützt so auch das Erstellen von Recommendations für spezifische Meldungen:
+
+\textit{Die Variable 'name' verbirgt ein Feld.}\\
+\textit{Die Variable 'artist' verbirgt ein Feld.}
+
+Wird in diesem Beispiel die Meldung \textit{verbirgt ein Feld} als Recommendation gespeichert, so erscheint die Recommendation für alle Meldungen (siehe Abbildung \ref{fig:recommendations}), die diesen Text in der Beschreibung beinhalten, der Variablenname kann so ignoriert werden. 
+
+\begin{figure}[tp]
+  \centering
+  \includegraphics[height=2cm]{images/recommendation.PNG}
+  % The short caption should be capitalised
+  % The full caption should hold a full sentence. 
+ \caption[Anzeige der Meldung mit dem hinterlegten Recommendation-Link. Der Link führt in diesem Beispiel zur genauen Beschreibung des Fehlers in einer Dokumentation]{Anzeige der Meldung mit dem hinterlegten Recommendation-Link. Der Link führt in diesem Beispiel zur genauen Beschreibung des Fehlers in einer Dokumentation}
+  \label{fig:recommendations}
+\end{figure}
 
 \subsubsection{Ignorieren von Meldungen}
 
