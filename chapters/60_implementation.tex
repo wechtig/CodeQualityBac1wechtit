@@ -416,9 +416,22 @@ Wird in diesem Beispiel die Meldung \textit{verbirgt ein Feld} als Recommendatio
 \end{figure}
 
 \subsubsection{Ignorieren von Meldungen}
+Die Analyseergebnisse der Tools für die Statische Code Analyse beinhalten auch Bugs und Informationen, die für Entwicklerinnen und Entwickler irrelevant, überflüssig  oder aus anderen Gründen nicht beachtet werden sollen. Die Weboberfläche bietet daher die Möglichkeit an, bestimmte Meldungen zu ignorieren. Wird eine Meldung von der Benutzerin oder dem Benutzer ignoriert, so scheint sie nicht in der Übersichtstabelle auf und wird auch in den Visualisierungen nicht beachtet. 
 
+Um eine Meldung zu ignorieren, muss der Text einer Meldung in der \textit{Ignore-Table} gespeichert werden. Wie beim Speichern von Recommendations, ist es nicht notwendig den ganzen Text der Meldung zu speichern, es kann auch nur ein Teil der Meldung angegeben werden.  
+Die Meldung wird in der Datenbank gespeichert und im Backend aus den Abfrageergebnissen gefiltert. Alle ignorierten Meldungen können in der \textit{Ignore-Table} eingesehen werden (siehe Abbildung \ref{fig:ignoredMessages}). Hier kann auch ein Bug aus der Tabelle gelöscht werden, um wieder in den Visualisierungen und in der Übersichtstabelle eingebunden zu werden.
 
-auf algorithmus problem eingehen!
+\begin{figure}[tp]
+  \centering
+  \includegraphics[height=4cm]{images/ignoreTable.PNG}
+  % The short caption should be capitalised
+  % The full caption should hold a full sentence. 
+ \caption[Übersichtstabelle mit ignorierten Meldungen. Diese Meldungen, oder Meldungen die diese Texte beinhaltet, werden ignoriert. Die Meldungen können aus der Ignore-Table gelöscht und im oberen Textfeld gespeichert werden.]{Übersichtstabelle mit ignorierten Meldungen. Diese Meldungen, oder Meldungen die diese Texte beinhaltet, werden ignoriert. Die Meldungen können aus der Ignore-Table gelöscht und im oberen Textfeld gespeichert werden}
+  \label{fig:ignoredMessages}
+\end{figure}
+
+\subsubsection*{Algorithmus}
+Um die ignorierten Meldung zu filtern, müssen alle Meldungen mit allen ignorierten Meldungen verglichen werden. Um die Meldungen zu filtern ergibt sich daher ein Algorithmus mit der Laufzeit \textit{O(n)}. Wird die Anzahl an ignorierten Meldungen aber erhöht, so erhöht sich auch die Laufzeit des Algorithmus stark. Bei der Erstellung der Recommendations wird der gleiche Algorithmus verwendet.
 
 \subsubsection{Erstellen von Grafiken}
 chart.js
