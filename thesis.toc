@@ -123,14 +123,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.6.2.5}Erstellen von Grafiken}{25}{subsubsection.4.6.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.2.6}Präsentation der Daten}{25}{subsubsection.4.6.2.6}%
+\contentsline {subsubsection}{\numberline {4.6.2.6}Präsentation der Daten}{26}{subsubsection.4.6.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.3}Vergleiche mit herkömmlichen Lösungen}{25}{subsection.4.6.3}%
+\contentsline {subsection}{\numberline {4.6.3}Vergleiche mit herkömmlichen Lösungen}{26}{subsection.4.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Evaluierung der Visualisierung und der Webapplikation}{26}{section.4.7}%
+\contentsline {section}{\numberline {4.7}Evaluierung der Visualisierung und der Webapplikation}{27}{section.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Ergebnisse}{27}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Ergebnisse}{28}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{28}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{29}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{30}{chapter*.11}%
+\contentsline {chapter}{References}{32}{chapter*.12}%

@@ -434,6 +434,34 @@
       \verb 10.1037/0033-2909.124.1.75
       \endverb
     \endentry
+    \entry{chartJsHelder}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=05f21ec9e1ca1acf3d5e31815a04a4a9}{%
+           family={Helder},
+           familyi={H\bibinitperiod},
+           given={da\bibnamedelima Rocha},
+           giveni={d\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Packt Publishing}%
+      }
+      \strng{namehash}{05f21ec9e1ca1acf3d5e31815a04a4a9}
+      \strng{fullhash}{05f21ec9e1ca1acf3d5e31815a04a4a9}
+      \strng{bibnamehash}{05f21ec9e1ca1acf3d5e31815a04a4a9}
+      \strng{authorbibnamehash}{05f21ec9e1ca1acf3d5e31815a04a4a9}
+      \strng{authornamehash}{05f21ec9e1ca1acf3d5e31815a04a4a9}
+      \strng{authorfullhash}{05f21ec9e1ca1acf3d5e31815a04a4a9}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1789342482}
+      \field{title}{Learn Chart.js}
+      \field{year}{2019}
+    \endentry
     \entry{iqbalCodeQualityApproach}{inproceedings}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=15c008b2796647296b20119a94ffca51}{%

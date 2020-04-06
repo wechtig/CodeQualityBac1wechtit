@@ -434,7 +434,51 @@ Die Meldung wird in der Datenbank gespeichert und im Backend aus den Abfrageerge
 Um die ignorierten Meldung zu filtern, müssen alle Meldungen mit allen ignorierten Meldungen verglichen werden. Um die Meldungen zu filtern ergibt sich daher ein Algorithmus mit der Laufzeit \textit{O(n)}. Wird die Anzahl an ignorierten Meldungen aber erhöht, so erhöht sich auch die Laufzeit des Algorithmus stark. Bei der Erstellung der Recommendations wird der gleiche Algorithmus verwendet.
 
 \subsubsection{Erstellen von Grafiken}
-chart.js
+Ein zentraler Bestandteil des Frontends sind die Visualisierungen. Hierbei werden die Fehler und Bugs in verschiedenen Grafiken aufbereitet. Um Grafiken(Charts) zu erstellen, wird die open-source Library Chart.js verwendet. Chart.js unterstützt das Erstellen von verschiedenen Grafiktypen wie Balken, Linien, Kreis oder Netzdiagramme. ~\parencite{chartJsHelder} Um eine Grafik mit Chart.js erstellen zu können, werden zwei Datenquellen benötigt: Ein Datenset für die Datenquelle und ein weiteres Set für die dazugehörigen Labels. Diese zwei Sets müssen von gleicher Länge sein, da die Zuordnung der Datenquellen mit den Labels stellenweise erfolgt (siehe Abbildung \ref{lst:pieChart}).
+
+\lstset{
+  caption={Erstellen eines Kreisdiagramms mit Chart.js.}, 
+  basicstyle=\small\ttfamily, 
+  label=lst:pieChart, 
+  %float=tbhp, % float image to top/bottom/here/page
+  language=Java,
+  frame=single,
+  breaklines=true, % break long source code lines, and add arrow
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+  %  basewidth={0.55em}, 
+  % fontadjust}  % adjust these for more appealing appearance
+}
+
+% listing with some settings, such as float, for this listing only
+\begin{samepage}% with samepage we keep a FLOATing listing on one page
+	\begin{lstlisting}[float=tbhp]
+var projectPieChart = new Chart(
+document.getElementById("pieChartProjects"), {
+   type: 'pie',
+    data: {
+       labels: pieData[0],
+       datasets: [{
+          label: "findings",
+          backgroundColor: colors,
+          data: pieData[1]
+       }]
+    },
+    options: {
+       title: {
+          display: true,
+            text: 'Findings per project'
+       }
+    }
+});
+	\end{lstlisting}
+\end{samepage}
+
+Bei der Konfiguration des Charts können auch mehrere Attribute angegeben werden, wie der Diagrammtyp, der angezeigte Text der Legende oder die verwendeten Farben. 
+
+Bei der Erstellung eines Balken-Diagramms muss der Typ \textit{horizontalBar} gesetzt werden. Weitere Konfigurationsmöglichkeiten bei Balkendiagrammen sind Werte wie die Größe der Balken (barThickness), der Startwert der Achsen (beginAtZero) oder das Stapeln der Balken. (stack)
+
+Um die erstellten Charts wieder zu löschen und bei neuen Requests neu erstellen zu können müssen die Charts mit der Funktion \textit{destroy} gelöscht werden, auch damit die Referenzen und Cache-Daten verworfen werden können. \footnote{https://www.chartjs.org/docs} Dazu werden die Charts im globalen JavaScript-Objekt \textit{window} gespeichert und wieder entfernt. 
+
 \subsubsection{Präsentation der Daten}
 \textbf{Übersichtstabelle} \\
 \textbf{Verteilung auf Projektebene} \\
