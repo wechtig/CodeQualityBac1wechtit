@@ -361,11 +361,11 @@ Im Frontend werden die Daten in verschiedenen Formen aufbereitet und den Entwick
 \subsubsection{Struktur}
 aufbau der ordner und files; image
 \subsubsection{Kommunikation mit dem Backend}
-Die Kommunikation zwischen Frontend und Backend geschieht mittels HTTP-Calls. Die im Frontend gesendeten HTTP-Calls werden im Backend-Controller verarbeitet.  Mit der JavaScript Schnittstelle \textit{XMLHttpRequest} werden HTTP-Methoden (POST, GET) abgeschickt. Ein Vorteil von \textit{XMLHttpRequest} ist die Möglichkeit der asynchronen Ausführung der Requests. Daher können auch dynamische Daten abgerufen werden.  \cite{ajaxOnJava}
+Die Kommunikation zwischen Frontend und Backend geschieht mittels HTTP-Calls. Die im Frontend gesendeten HTTP-Calls werden im Backend-Controller verarbeitet.  Mit der JavaScript Schnittstelle \textit{Fetch API} werden HTTP-Methoden (POST, GET) abgeschickt. Ein Vorteil der  \textit{Fetch API} ist die Möglichkeit der asynchronen Ausführung der Requests. Daher können auch dynamische Daten abgerufen werden. \footnote{https://developers.google.com/web/updates/2015/03/introduction-to-fetch}
 \lstset{
-  caption={Erstellung eines GET-Request für Projektdaten mit der Schnittstelle XMLHttpRequest.}, 
+  caption={Erstellung eines GET-Request für Projektdaten mit der Schnittstelle Fetch API.}, 
   basicstyle=\small\ttfamily, 
-  label=lst:main, 
+  label=lst:fetchApiGet, 
   %float=tbhp, % float image to top/bottom/here/page
   language=Java,
   frame=single,
@@ -378,23 +378,33 @@ Die Kommunikation zwischen Frontend und Backend geschieht mittels HTTP-Calls. Di
 % listing with some settings, such as float, for this listing only
 \begin{samepage}% with samepage we keep a FLOATing listing on one page
 	\begin{lstlisting}[float=tbhp]
-var request = new XMLHttpRequest();
-request.open("GET", "http://localhost:8084/projects");
-request.onload = function () {
-   var projectData = document.getElementById("projects");
-   if (request.status >= 200 && request.status < 300) {
-     var json_data = JSON.parse(request.response);
-     var result = [];
-     for (var i in json_data)
-       result.push([i, json_data [i]]);
-...
-request.send();
+fetch(urlProjects)
+  .then(function(response) {
+     return response.json();
+   })
+  .then(function(json) {
+     var result = json;
+        
+  	 result.forEach(function (entry) {
+        var opt = document
+           .createElement('option');
+        var projectname = entry;
+        opt.value = projectname;
+        opt.id = projectname;
+        opt.innerHTML = projectname;
+            projectData.appendChild(opt);
+        });
+        
+    }).catch(function (error) {
+        console.log('Failure: ', error);
+    });
 
 	\end{lstlisting}
 \end{samepage}
 
-Im Listing werden allgemeine Daten der Projekte abgefragt. Da bei der Abfrage keine Daten am Server verändert werden, wird ein GET-Requests erstellt. Mit der if-Anweisung \textit{request.status >= 200} wird geprüft, ob die Abfrage erfolgreich ist (Status 200 = OK). Ist die Abfrage erfolgreich, wird der Response als JSON verwendet. Um die Daten verwenden zu können, werden die einzelnen JSON-Objekte in einem Result-Array gespeichert. Mit der Anweisung \textit{request.send()} wird der Request abgeschickt. \\
-Im Gegensatz zum GET-Request steht der POST-Request. Hierbei werden Daten an den Server übermittelt. Im Frontend werden diese Anfragen für das Erstellen von Recommendations und zum Ignorieren von Meldungen verwendetet. Bei einem POST-Request können die Daten beim Versenden angegeben werden: \textit{recRequest.send(message)}
+Im Listing werden allgemeine Daten der Projekte abgefragt (siehe Listing \ref{lst:fetchApiGet}). Da bei der Abfrage keine Daten am Server verändert werden, wird ein GET-Requests erstellt. Ist die Abfrage erfolgreich, so werden die einzelnen \textit{then}-Blöcke ausgeführt. Im ersten Block werden die Daten des Response zu JSON-Objekte konvertiert. Um die Daten verwenden zu können, werden die einzelnen JSON-Objekte in einem Result-Array gespeichert.  \\
+Im Gegensatz zum GET-Request steht der POST-Request. Hierbei werden Daten an den Server übermittelt. Im Frontend werden diese Anfragen für das Erstellen von Recommendations und zum Ignorieren von Meldungen verwendetet. Um einen POST-Request zu erstellen, müssen die Attribute \textit{param} und \textit{method: 'POST'} angegeben werden. Die Daten können mittels dem Attribut \textit{param} übergeben werden. \\
+Treten beim Request Fehler auf, so werden die Anweisungen im \textit{catch}-Block ausgeführt.
 
 \subsubsection{Recommendations}
 In der Weboberfläche können gezielt Vorschläge (Recommendations) für einzelne Fehlermeldungen und Warnungen hinterlegt werden. Um eine Recommendation zu erstellen, muss in der Weboberfläche in der Recommendations-Section ein neuer Eintrag mit einer Fehlermeldung und einem Link auf eine Lösung hinterlegt werden. Diese Lösungen können beispielsweise Tutorials, Dokumentationen oder andere gezielte Hilfsstellungen für die Meldung sein. Diese Recommendations werden in der Datenbank gespeichert.
@@ -486,6 +496,44 @@ Um die erstellten Charts wieder zu löschen und bei neuen Requests neu erstellen
 \textbf{Am häufigsten vorkommende Fehler} \\
 \textbf{Klassen mit den meisten Problemen} \\
 \textbf{Export der Daten als PDF} \\
+Eine weitere Möglichkeit im Frontend die Daten anzeigen zu können, ist der PDF-Report. Der Report verwendet dabei die gleichen Daten, die für die anderen Darstellungen ausgewählt wurden. Der Report kann in über einen Download-Button heruntergeladen werden. Erstellt wird der Report im Backend (siehe 4.6.1.4). Um den Report erstellen zu können, wird ein Request versendet, der Report wird daraufhin am Backend generiert und an das Frontend zurückgegeben. Um im Frontend das PDF herunterladen zu können, wird die Blob-Funktionalität verwendet. \footnote{https://developer.mozilla.org/de/docs/Web/API/Blob}
+
+\lstset{
+  caption={Herunterladen eines PDF-Files in Javascript mit Blob.}, 
+  basicstyle=\small\ttfamily, 
+  label=lst:blobDownload, 
+  %float=tbhp, % float image to top/bottom/here/page
+  language=Java,
+  frame=single,
+  breaklines=true, % break long source code lines, and add arrow
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+  %  basewidth={0.55em}, 
+  % fontadjust}  % adjust these for more appealing appearance
+}
+
+% listing with some settings, such as float, for this listing only
+\begin{samepage}% with samepage we keep a FLOATing listing on one page
+	\begin{lstlisting}[float=tbhp]
+.then(function(response) {
+   return response.blob(); 
+})
+.then(function (blobObj) {
+   var objectUrl = URL.createObjectURL(blobObj);
+   var a = document.createElement('a');
+   a.href = objectUrl;
+   a.download = project + "Report.pdf";
+   document.body.appendChild(a);
+   a.click();
+   a.remove(); 
+})
+.catch(function (error) {
+   console.log('Request failure: ', error);
+});
+	\end{lstlisting}
+\end{samepage}
+
+Blob(Binary Large Object) bietet die Möglichkeit Dateien zu speichern. Zusätzlich zu Dateidaten speichert Blob einen MIME-Type. Mit dem MIME-Type (Media Type) kann die Art der Daten angegeben werden, in diesem Beispiel hat der MIME-Type den Wert \textit{application/pdf}. Hierbei wird der Reponse bei einem erfolgreichen Request zu einem blob-Objekt konvertiert. Um einen Download durchführen zu können, wird ein Url-Objekt und ein Link erstellt. Der Link wird automatisch geklickt und es erfolgt der Download. Der Hilf-Link wird nach dem Download wieder gelöscht.
+
 \subsection{Vergleiche mit herkömmlichen Lösungen} 
 hinsichtlich der Linienmarkierung in Entwicklungsumgebungen
 vergleichen auch mit SpotBugs GUI
