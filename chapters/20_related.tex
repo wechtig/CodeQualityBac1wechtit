@@ -34,6 +34,19 @@ Vercode ist eine Software-Lösung, die den Code auf Security-Lags und anderen Pr
 Die Code Analyse ist die Analysemöglichkeit des Quellcodes auf Fehler. Dazu ist Statische Code Analyse ist die Analysemöglichkeit des Quellcodes zur Übersetzungszeit. In dieser Analyse werden Prüfungen durchgeführt, die bestimmte Fehler, Regeln und Attribute identifizieren und aufzeigen. ~\parencite{gomes2009overview}
 Die Statische Code Analyse soll ein gute Code-Qualität sicherstellen. Für die Beschreibung einer guten Code-Quality gibt es mehrere Modelle, wie das McCall Model, Boehm Model oder das ISO/IEC Proposed Model. ~\parencite{al2011software} Diese Modelle definieren bestimmte Faktoren, die für eine gute Code-Qualität wichtig sind: Portabilität, Interoperabilität, Korrektheit, Zuverlässigkeit, Effizienz, Integrität, Benutzerfreundlichkeit, Testbarkeit, Flexibilität und Wartbarkeit. \parencite{iqbalCodeQualityApproach} Diese Faktoren werden von allen Modellen als bestimmend hervorgehoben, die Modelle unterscheiden sich aber untereinander, wie zum Beispiel bei den Faktoren Dokumentation, Wiederverwendbarkeit und Möglichkeit zur Veränderung des Codes. ~\parencite{boukouchiModels}
 Eine gute Code-Qualität kann aber nie durch Tools alleine sichergestellt werden, sondern es erfordert auch manuelle das Testen der Software. 
+
+Die Analysetypen kann man in vier Arten unterteilen:
+\begin{itemize}
+\item \textbf{Syntaxanalyse}
+Bei der Syntaxanalyse werden Fehler gefunden, ohne das der Code vollständig ausgeführt wird. Die Fehler sind daher reine Text-Fehler. Diese Fehler werden aber schon von Compiler und Interpreter gefunden.
+\item \textbf{Stilanalyse}
+In der Stilanalyse wird der Stil des Codes anhand bestimmter Regeln überprüft.
+\item \textbf{Kontrolflussanalyse}
+Hierbei wird der Ablauf des Programms analysiert.
+\item \textbf{Datenflussanalyse}
+In der Datenflussanalyse wird der Verlauf und der Wert einzelner Variablen des Programms analysiert.
+\end{itemize}
+
 \subsection{Unterschiede zu dynamischen Tests}
 Im Gegensatz zur Statische Code Analyse überprüft die dynamische Code Analyse dynamischen und variablen Aspekte des Programms. Mit verschiedenen Eingabeparametern wird auf ein bestimmtes Ergebnis getestet. \cite{grigorenkoDynTest} Für diese Tests wird eine Simulation erstellt bzw. gestartet. Aus diesem Grund benötigt ein dynamischer Test ein lauffähiges Programm, was bei einem statischen Test nicht vorausgesetzt wird. Ein dynamischer Test auf zwei verschiedene Arten durchgeführt werden: Als Black-Box, White-Box oder diversifizierender Test.
 In der Methode des Black-Box-Testings ist das zu testende System der Testerin oder dem Tester nicht bekannt. Hierbei wird ausschließlich die Funktionalität anhand der Spezifikationen getestet. Bei White-Box-Tests ist das System und der Code bekannt, daher sind die ausführenden Tester oft Entwicklerinnen und Entwickler des Programms. Anhand des Programms werden daher Tests erstellt, die bestimmte Teile überprüfen und testen sollen. Bei diversifizierenden Tests hingegen, werden die Testergebnisse nicht mit der Spezifikation verglichen, sondern sie vergleichen verschiedene Versionen der Software. Sind die getesteten Version gleich, so ist der Testfall erfolgreich. Ein diversifizierenden Test kann entweder als Back-to-back-Test (Testen von verschiedene Lösungen und Versionen des Programms), Regressionstest (Wiederholen des selben Tests um sicherzustellen, dass bereits getestete Software-Teile keine neuen Fehler aufweisen) oder als Mutationtest (Leistungsfähigkeit der Testmethoden) durchgeführt werden. \parencite{bommer2016softwarewartung}
@@ -64,7 +77,13 @@ Security ist ein wichtiger Punkt in Programmen. Tools wie FindBugs, Protecode un
 Um die einzelnen Tools bewerten und vergleichen zu können, müssen sie daher in verschiedene Anwendungsbereiche geteilt werden. Bei einer Bewertung der Tools sind aber auch andere Metriken ausschlaggebend wie: Möglichkeit der Erweiterbarkeit der Tools (Open-Source), letztes Release und Art und Vielfalt der Reports. ~\parencite{comparativeAnalysisTools}
 
 \section{Visualisierungen} 
-xml report, ide anzeige, 
+In den vorgestellten Lösungen gibt es mehrere Arten die Analyseergebnisse anzeigen zu lasen:
+\begin{itemize}
+\item \textbf{Anzeige in der Entwicklungsumgebung}
+\item \textbf{Anzeige in Webbrowsern}
+Besonders bei der Integration der Statischen Code Analyse in Build-Servern.
+\item \textbf{Anzeige als Report (XML oder HTML)}
+\end{itemize}
 \subsection{Probleme} 
 
 \subsubsection{Keine dauerhafte Anzeige} 

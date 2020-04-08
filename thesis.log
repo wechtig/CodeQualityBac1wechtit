@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  7 APR 2020 20:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  8 APR 2020 20:59
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1374,23 +1374,23 @@ Overfull \hbox (7.9037pt too wide) in paragraph at lines 31--32
  []
 
 [5 <./images/sonarQube.PNG>] [6]
-Overfull \hbox (0.43451pt too wide) in paragraph at lines 49--51
+Overfull \hbox (0.43451pt too wide) in paragraph at lines 62--64
 []\T1/ptm/b/n/12 Nebenläufigkeit \T1/ptm/m/n/12 be-schreibt die Mög-lich-keit, 
 meh-re-re Funk-tio-nen zur sel-ben Zeit
  []
 
-
-Overfull \hbox (0.21138pt too wide) in paragraph at lines 53--54
+[7]
+Overfull \hbox (0.21138pt too wide) in paragraph at lines 66--67
 \T1/ptm/m/n/12 te-re Ope-ra-tio-nen auf-ge-nom-men und wei-ter-ge-ge-ben wer-de
 n. Hier-bei kön-nen Feh-
  []
 
-[7] [8]) [9]
+[8] [9]) [10]
 \openout2 = `chapters/40_concept.aux'.
 
  (chapters/40_concept.tex
 Kapitel 3.
-[10
+[11
 
 
 
@@ -1399,7 +1399,7 @@ Kapitel 3.
 
  (chapters/60_implementation.tex
 Kapitel 4.
-[11
+[12
 
 
 
@@ -1410,13 +1410,13 @@ Overfull \hbox (28.5544pt too wide) in paragraph at lines 25--26
 a-ti-ve kann Jon-go (htt-ps://jongo.org/)
  []
 
-[12]
-<images/infrastruktur.PNG, id=272, 329.73187pt x 237.13594pt>
+[13]
+<images/infrastruktur.PNG, id=276, 329.73187pt x 237.13594pt>
 File: images/infrastruktur.PNG Graphic file (type png)
 <use images/infrastruktur.PNG>
 Package pdftex.def Info: images/infrastruktur.PNG  used on input line 44.
 (pdftex.def)             Requested size: 316.51382pt x 227.62204pt.
- [13 <./images/infrastruktur.PNG>]
+ [14 <./images/infrastruktur.PNG>]
 Overfull \hbox (101.65479pt too wide) in paragraph at lines 59--61
 \T1/ptm/m/n/12 eingehen auf ver-wen-de-te ide und tools; in-tel-lij in-spec-ti-
 on build in https://www.jetbrains.com/help/idea/code-
@@ -1436,7 +1436,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
- [14] [15] [16]
+ [15] [16] [17]
 Overfull \hbox (26.63484pt too wide) in paragraph at lines 163--163
 []\T1/pcr/m/n/12 "source" : "checkstyle.checks.blocks.AvoidNestedBlocksCheck",[
 ] 
@@ -1448,24 +1448,24 @@ Overfull \hbox (48.23483pt too wide) in paragraph at lines 174--174
 })[] 
  []
 
-[17]
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
-[18]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 240--244
 
  []
 
-[19]
+[20]
 Overfull \hbox (2.93103pt too wide) in paragraph at lines 283--284
 \T1/ptm/m/n/12 ein-zel-nen Me-tho-den des Con-trol-lers wer-den zu-sätz-lich an
 -no-tiert um die Me-tho-de (GET,
  []
 
-[20] [21]
-<images/seqGeneratePdf.PNG, id=385, 472.76625pt x 247.67531pt>
+[21] [22]
+<images/seqGeneratePdf.PNG, id=389, 472.76625pt x 247.67531pt>
 File: images/seqGeneratePdf.PNG Graphic file (type png)
 <use images/seqGeneratePdf.PNG>
 Package pdftex.def Info: images/seqGeneratePdf.PNG  used on input line 352.
@@ -1479,25 +1479,25 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 364.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 364.
-[22 <./images/seqGeneratePdf.PNG>] [23]
-<images/recommendation.PNG, id=431, 258.21469pt x 74.52844pt>
+[23 <./images/seqGeneratePdf.PNG>] [24]
+<images/recommendation.PNG, id=436, 258.21469pt x 74.52844pt>
 File: images/recommendation.PNG Graphic file (type png)
 <use images/recommendation.PNG>
 Package pdftex.def Info: images/recommendation.PNG  used on input line 421.
 (pdftex.def)             Requested size: 197.15929pt x 56.9055pt.
- [24 <./images/recommendation.PNG>]
-<images/ignoreTable.PNG, id=441, 468.24937pt x 161.10187pt>
+ [25 <./images/recommendation.PNG>]
+<images/ignoreTable.PNG, id=445, 468.24937pt x 161.10187pt>
 File: images/ignoreTable.PNG Graphic file (type png)
 <use images/ignoreTable.PNG>
 Package pdftex.def Info: images/ignoreTable.PNG  used on input line 436.
 (pdftex.def)             Requested size: 330.8089pt x 113.81102pt.
 
-[25 <./images/ignoreTable.PNG>] [26]) [27] [28]
+[26 <./images/ignoreTable.PNG>] [27]) [28] [29]
 \openout2 = `chapters/80_evaluation.aux'.
 
  (chapters/80_evaluation.tex
 Kapitel 5.
-) [29
+) [30
 
 
 
@@ -1506,7 +1506,7 @@ Kapitel 5.
 
  (chapters/90_conclusion.tex
 Kapitel 6.
-[30
+[31
 
 
 
@@ -1535,11 +1535,11 @@ tm/m/it/12 tssicherung in he-te-ro-ge-nen Pro-jek-ten \T1/ptm/m/n/12 (o.D.). Av
 aila-
  []
 
-[31
+[32
 
 
 
-] [32] [33]
+] [33] [34]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
  (thesis.aux (chapters/01_titlepage.aux)
@@ -1555,17 +1555,13 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30300 strings out of 480900
- 544013 string characters out of 2917036
+ 30301 strings out of 480900
+ 544020 string characters out of 2917036
  1315524 words of memory out of 3000000
  45283 multiletter control sequences out of 15000+200000
  603696 words of font info for 115 fonts, out of 3000000 for 9000
@@ -1585,9 +1581,9 @@ a.pfb><D:/MikTex/fonts/type1/urw/courier/ucrr8a.pfb><D:/MikTex/fonts/type1/urw/
 helvetic/uhvr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/MikTex/font
 s/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/Mi
 kTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (40 pages, 390349 bytes).
+Output written on thesis.pdf (41 pages, 392286 bytes).
 PDF statistics:
- 653 PDF objects out of 1000 (max. 8388607)
- 243 named destinations out of 1000 (max. 500000)
+ 657 PDF objects out of 1000 (max. 8388607)
+ 244 named destinations out of 1000 (max. 500000)
  219 words of extra memory for PDF output out of 10000 (max. 10000000)
 
