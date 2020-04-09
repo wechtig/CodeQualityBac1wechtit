@@ -491,8 +491,34 @@ Um die erstellten Charts wieder zu löschen und bei neuen Requests neu erstellen
 
 \subsubsection{Präsentation der Daten}
 \textbf{Übersichtstabelle} \\
-\textbf{Verteilung auf Projektebene} \\
-\textbf{Verteilung auf Packageebene} \\
+In der Übersichtstabelle werden alle geladenen Daten angezeigt. Da die mögliche große Anzahl an Fehler für eine einfache Tabelle zu groß ist, wird Pagination eingesetzt. Unter Pagination versteht man generell die Nummerierung und Aufteilung der Daten, um große Datenmengen einfacher zugänglich zu machen.  ~\parencite{wieczorek2014mode} Dies kann mittels Nummerierung und Navigation erreicht werden. Um Pagination für die Tabelle sicherzustellen, wird das Plug-in \textit{DataTables} verwendet. \footnote{https://datatables.net/} Zusätzlich bietet das Framework automatisch die Möglichkeit zur Sortierung und Filterung an (siehe Abbildung \ref{fig:pagination}).
+
+\begin{figure}[tp]
+  \centering
+  \includegraphics[height=9cm]{images/pagination.PNG}
+  % The short caption should be capitalised
+  % The full caption should hold a full sentence. 
+ \caption[Anzeige der Daten in der Übersichtstabelle mit Möglichkeit zur Filterung und Sortierung der Daten]{Anzeige der Daten in der Übersichtstabelle mit Möglichkeit zur Filterung und Sortierung der Daten}
+  \label{fig:pagination}
+\end{figure}
+
+Über das Input-Feld \textit{search} können alle verwendeten Felder durchsucht werden: File (File, in dem der Error gefunden wurde), Project (ausgewähltes Projekt), Message (Meldung), Severity (Schwerer der Fehler), Line (Zeilen, in dem der Fehler auftritt und Date. \\ In der Übersichtstabelle werden zusätzlich die Recommendations angezeigt. (siehe Punkt 4.6.2.3) 
+
+\textbf{Verteilung der gefunden Fehler und Bugs auf Projektebene} \\
+In diesem Chart wird die Verteilung der Fehler auf die Projekte visualisiert (siehe \ref{fig:findingsProject}). Dieses Chart wird nur angezeigt, wenn bei der Filterung mehr als ein Projekt ausgewählt wurde. 
+
+\begin{figure}[tp]
+  \centering
+  \includegraphics[height=9cm]{images/findingsPerProject.PNG}
+  % The short caption should be capitalised
+  % The full caption should hold a full sentence. 
+ \caption[Chart für die Verteilung der Fehler in den Projekten]{Chart für die Verteilung der Fehler in den Projekten. Die Entwicklerinnen bzw. der Entwickler erhält damit einen genauen Überblick über die Anzahl der Fehler in den Projekten.}
+  \label{fig:findingsProject}
+\end{figure}
+
+Bei einem \textit{Mouseover} über das einzelne Projekte wird die genaue Anzahl der gefunden Fehler angezeigt.
+
+\textbf{Verteilung der gefunden Fehler und Bugs auf Packageebene} \\
 \textbf{Am häufigsten vorkommende Fehler} \\
 \textbf{Klassen mit den meisten Problemen} \\
 \textbf{Export der Daten als PDF} \\

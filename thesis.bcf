@@ -2207,6 +2207,7 @@
     <bcf:citekey order="21">walls2016spring</bcf:citekey>
     <bcf:citekey order="22">lowagie2011itext</bcf:citekey>
     <bcf:citekey order="23">chartJsHelder</bcf:citekey>
+    <bcf:citekey order="24">wieczorek2014mode</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

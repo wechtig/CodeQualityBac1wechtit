@@ -620,33 +620,6 @@
       \verb https://docs.mongodb.com/manual/
       \endverb
     \endentry
-    \entry{ajaxOnJava}{book}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=f487cdcd5a1e834ca421086d7602c50c}{%
-           family={Olson},
-           familyi={O\bibinitperiod},
-           given={Steven\bibnamedelima Douglas},
-           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {O'Reilly}%
-      }
-      \strng{namehash}{f487cdcd5a1e834ca421086d7602c50c}
-      \strng{fullhash}{f487cdcd5a1e834ca421086d7602c50c}
-      \strng{bibnamehash}{f487cdcd5a1e834ca421086d7602c50c}
-      \strng{authorbibnamehash}{f487cdcd5a1e834ca421086d7602c50c}
-      \strng{authornamehash}{f487cdcd5a1e834ca421086d7602c50c}
-      \strng{authorfullhash}{f487cdcd5a1e834ca421086d7602c50c}
-      \field{sortinit}{O}
-      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Ajax on Java: The Essentials of XMLHttpRequest and XML Programming with Java}
-      \field{year}{2007}
-    \endentry
     \entry{palomba2014they}{inproceedings}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=b55e247c53ee6ca1acadfe03ce3549c1}{%
@@ -753,6 +726,74 @@
       \field{labeltitlesource}{title}
       \field{title}{Spring Boot in action}
       \field{year}{2016}
+    \endentry
+    \entry{wieczorek2014mode}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=c612fd0069446f6677c5013a125ece29}{%
+           family={Wieczorek},
+           familyi={W\bibinitperiod},
+           given={Anna\bibnamedelima Maria},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edaf0650e6aa423e17b612cccdc25ea1}{%
+           family={Klyszejko},
+           familyi={K\bibinitperiod},
+           given={Zuzanna},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eaab166d007dc844a8ef01d78a03891d}{%
+           family={Sarzynska},
+           familyi={S\bibinitperiod},
+           given={Justyna},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e41fea3176a2027a279f2d8d1fcc89f}{%
+           family={Sz{ó}stek},
+           familyi={S\bibinitperiod},
+           given={Agnieszka},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=babf8990de9e78fb02bd706bfae91bea}{%
+           family={Chmiel},
+           familyi={C\bibinitperiod},
+           given={Karolina},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40079cb9a598606c38439492dc3b9aa9}{%
+           family={Soluch},
+           familyi={S\bibinitperiod},
+           given={Tomasz},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93199867aa3582ec0c52f934803b8375}{%
+           family={Brzezicka},
+           familyi={B\bibinitperiod},
+           given={Aneta},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Experimental Psychology, Slovak Academy of Sciences}%
+      }
+      \strng{namehash}{28c9ea907bd76cfa0f260d7c7a6e1ccf}
+      \strng{fullhash}{169e4902dc0924a4fc220866ad6834cc}
+      \strng{bibnamehash}{169e4902dc0924a4fc220866ad6834cc}
+      \strng{authorbibnamehash}{169e4902dc0924a4fc220866ad6834cc}
+      \strng{authornamehash}{28c9ea907bd76cfa0f260d7c7a6e1ccf}
+      \strng{authorfullhash}{169e4902dc0924a4fc220866ad6834cc}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Studia Psychologica}
+      \field{number}{4}
+      \field{title}{Mode of text presentation and its influence on reading efficiency: scrolling versus pagination}
+      \field{volume}{56}
+      \field{year}{2014}
+      \field{pages}{309}
+      \range{pages}{1}
     \endentry
     \entry{zampetti2017open}{inproceedings}{}
       \name{author}{5}{}{%
