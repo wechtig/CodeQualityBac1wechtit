@@ -11,11 +11,11 @@ Spring Boot ist ein Java Framework, das im Zuge der Projektarbeit zur Entwicklun
 \subsection{Maven} 
 Maven ist ein Versionsverwaltungstool mit dem Abhängigkeiten und JARs verwaltet und heruntergeladen werden können.
 
-\subsection{FindBugs/SpotBugs} 
-ERGÄNZEN ERGÄNZEN ERGÄNZEN 
+\subsection{PMD} 
+Checkstyle ist ein open-source Tool für die Statische Code Analyse für Java, JavaScript und XML, auf Probleme und CodeSmells untersucht. Es unterstützt eine API, mit der eigene Regeln erstellt werden können. \footnote{https://pmd.github.io/latest/}
 
 \subsection{Checkstyle} 
-Checkstyle ist ein open-source Tool für die Statische Code Analyse. Checkstyle ist für die Verwendung in Java Applikation entwickelt worden. Hierbei werden eine Vielzahl an Fehler und Bugs analysiert und beachtet. Checkstyle kann konfiguriert und an spezifische Probleme angepasst werden
+Checkstyle ist ein open-source Tool für die Statische Code Analyse. Checkstyle ist für die Verwendung in Java Applikationen entwickelt worden. Hierbei werden eine Vielzahl an Fehler und Bugs analysiert und beachtet. Checkstyle kann konfiguriert und an spezifische Probleme angepasst werden. \footnote{https://checkstyle.sourceforge.io/}
 
 \subsection{MongoDB} 
 Als Datenbank wird die nicht-relationale Lösung MongoDB verwendet, da es verschiedene Vorteile gegenüber relationales Datenbankmanagementsystem bietet. (siehe Punkt 4.4.1) Es gehört zu den dokumentorientierten Datenbanken.
@@ -405,6 +405,10 @@ fetch(urlProjects)
 Im Listing werden allgemeine Daten der Projekte abgefragt (siehe Listing \ref{lst:fetchApiGet}). Da bei der Abfrage keine Daten am Server verändert werden, wird ein GET-Requests erstellt. Ist die Abfrage erfolgreich, so werden die einzelnen \textit{then}-Blöcke ausgeführt. Im ersten Block werden die Daten des Response zu JSON-Objekte konvertiert. Um die Daten verwenden zu können, werden die einzelnen JSON-Objekte in einem Result-Array gespeichert.  \\
 Im Gegensatz zum GET-Request steht der POST-Request. Hierbei werden Daten an den Server übermittelt. Im Frontend werden diese Anfragen für das Erstellen von Recommendations und zum Ignorieren von Meldungen verwendetet. Um einen POST-Request zu erstellen, müssen die Attribute \textit{param} und \textit{method: 'POST'} angegeben werden. Die Daten können mittels dem Attribut \textit{param} übergeben werden. \\
 Treten beim Request Fehler auf, so werden die Anweisungen im \textit{catch}-Block ausgeführt.
+
+\subsubsection{Auswahl und Filterung}
+Um eine genaue Auswahl der Daten zu bekommen, gibt es die Möglichkeit zur Filterung der Daten. Dazu gibt es zwei Attribute. Das erste Attribut ist der Zeitraum, aus dem die Daten stammen sollen. Das andere Attribut ist das Projekt. Hierbei besteht auch die Möglichkeit die Daten aus allen Projekten zu beziehen. \\
+Die Filterung ist auch wichtig, da ein Import der Daten der Statischen Code Analyse mit dem Plugin bei jedem \textit{mvn install} geschehen kann (siehe Punkt 4.5) und so eine große Datenmenge erstellt werden kann, die das Ergebnis möglicherweise verfälscht. Da einige Bugs und Probleme auch ausgebessert werden, ist es wichtig einen Datumsfilter zu verwenden, um nur den gewünschten Zeitraum zu verwenden. \\ Mit dem Projektfilter können gezielt einzelne Projekte betrachtet werden, aber auch eine Übersicht über alle Projekte kann erreicht werden. So kann die Benutzerin  oder der Benutzer einen Überblick bekommen und die Zusammenhänge zwischen den einzelnen Projekten einsehen: Genau Verteilung der Fehler in den Projekten und häufigste Fehler (siehe Punkt 4.6.2.7).
 
 \subsubsection{Recommendations}
 In der Weboberfläche können gezielt Vorschläge (Recommendations) für einzelne Fehlermeldungen und Warnungen hinterlegt werden. Um eine Recommendation zu erstellen, muss in der Weboberfläche in der Recommendations-Section ein neuer Eintrag mit einer Fehlermeldung und einem Link auf eine Lösung hinterlegt werden. Diese Lösungen können beispielsweise Tutorials, Dokumentationen oder andere gezielte Hilfsstellungen für die Meldung sein. Diese Recommendations werden in der Datenbank gespeichert.

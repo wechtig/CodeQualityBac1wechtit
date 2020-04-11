@@ -19,118 +19,120 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.2}Kriterien}{2}{subsection.1.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Stand der Technik}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Stand der Technik}{4}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Andere Lösungen}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Andere Lösungen}{4}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Entwicklungsumgebungen}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.1}Entwicklungsumgebungen}{4}{subsection.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Build-Server und Continuous Integration (CI)-Pipeline}{4}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.2}Build-Server und Continuous Integration (CI)-Pipeline}{5}{subsection.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}SonarQube}{4}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.3}SonarQube}{5}{subsection.2.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.4}Veracode}{5}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.4}Veracode}{6}{subsection.2.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Statische Code Analyse}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Statische Code Analyse}{6}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Unterschiede zu dynamischen Tests}{6}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}Unterschiede zu dynamischen Tests}{7}{subsection.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Tools für die Statische Code Analyse}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Tools für die Statische Code Analyse}{8}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Visualisierungen}{9}{section.2.4}%
+\contentsline {section}{\numberline {2.4}Visualisierungen}{10}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Probleme}{9}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.1}Probleme}{10}{subsection.2.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.1.1}Keine dauerhafte Anzeige}{9}{subsubsection.2.4.1.1}%
+\contentsline {subsubsection}{\numberline {2.4.1.1}Keine dauerhafte Anzeige}{10}{subsubsection.2.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.1.2}Keine Verbesserung der Kenntnisse und des Codestils des Entwicklers}{9}{subsubsection.2.4.1.2}%
+\contentsline {subsubsection}{\numberline {2.4.1.2}Keine Verbesserung der Kenntnisse und des Codestils des Entwicklers}{10}{subsubsection.2.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.1.3}Unübersichtliche Anzeige}{10}{subsubsection.2.4.1.3}%
+\contentsline {subsubsection}{\numberline {2.4.1.3}Unübersichtliche Anzeige}{11}{subsubsection.2.4.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.1.4}Keine weiteren Analysen}{10}{subsubsection.2.4.1.4}%
+\contentsline {subsubsection}{\numberline {2.4.1.4}Keine weiteren Analysen}{11}{subsubsection.2.4.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Konzept}{11}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Konzept}{12}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Umsetzung}{12}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Umsetzung}{13}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Technologien und Tools für Umsetzung }{12}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Technologien und Tools für Umsetzung }{13}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Java}{12}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.1}Java}{13}{subsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Spring}{12}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.2}Spring}{13}{subsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}Maven}{12}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.3}Maven}{13}{subsection.4.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.4}FindBugs/SpotBugs}{12}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.4}PMD}{13}{subsection.4.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.5}Checkstyle}{13}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.5}Checkstyle}{14}{subsection.4.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.6}MongoDB}{13}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.6}MongoDB}{14}{subsection.4.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.7}MongoDB Java Driver}{13}{subsection.4.1.7}%
+\contentsline {subsection}{\numberline {4.1.7}MongoDB Java Driver}{14}{subsection.4.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.8}JavaScript und Frameworks}{13}{subsection.4.1.8}%
+\contentsline {subsection}{\numberline {4.1.8}JavaScript und Frameworks}{14}{subsection.4.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.9}IntelliJ}{14}{subsection.4.1.9}%
+\contentsline {subsection}{\numberline {4.1.9}IntelliJ}{15}{subsection.4.1.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Infrastruktur und Aufbau der Applikationen}{14}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Infrastruktur und Aufbau der Applikationen}{15}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Demo-Projekt und Bugreport}{15}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Demo-Projekt und Bugreport}{16}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Entwicklungsumgebung Build-in}{15}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.1}Entwicklungsumgebung Build-in}{16}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Maven Plugins}{15}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.2}Maven Plugins}{16}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2.1}CheckStyle-Plugin}{15}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}CheckStyle-Plugin}{16}{subsubsection.4.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2.2}SpotBugs-Plugin}{15}{subsubsection.4.3.2.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.2}SpotBugs-Plugin}{16}{subsubsection.4.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Speichern der Daten}{16}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Speichern der Daten}{17}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Vorteil vom Einsatz einer nicht-relationalen Datenbank gegenüber einer relationalen Datenbanke }{16}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.1}Vorteil vom Einsatz einer nicht-relationalen Datenbank gegenüber einer relationalen Datenbanke }{17}{subsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}Typen der nicht-relationale Datenbanken}{17}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.2}Typen der nicht-relationale Datenbanken}{18}{subsection.4.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.3}Aufbau der Datenbank}{17}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.3}Aufbau der Datenbank}{18}{subsection.4.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Datenbank Importer Plugin}{18}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Datenbank Importer Plugin}{19}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Apache Maven Plugin}{19}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.1}Apache Maven Plugin}{20}{subsection.4.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}MongoDB-Java-Driver und Datenbank-Import}{20}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.2}MongoDB-Java-Driver und Datenbank-Import}{21}{subsection.4.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Webapplikation}{21}{section.4.6}%
+\contentsline {section}{\numberline {4.6}Webapplikation}{22}{section.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.1}Backend}{21}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.1}Backend}{22}{subsection.4.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.1.1}Struktur}{21}{subsubsection.4.6.1.1}%
+\contentsline {subsubsection}{\numberline {4.6.1.1}Struktur}{22}{subsubsection.4.6.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.1.2}API und Controller}{21}{subsubsection.4.6.1.2}%
+\contentsline {subsubsection}{\numberline {4.6.1.2}API und Controller}{22}{subsubsection.4.6.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.1.3}Services und MongoDB-Java-Driver}{21}{subsubsection.4.6.1.3}%
+\contentsline {subsubsection}{\numberline {4.6.1.3}Services und MongoDB-Java-Driver}{22}{subsubsection.4.6.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.1.4}IText und PDF-Export}{22}{subsubsection.4.6.1.4}%
+\contentsline {subsubsection}{\numberline {4.6.1.4}IText und PDF-Export}{23}{subsubsection.4.6.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.2}Frontend}{23}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.2}Frontend}{24}{subsection.4.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.2.1}Struktur}{23}{subsubsection.4.6.2.1}%
+\contentsline {subsubsection}{\numberline {4.6.2.1}Struktur}{24}{subsubsection.4.6.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.2.2}Kommunikation mit dem Backend}{24}{subsubsection.4.6.2.2}%
+\contentsline {subsubsection}{\numberline {4.6.2.2}Kommunikation mit dem Backend}{25}{subsubsection.4.6.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.2.3}Recommendations}{25}{subsubsection.4.6.2.3}%
+\contentsline {subsubsection}{\numberline {4.6.2.3}Auswahl und Filterung}{26}{subsubsection.4.6.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.2.4}Ignorieren von Meldungen}{25}{subsubsection.4.6.2.4}%
+\contentsline {subsubsection}{\numberline {4.6.2.4}Recommendations}{26}{subsubsection.4.6.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.2.5}Erstellen von Grafiken}{26}{subsubsection.4.6.2.5}%
+\contentsline {subsubsection}{\numberline {4.6.2.5}Ignorieren von Meldungen}{27}{subsubsection.4.6.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.2.6}Präsentation der Daten}{27}{subsubsection.4.6.2.6}%
+\contentsline {subsubsection}{\numberline {4.6.2.6}Erstellen von Grafiken}{28}{subsubsection.4.6.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.3}Vergleiche mit anderen Lösungen}{32}{subsection.4.6.3}%
+\contentsline {subsubsection}{\numberline {4.6.2.7}Präsentation der Daten}{29}{subsubsection.4.6.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Evaluierung der Visualisierung und der Webapplikation}{32}{section.4.7}%
+\contentsline {subsection}{\numberline {4.6.3}Vergleiche mit anderen Lösungen}{33}{subsection.4.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Ergebnisse}{33}{chapter.5}%
+\contentsline {section}{\numberline {4.7}Evaluierung der Visualisierung und der Webapplikation}{33}{section.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{34}{chapter.6}%
+\contentsline {chapter}{\numberline {5}Ergebnisse}{34}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{37}{chapter*.13}%
+\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{35}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{References}{38}{chapter*.13}%
