@@ -131,12 +131,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.7}Evaluierung der Visualisierung und der Webapplikation}{33}{section.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.1}Evaluierungen der Testpersonen}{33}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.1}Evaluierungen der Webapplikation mit Testpersonen}{33}{subsection.4.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.7.1.1}Testperson 1}{34}{subsubsection.4.7.1.1}%
+\contentsline {subsubsection}{\numberline {4.7.1.1}Testpersonen}{34}{subsubsection.4.7.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Ergebnisse}{35}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Ergebnisse}{36}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{36}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{37}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{39}{chapter*.14}%
+\contentsline {chapter}{References}{40}{chapter*.13}%
