@@ -597,19 +597,24 @@ Eine weitere Möglichkeit im Frontend die Daten anzeigen zu können, ist der PDF
 	\end{lstlisting}
 \end{samepage}
 
-Blob(Binary Large Object) bietet die Möglichkeit Dateien zu speichern. Zusätzlich zu Dateidaten speichert Blob einen MIME-Type. Mit dem MIME-Type (Media Type) kann die Art der Daten angegeben werden, in diesem Beispiel hat der MIME-Type den Wert \textit{application/pdf}. Hierbei wird der Reponse bei einem erfolgreichen Request zu einem blob-Objekt konvertiert. Um einen Download durchführen zu können, wird ein Url-Objekt und ein Link erstellt. Der Link wird automatisch geklickt und es erfolgt der Download. Der Hilf-Link wird nach dem Download wieder gelöscht.
+Blob(Binary Large Object) bietet die Möglichkeit Dateien zu speichern. Zusätzlich zu Dateidaten speichert Blob einen MIME-Type. Mit dem MIME-Type (Media Type) kann die Art der Daten angegeben werden, in diesem Beispiel hat der MIME-Type den Wert \textit{application/pdf}. Hierbei wird der Reponse bei einem erfolgreichen Request zu einem blob-Objekt konvertiert. Um einen Download durchführen zu können, wird ein Url-Objekt und ein Link erstellt. Der Link wird automatisch geklickt und es erfolgt der Download. Dieser automatisch erstellte Link wird nach dem Download wieder gelöscht.
 
 \subsection{Vergleiche mit anderen Lösungen} 
-hinsichtlich der Linienmarkierung in Entwicklungsumgebungen
-vergleichen auch mit SpotBugs GUI
-mehrere Entwickler verfälschen ergebnis
-viele analyse tools Vielfalt
+Im Vergleich mit anderen Lösungen, die im Punkt 2.1 beschrieben werden, ergeben sich folgende Unterschiede und neue Aspekte: 
+\begin{itemize}
+\item Die Ergebnisse der Statischen Code Analyse werden über einen längeren Zeitraum gespeichert und nicht gelöscht. Dadurch kann auch die Historie der Fehler genauer analysiert werden. 
+\item Durch das Plugin können eine Vielzahl an Tools unterstützt und eingebunden werden. Die einzige Voraussetzung hierbei ist das Angegeben der XML-Results. Dadurch können die Benutzer die Applikation individuell gestalten, da nur die von ihnen gewünschten Fehler und Bugs analysiert werden können. Ein Einsatz beliebiger Tools für spezifische Probleme kann so unterstützt werden (siehe Punkt 2.3). Herkömmliche Lösungen wie Veracode oder SonarQube verwenden eine eingebaute und vorgegebene Code Analyse.
+\item Aufgrund der Verwendung einer Web-Applikation ist das Springen, automatische Ausbessern und Navigieren zu den Fehlern im Unterschied zu Entwicklungsumgebungen nicht möglich. Die Fehler werden daher auch nicht direkt in der Entwicklungsumgebung markiert.
+
+TODO ERGÄNZEN IGNORE RECOMMENDATIONS VISUALISERUNGEN 
+
+\end{itemize}
 \section{Evaluierung der Visualisierung und der Webapplikation} 
 
 \subsection{Evaluierungen der Webapplikation mit Testpersonen}
-Die einzelnen Kriterien in den Tabellen werden im Punkt 1.2.2 genaue beschrieben. 
+Die einzelnen Kriterien in den Beschreibung der Evaluierung der Testpersonen werden im Punkt 1.2.2 beschrieben. 
 
-Die Testpersonen bewerten die einzelnen Punkte mit den Noten 1-5.
+Die Testpersonen bewerten die einzelnen Punkte mit den Noten 1-5. Anmerkungen der Testpersonen werden zu der Bewertung angegeben. Beim Kriterium \textit{Unterstützung} suchen die Testpersonen bestimmte Fehler  mithilfe der Applikation und bewerten die Fehlersuche im Vergleich zu herkömmlichen Lösungen bzw. zu einer freien Fehlersuche.
 \subsubsection{Testpersonen}
 \textbf{Testperson 1} \\
 Erfahrung in der Softwareentwicklung: 5 Jahre Berufserfahrung; Erfahrung mit der Statische Code Analyse: Bereits eingesetzt und verwendet \\
@@ -628,3 +633,9 @@ Erfahrung in der Softwareentwicklung: 4 Jahre Berufserfahrung; Erfahrung mit der
 Bewertung der Kriterien:
 
 Einfachheit: 2, Mit einer Desktop-Applikation kann eine bessere Interaktion mit der Entwicklungsumgebung erfolgen \newline Übersicht: 1 \newline  Unterstützung: 1, Fehler konnte in unter fünfzehn Sekunden gefunden werden \newline Individualität: 2, Möglichkeit zur eigenen weiteren Einteilung der Fehler in Kategorien würde die Übersicht steigern.  \newline Performance: 1 \newline  Verständnis: 2, Angabe des eingesetzten Tools bei der Meldung\newline 
+
+\textbf{Testperson 4} \\
+Erfahrung in der Softwareentwicklung: 1 Jahr Berufserfahrung; Erfahrung mit der Statische Code Analyse: Keine Erfahrungen\\
+Bewertung der Kriterien:
+
+Einfachheit: 3, Hinzufügen einer Dokumentation für das Einfügen der Plugins.  \newline Übersicht: 1 \newline  Unterstützung: 1, Fehler konnte in unter zwanzig Sekunden gefunden werden \newline Individualität: 2, Severity (Fehlerlevel) soll vom Benutzer auch selbst bestimmt werden können\newline Performance: 1 \newline  Verständnis: 2\newline 
