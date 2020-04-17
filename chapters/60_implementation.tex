@@ -605,9 +605,9 @@ Im Vergleich mit anderen Lösungen, die im Punkt 2.1 beschrieben werden, ergeben
 \item Die Ergebnisse der Statischen Code Analyse werden über einen längeren Zeitraum gespeichert und nicht gelöscht. Dadurch kann auch die Historie der Fehler genauer analysiert werden. 
 \item Durch das Plugin können eine Vielzahl an Tools unterstützt und eingebunden werden. Die einzige Voraussetzung hierbei ist das Angegeben der XML-Results. Dadurch können die Benutzer die Applikation individuell gestalten, da nur die von ihnen gewünschten Fehler und Bugs analysiert werden können. Ein Einsatz beliebiger Tools für spezifische Probleme kann so unterstützt werden (siehe Punkt 2.3). Herkömmliche Lösungen wie Veracode oder SonarQube verwenden eine eingebaute und vorgegebene Code Analyse.
 \item Aufgrund der Verwendung einer Web-Applikation ist das Springen, automatische Ausbessern und Navigieren zu den Fehlern im Unterschied zu Entwicklungsumgebungen nicht möglich. Die Fehler werden daher auch nicht direkt in der Entwicklungsumgebung markiert.
-
-TODO ERGÄNZEN IGNORE RECOMMENDATIONS VISUALISERUNGEN 
-
+\item Im Frontend können Meldung gezielt ignoriert werden (siehe Punkt 4.6.2.5). Dazu muss die bestimmte Meldung angegeben werden. In anderen Lösungen gibt es verschiedene Konzepte für diese Funktion, zum Beispiel das Hinzufügen von bestimmten Modulen mit denen man im Code Fehler ignorieren kann, mit Annotations oder mit Kommentaren. In anderen Lösungen können auch Code-Blöcke für die Analyse ausgenommen werden.
+\item Mit dem Hinzufügen von Recommendations können Fehler vermieden werden. Das Ziel hierbei ist es auch, einen Lernprozess bei den Benutzerinnen und Benutzern zu ermöglichen. Herkömmliche Lösungen ermöglichen das automatische Ausbessern der Fehler oder geben zusätzliche  Informationen bei den Meldungen an.
+\item Im Frontend können verschiedene Charts zur Unterstützung angezeigt werden. Auch andere Web-Lösungen wie SonarQube und Veracode ermöglichen das Anzeigen von Charts mit Informationen wie Anzahl der Fehlertypen oder Charts zur Komplexität der Fehler. In Entwicklungsumgebungen werden hingegen keine Charts angezeigt.
 \end{itemize}
 \section{Evaluierung der Visualisierung und der Webapplikation} 
 
