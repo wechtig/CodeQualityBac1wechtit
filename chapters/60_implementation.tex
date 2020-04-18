@@ -273,7 +273,17 @@ Der Typ \textit{MongoCollection<Document>} kann nun verwendet werden um Dokument
 % \includegraphics{dbpluginSave}    
 
 \section{Webapplikation} 
-Die Webapplikation bildet den zentralen Teil der Applikation. Das Ziel ist es, die gespeicherten Daten für die Benutzerinnen und Benutzer übersichtlich und einfach aufzubereiten. 
+Die Webapplikation bildet den zentralen Teil der Applikation. Das Ziel ist es, die gespeicherten Daten für die Benutzerinnen und Benutzer übersichtlich und einfach aufzubereiten. Die Applikation besitzt ein Backend und ein Frontend. Beide Teile werden in einem Projekt implementiert, wobei sich das Backend im package \textit{java} und das Frontend sich im package \textit{ressources} befindet (siehe Abbildung \ref{fig:structure}).
+
+\begin{figure}[tp]
+  \centering
+  \includegraphics[height=10cm]{images/structure.PNG}
+  % The short caption should be capitalised
+  % The full caption should hold a full sentence. 
+ \caption[Aufbau und package-Struktur der Webapplikation.]{Aufbau und package-Struktur der Webapplikation.}
+  \label{fig:structure}
+\end{figure}
+
 \subsection{Backend}
 Im Backend werden die Daten aus der Datenbank in Services ausgelesen. Die ausgelesen Daten werden in Beans umgewandelt. Über die REST-Schnittstelle können Daten an das Frontend übergeben werden. Das Backend bzw. die Webapplikation verwendet das Framework Spring-Boot als Alternative zu Java EE. ~\parencite{walls2016spring} Spring Boot bietet einen Standalone-Server und kann daher ohne Konfigurationen verwendet werden. Zusätzlich bietet Spring Boot die Möglichkeit zur Erstellung von Spring Beans und REST-Controller.  
 
@@ -639,3 +649,16 @@ Erfahrung in der Softwareentwicklung: 1 Jahr Berufserfahrung; Erfahrung mit der 
 Bewertung der Kriterien:
 
 Einfachheit: 3, Hinzufügen einer Dokumentation für das Einfügen der Plugins.  \newline Übersicht: 1 \newline  Unterstützung: 1, Fehler konnte in unter zwanzig Sekunden gefunden werden \newline Individualität: 2, Severity (Fehlerlevel) soll vom Benutzer auch selbst bestimmt werden können\newline Performance: 1 \newline  Verständnis: 2\newline 
+
+\textbf{Testperson 5} \\
+Erfahrung in der Softwareentwicklung: 2 Jahre Berufserfahrung; Erfahrung mit der Statische Code Analyse: Bereits eingesetzt\\
+Bewertung der Kriterien:
+
+Einfachheit: 2, Hinzufügen einer Dokumentation für das Einfügen der Plugins.  \newline Übersicht: 2, Charts sollen in Pop-Ups angezeigt werden. Tabelle soll nach Packages gefiltert werden können \newline  Unterstützung: 1, Fehler konnte in unter fünfzehn Sekunden gefunden werden \newline Individualität: 1 \newline Performance: 1 \newline  Verständnis: 2, Bessere Erklärungen zu den Charts und zu den Feldern in der Tabelle (Schwere des Fehlers)\newline 
+
+\textbf{Testperson 6} \\
+Erfahrung in der Softwareentwicklung: 7 Jahre Berufserfahrung; Erfahrung mit der Statische Code Analyse: Bereits eingesetzt und wird aktuell verwendet\\
+Bewertung der Kriterien:
+
+Einfachheit: 3, Hinzufügen einer Dokumentation für das Einfügen der Plugins; Erstellen von Container für die Docker-Unterstützung, um die Applikation und die Datenbank schnell und einfach verwenden zu können; Erstellen einer Git-Integration und Möglichkeit zur Öffnung der Files in Github  \newline Übersicht: 2, Navigation zu den einzelnen Sections, Pfade der Klassen anzeigen, Zusätzlich zur Datum-Filterung auch Möglichkeit der Filterung nach Commit \newline  Unterstützung: 1, Fehler konnte in unter fünfzehn Sekunden gefunden werden \newline Individualität: 1, Erstellen eines Security-Tokens für die Sicherheit in der Applikation \newline Performance: 1 \newline  Verständnis: 1\newline 
+

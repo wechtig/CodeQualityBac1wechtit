@@ -103,23 +103,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.6.1}Backend}{22}{subsection.4.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.1.1}Struktur}{22}{subsubsection.4.6.1.1}%
+\contentsline {subsubsection}{\numberline {4.6.1.1}Struktur}{23}{subsubsection.4.6.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.1.2}API und Controller}{22}{subsubsection.4.6.1.2}%
+\contentsline {subsubsection}{\numberline {4.6.1.2}API und Controller}{23}{subsubsection.4.6.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.1.3}Services und MongoDB-Java-Driver}{22}{subsubsection.4.6.1.3}%
+\contentsline {subsubsection}{\numberline {4.6.1.3}Services und MongoDB-Java-Driver}{23}{subsubsection.4.6.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.1.4}IText und PDF-Export}{23}{subsubsection.4.6.1.4}%
+\contentsline {subsubsection}{\numberline {4.6.1.4}IText und PDF-Export}{24}{subsubsection.4.6.1.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.6.2}Frontend}{24}{subsection.4.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.2.1}Struktur}{24}{subsubsection.4.6.2.1}%
+\contentsline {subsubsection}{\numberline {4.6.2.1}Struktur}{25}{subsubsection.4.6.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.6.2.2}Kommunikation mit dem Backend}{25}{subsubsection.4.6.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.6.2.3}Auswahl und Filterung}{26}{subsubsection.4.6.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.2.4}Recommendations}{26}{subsubsection.4.6.2.4}%
+\contentsline {subsubsection}{\numberline {4.6.2.4}Recommendations}{27}{subsubsection.4.6.2.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.6.2.5}Ignorieren von Meldungen}{27}{subsubsection.4.6.2.5}%
 \defcounter {refsection}{0}\relax 
@@ -127,16 +127,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.6.2.7}Präsentation der Daten}{29}{subsubsection.4.6.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.3}Vergleiche mit anderen Lösungen}{33}{subsection.4.6.3}%
+\contentsline {subsection}{\numberline {4.6.3}Vergleiche mit anderen Lösungen}{34}{subsection.4.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Evaluierung der Visualisierung und der Webapplikation}{34}{section.4.7}%
+\contentsline {section}{\numberline {4.7}Evaluierung der Visualisierung und der Webapplikation}{35}{section.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.1}Evaluierungen der Webapplikation mit Testpersonen}{34}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.1}Evaluierungen der Webapplikation mit Testpersonen}{35}{subsection.4.7.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.7.1.1}Testpersonen}{35}{subsubsection.4.7.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Ergebnisse}{37}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Ergebnisse}{38}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{38}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{39}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{41}{chapter*.13}%
+\contentsline {chapter}{References}{42}{chapter*.13}%
