@@ -22,7 +22,7 @@ Als Datenbank wird die nicht-relationale Lösung MongoDB verwendet, da es versch
 MongoDB kann über die offiziele Website heruntergeladen und installiert werden. \cite{mongoDbManual}
 
 \subsection{MongoDB Java Driver}
-Der MongoDB Java Driver wird für die Kommunikation (Synchronisation und asynchrone Interaktion) mit MongoDB eingesetzt. Als Alternative kann Jongo (https://jongo.org/) oder  Morphia (https://morphia.dev/) eingesetzt werden. 
+Der MongoDB Java Driver wird für die Kommunikation (Synchronisation und asynchrone Interaktion) mit MongoDB eingesetzt. Als Alternative kann Jongo\footnote{https://jongo.org/} oder  Morphia\footnote{https://morphia.dev/} eingesetzt werden. 
 
 \subsection{JavaScript und Frameworks}
 Für das Frontend der Webapplikation wird JavaScript eingesetzt. Um zusätzliche Funktionen verwenden zu können, werden folgende JavaScript-Plugins, Frameworks und Libraries verwendet: 
@@ -63,7 +63,7 @@ https://www.jetbrains.com/help/idea/code-inspection.html
 Viele Tools für die Statische Code Analyse bieten die Möglichkeit, XML-Reports zu genieren. Dies ist möglich mit dem Verwenden der spezifischen Maven-Plugins. ~\parencite{spotBugsUsage} \cite{checkstylePlugin} 
 Diese Plugins bieten build-Optionen an, mit dem die XML oder Doc-Reports generiert werden können. Die daraus entstehenden XML-Reports bilden die Datengrundlagen für die Analysen und Visualisierungen im Frontend.
 \subsubsection{CheckStyle-Plugin}
-Um Checkstyle verwenden zu können, muss das CheckStyle-Plugin nicht verwendet werden. Das Plugin dient zum Export der Daten als XML. Dieses generierte XML bildet den Grundstock für die unterschiedlichen Präsentationen der Daten im Frontend gibt. Um die Daten zu exportieren muss folgender Befehl ausgeführt werden:
+Um Checkstyle verwenden zu können, muss das CheckStyle-Plugin nicht verwendet werden. Das Plugin dient unter anderem zum Export der Daten als XML. Dieses generierte XML bildet den Grundstock für die unterschiedlichen Präsentationen der Daten im Frontend gibt. Um die Daten zu exportieren muss folgender Befehl ausgeführt werden:
 \begin{verbatim}
 mvn checkstyle:checkstyle
 \end{verbatim}
@@ -100,7 +100,7 @@ Dieser Befehl muss von der Benutzerin oder dem Benutzer manuell ausgeführt werd
 </plugin>
 	\end{lstlisting}
 \end{samepage}
-\subsubsection{SpotBugs-Plugin}
+\subsubsection{PMD-Plugin}
 ERGÄNZEN TESTEN
 \begin{verbatim}
 mvn site

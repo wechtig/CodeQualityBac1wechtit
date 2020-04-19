@@ -15,27 +15,29 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Beispiel-ERD, mit der die Daten für die weitere Aufbereitung gespeichert werden können.}}{13}{figure.3.1}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Aufbau der Teilsysteme und Projekte der Arbeit}}{15}{figure.4.1}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Aufbau der Teilsysteme und Projekte der Arbeit}}{16}{figure.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Aufbau und package-Struktur der Webapplikation.}}{22}{figure.4.2}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Aufbau und package-Struktur der Webapplikation.}}{23}{figure.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Sequenzdiagramm für den Download eines PDF-Exports}}{25}{figure.4.3}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Sequenzdiagramm für den Download eines PDF-Exports}}{26}{figure.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Anzeige der Meldung mit dem hinterlegten Recommendation-Link. Der Link führt in diesem Beispiel zur genauen Beschreibung des Fehlers in einer Dokumentation}}{27}{figure.4.4}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Anzeige der Meldung mit dem hinterlegten Recommendation-Link. Der Link führt in diesem Beispiel zur genauen Beschreibung des Fehlers in einer Dokumentation}}{28}{figure.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Übersichtstabelle mit ignorierten Meldungen. Diese Meldungen, oder Meldungen die diese Texte beinhaltet, werden ignoriert. Die Meldungen können aus der Ignore-Table gelöscht und im oberen Textfeld gespeichert werden.}}{28}{figure.4.5}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Übersichtstabelle mit ignorierten Meldungen. Diese Meldungen, oder Meldungen die diese Texte beinhaltet, werden ignoriert. Die Meldungen können aus der Ignore-Table gelöscht und im oberen Textfeld gespeichert werden.}}{29}{figure.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Anzeige der Daten in der Übersichtstabelle mit Möglichkeit zur Filterung und Sortierung der Daten}}{30}{figure.4.6}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Anzeige der Daten in der Übersichtstabelle mit Möglichkeit zur Filterung und Sortierung der Daten}}{31}{figure.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Chart für die Verteilung der Fehler in den Projekten. Die Entwicklerinnen bzw. der Entwickler erhält damit einen genauen Überblick über die Anzahl der Fehler in den Projekten.}}{31}{figure.4.7}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Chart für die Verteilung der Fehler in den Projekten. Die Entwicklerinnen bzw. der Entwickler erhält damit einen genauen Überblick über die Anzahl der Fehler in den Projekten.}}{32}{figure.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Chart für die Verteilung der Fehler in den Packages.}}{31}{figure.4.8}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Chart für die Verteilung der Fehler in den Packages.}}{32}{figure.4.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Häufigst vorkommende Fehler in den ausgewählten Projekte.}}{32}{figure.4.9}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Häufigst vorkommende Fehler in den ausgewählten Projekte.}}{33}{figure.4.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Klassen mit den meisten Fehlern. Neben den Klassennamen wird das jeweilige Projekt angegeben.}}{33}{figure.4.10}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Klassen mit den meisten Fehlern. Neben den Klassennamen wird das jeweilige Projekt angegeben.}}{34}{figure.4.10}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
