@@ -15,11 +15,11 @@ Maven ist ein Versionsverwaltungstool mit dem Abhängigkeiten und JARs verwaltet
 Checkstyle ist ein open-source Tool für die Statische Code Analyse für Java, JavaScript und XML, auf Probleme und CodeSmells untersucht. Es unterstützt eine API, mit der eigene Regeln erstellt werden können. \footnote{https://pmd.github.io/latest/}
 
 \subsection{Checkstyle} 
-Checkstyle ist ein open-source Tool für die Statische Code Analyse. Checkstyle ist für die Verwendung in Java Applikationen entwickelt worden. Hierbei werden eine Vielzahl an Fehler und Bugs analysiert und beachtet. Checkstyle kann konfiguriert und an spezifische Probleme angepasst werden. \footnote{https://checkstyle.sourceforge.io/}
+Checkstyle ist ein open-source Tool für die Statische Code Analyse. Checkstyle ist für die Verwendung in Java Applikationen entwickelt worden. Hierbei werden eine Vielzahl an Fehler und Bugs analysiert und beachtet. Checkstyle kann konfiguriert und an spezifische Probleme angepasst werden.\footnote{https://checkstyle.sourceforge.io/}
 
 \subsection{MongoDB} 
 Als Datenbank wird die nicht-relationale Lösung MongoDB verwendet, da es verschiedene Vorteile gegenüber relationales Datenbankmanagementsystem bietet. (siehe Punkt 4.4.1) Es gehört zu den dokumentorientierten Datenbanken.
-MongoDB kann über die offiziele Website heruntergeladen und installiert werden. \cite{mongoDbManual}
+MongoDB kann über die offiziele Website heruntergeladen und installiert werden.\footnote{https://docs.mongodb.com/manual/}
 
 \subsection{MongoDB Java Driver}
 Der MongoDB Java Driver wird für die Kommunikation (Synchronisation und asynchrone Interaktion) mit MongoDB eingesetzt. Als Alternative kann Jongo\footnote{https://jongo.org/} oder  Morphia\footnote{https://morphia.dev/} eingesetzt werden. 
@@ -52,27 +52,21 @@ Das \textit{Project} ist das Softwareprojekt, welches analysiert werden soll. In
 
 
 \section{Demo-Projekt und Bugreport}
-demo projekte allgemein -> unterschiedlichkeit
-%https://checkstyle.sourceforge.io/config_filters.html
-
-\subsection{Entwicklungsumgebung Build-in}
-eingehen auf verwendete ide und tools; intellij inspection build in 
-https://www.jetbrains.com/help/idea/code-inspection.html
-
+Um den Bugreport(Testdaten) generieren zu können, werden verschiedene existierende Projekte verwendet. In diesen Projekten werden für die Generierung der Testdaten die Tools für die Statische Code Analyse eingesetzt. Diese Tools können in den Entwicklungsumgebung als Extension installiert oder als Plugin eingebunden werden.
 \subsection{Maven Plugins}
-Viele Tools für die Statische Code Analyse bieten die Möglichkeit, XML-Reports zu genieren. Dies ist möglich mit dem Verwenden der spezifischen Maven-Plugins. ~\parencite{spotBugsUsage} \cite{checkstylePlugin} 
+Viele Tools für die Statische Code Analyse bieten die Möglichkeit, XML-Reports zu genieren. Dies ist möglich mit dem Verwenden der spezifischen Maven-Plugins. ~\parencite{spotBugsUsage} ~\parencite{checkstylePlugin} 
 Diese Plugins bieten build-Optionen an, mit dem die XML oder Doc-Reports generiert werden können. Die daraus entstehenden XML-Reports bilden die Datengrundlagen für die Analysen und Visualisierungen im Frontend.
 \subsubsection{CheckStyle-Plugin}
 Um Checkstyle verwenden zu können, muss das CheckStyle-Plugin nicht verwendet werden. Das Plugin dient unter anderem zum Export der Daten als XML. Dieses generierte XML bildet den Grundstock für die unterschiedlichen Präsentationen der Daten im Frontend gibt. Um die Daten zu exportieren muss folgender Befehl ausgeführt werden:
 \begin{verbatim}
 mvn checkstyle:checkstyle
 \end{verbatim}
-Dieser Befehl muss von der Benutzerin oder dem Benutzer manuell ausgeführt werden. Um den Report automatisch zu erstellen, kann beim Einbinden des Plugin die Phase angegeben werden:
+Dieser Befehl muss von der Benutzerin oder dem Benutzer manuell ausgeführt werden. Um den Report automatisch zu erstellen, kann beim Einbinden des Plugin die Maven-Lifecycle-Phase angegeben werden (siehe \ref{fig:phase}).
 
 \lstset{
   caption={Das Plugin wird automatisch in der install-Phase ausgeführt.}, 
   basicstyle=\small\ttfamily, 
-  label=lst:main, 
+  label=lst:phase, 
   %float=tbhp, % float image to top/bottom/here/page
   language=Java,
   frame=single,
@@ -101,12 +95,12 @@ Dieser Befehl muss von der Benutzerin oder dem Benutzer manuell ausgeführt werd
 	\end{lstlisting}
 \end{samepage}
 \subsubsection{PMD-Plugin}
-ERGÄNZEN TESTEN
+Wie beim CheckStyle-Plugin können auch mit dem PMD-Plugin die generierten Daten als XML exportiert werden:
 \begin{verbatim}
-mvn site
+mvn pmd:pmd
 \end{verbatim}
-Der Speicherort des generierten XML-Files kann in der Plugin-Konfiguration angegeben werden.
-
+In der Plugin-Konfiguration können beim PMD-Plugin zusätzliche Konfigurationen angegeben werden wie \textit{printFailingErrors}  (Auftretende Fehler werden auch in der Konsole ausgegeben) oder \textit{failOnViolation} (Build schlägt bei Fehler fehl). \\
+Wie beim CheckStyle-Plugin kann auch bei diesem Plugin die Maven-Lifecycle-Phase angegeben werden, damit das Plugin automatisch ausgeführt werden kann.
 
 \section{Speichern der Daten} 
 
@@ -179,7 +173,7 @@ In einer dritten Collection \textit{ignoredFindings} werden Errors und Warnungen
 \section{Datenbank Importer Plugin} 
 Die Statischen Code Analyse wird auf dem Rechner des Entwicklers oder der Entwicklerin ausgeführt. Diese Daten müssen in der Datenbank gespeichert werden, um sie in einem längeren Zeitraum einsehen und auswerten zu können. Eine eigene Lösung wird daher benötigt, um die Daten in der Datenbank speichern zu können. 
 \subsection{Apache Maven Plugin}
-Mit Apache Maven können verschiedene Plugins eingebunden und im Projekt verwendet werden. Apache Maven bietet aber auch die Möglichkeit, eigene Plugins zu entwickeln.\cite{anardu2014maven}
+Mit Apache Maven können verschiedene Plugins eingebunden und im Projekt verwendet werden. Apache Maven bietet aber auch die Möglichkeit, eigene Plugins zu entwickeln.~\parencite{anardu2014maven}
 
 Die Dependency \textit{maven-plugin-api} gibt Klassen und Funktionen vor, die benutzt werden können um ein eigenes Plugin zu entwickeln
 \begin{verbatim}
@@ -191,7 +185,7 @@ Die Dependency \textit{maven-plugin-api} gibt Klassen und Funktionen vor, die be
  </dependency>
 \end{verbatim}
 
-Mit dieser Dependency kann nun eine Mojo-Klasse erstellt (siehe Listing  \ref{lst:mainexecuter}). Die Klasse \textit{MainExecuter.java} stellt den Kern des Plugins da, die der Verwendung des Plugins zuerst ausgeführt wird.  \cite{gonzalezMavenTutorial}
+Mit dieser Dependency kann nun eine Mojo-Klasse erstellt (siehe Listing  \ref{lst:mainexecuter}). Die Klasse \textit{MainExecuter.java} stellt den Kern des Plugins da, die der Verwendung des Plugins zuerst ausgeführt wird.  ~\parencite{gonzalezMavenTutorial}
 
 \lstset{
   caption={Kopf der Executor-Klasse: Sie wird mit dem Aufruf des Plugins zuerst gestartet.}, 
@@ -287,10 +281,8 @@ Die Webapplikation bildet den zentralen Teil der Applikation. Das Ziel ist es, d
 \subsection{Backend}
 Im Backend werden die Daten aus der Datenbank in Services ausgelesen. Die ausgelesen Daten werden in Beans umgewandelt. Über die REST-Schnittstelle können Daten an das Frontend übergeben werden. Das Backend bzw. die Webapplikation verwendet das Framework Spring-Boot als Alternative zu Java EE. ~\parencite{walls2016spring} Spring Boot bietet einen Standalone-Server und kann daher ohne Konfigurationen verwendet werden. Zusätzlich bietet Spring Boot die Möglichkeit zur Erstellung von Spring Beans und REST-Controller.  
 
-\subsubsection{Struktur}
-aufbau der packages und files; image
 \subsubsection{API und Controller}
-Über den Controller können HTTP-Requests an das Backend geschickt werden. Mit Spring können die Controller als \textit{RestController} annotiert und verwendet werden. Die einzelnen Methoden des Controllers werden zusätzlich annotiert um die Methode (GET, POST, DELETE, PUT, ...) und den Pfad zu definieren. Im Pfad können zusätzlich Parameter als \textit{PathVariable} definiert werden. Im Controller werden  Methoden verwendet um bestimmte Projektanalysedaten auszulesen, Daten als PDF zu exportieren und um Vorschläge zu speichern und auszulesen. Im \textit{FindingsController} werden die Anfragen aus dem Frontend bearbeitet und Daten an des Frontend übermittelt. Im Controller sind dazu die verschiedenen Services eingebunden.
+Über den Controller können HTTP-Requests an das Backend geschickt werden. Mit Spring können die Controller als \textit{RestController} annotiert und verwendet werden. Die einzelnen Methoden des Controllers werden zusätzlich annotiert um die Methode (GET, POST, DELETE, PUT, PATCH) und den Pfad zu definieren. Im Pfad können zusätzlich Parameter als \textit{PathVariable} definiert werden. Im Controller werden  Methoden verwendet um bestimmte Projektanalysedaten auszulesen, Daten als PDF zu exportieren und um Vorschläge zu speichern und auszulesen. Im \textit{FindingsController} werden die Anfragen aus dem Frontend bearbeitet und Daten an des Frontend übermittelt. Im Controller sind dazu die verschiedenen Services eingebunden.
 \subsubsection{Services und MongoDB-Java-Driver}
 In den Services werden Methoden bereitgestellt, die die Daten der Datenbank auslesen. Dies geschieht mit dem MongoDB-Java-Driver. Für das Verwenden des MongoDB-Java-Driver ist ein spezifischer Converter notwendig. Wie im Importer-Plugin müssen die Daten konvertiert werden, daher wird ein Konverter \textit{DBObjectConverter.java} auch im Backend verwendet.
 \lstset{
@@ -326,7 +318,7 @@ Der Konverter wird in allen Service-Methoden verwendet, wo Daten aus den Collect
 
 \subsubsection{IText und PDF-Export}
 Der PDF-Export ist eine weitere Funktion, die das Backend bietet. Ein PDF-Export kann für ein bestimmtes Projekt in einem bestimmten Zeitraum erstellt werden. Im Report werden die wichtigsten Informationen der Analyse in Textform dargestellt, dazu auch die einzelnen gefundenen Fehler und Warnungen. \\
-Dazu wird das Tool IText zur Erstellung von Reports verwendet.  \cite{lowagie2011itext} Um IText zu verwenden, kann aus verschiedenen Preismodellen gewählt werden, eine kostenlose Version wird aber auch zur Verfügung gestellt und in dieser Arbeit verwendet.  \\
+Dazu wird das Tool IText zur Erstellung von Reports verwendet.  ~\parencite{lowagie2011itext} Um IText zu verwenden, kann aus verschiedenen Preismodellen gewählt werden, eine kostenlose Version wird aber auch zur Verfügung gestellt und in dieser Arbeit verwendet.  \\
 Über das Service liest der PDF-Generator die angegeben Daten aus.
 
 \lstset{
@@ -368,8 +360,6 @@ Nach der Erstellung des PDF-Dokument muss das Ergebnis weiter an den Client gesc
 
 \subsection{Frontend}
 Im Frontend werden die Daten in verschiedenen Formen aufbereitet und den Entwicklerinnen und Entwicklern präsentiert, dazu dient eine OnePage-HTML Seite. Die Daten im Frontend werden aus dem Backend abgefragt.
-\subsubsection{Struktur}
-aufbau der ordner und files; image
 \subsubsection{Kommunikation mit dem Backend}
 Die Kommunikation zwischen Frontend und Backend geschieht mittels HTTP-Calls. Die im Frontend gesendeten HTTP-Calls werden im Backend-Controller verarbeitet.  Mit der JavaScript Schnittstelle \textit{Fetch API} werden HTTP-Methoden (POST, GET) abgeschickt. Ein Vorteil der  \textit{Fetch API} ist die Möglichkeit der asynchronen Ausführung der Requests. Daher können auch dynamische Daten abgerufen werden. \footnote{https://developers.google.com/web/updates/2015/03/introduction-to-fetch}
 \lstset{
@@ -554,7 +544,7 @@ In diesem Chart werden die häufigsten Fehler der ausgewählten Projekte angezei
   \includegraphics[height=8cm]{images/mostCommonErrors.PNG}
   % The short caption should be capitalised
   % The full caption should hold a full sentence. 
- \caption[Häufigst vorkommende Fehler in den ausgewählten Projekte.]{Häufigst vorkommende Fehler in den ausgewählten Projekte.}
+ \caption[Am meisten vorkommende Fehler in den ausgewählten Projekte. (vgl. Fehler in den den Abbildungen \ref{fig:checkstyleHTMLReport} und \ref{fig:findingsInIDE})]{Am meisten vorkommende Fehler in den ausgewählten Projekte. (vgl. Fehler in den den Abbildungen \ref{fig:findingsInIDE} und \ref{fig:checkstyleHTMLReport})}
   \label{fig:mostCommonErrors}
 \end{figure}
 
@@ -612,11 +602,24 @@ Blob(Binary Large Object) bietet die Möglichkeit Dateien zu speichern. Zusätzl
 \subsection{Vergleiche mit anderen Lösungen} 
 Im Vergleich mit anderen Lösungen, die im Punkt 2.1 beschrieben werden, ergeben sich folgende Unterschiede und neue Aspekte: 
 \begin{itemize}
-\item Die Ergebnisse der Statischen Code Analyse werden über einen längeren Zeitraum gespeichert und nicht gelöscht. Dadurch kann auch die Historie der Fehler genauer analysiert werden. 
+\item Die Ergebnisse der Statischen Code Analyse werden über einen längeren Zeitraum gespeichert und nicht gelöscht. Dadurch kann auch die Historie der Fehler genauer analysiert werden. Die Fehler können nach Projekt und Datumsbereich gefiltert und angezeigt werden (siehe Abbildung \ref{fig:tableRec}).
+
+\begin{figure}[tp]
+  \centering
+  \includegraphics[height=8cm]{images/tableRec.PNG}
+  % The short caption should be capitalised
+  % The full caption should hold a full sentence. 
+ \caption[Am meisten vorkommende Fehler in den ausgewählten Projekte. (vgl. Fehler in den den Abbildungen \ref{fig:checkstyleHTMLReport} und \ref{fig:findingsInIDE})]{Am meisten vorkommende Fehler in den ausgewählten Projekte. (vgl. Fehler in den den Abbildungen \ref{fig:findingsInIDE} und \ref{fig:checkstyleHTMLReport})}
+  \label{fig:tableRec}
+\end{figure}
+
 \item Durch das Plugin können eine Vielzahl an Tools unterstützt und eingebunden werden. Die einzige Voraussetzung hierbei ist das Angegeben der XML-Results. Dadurch können die Benutzer die Applikation individuell gestalten, da nur die von ihnen gewünschten Fehler und Bugs analysiert werden können. Ein Einsatz beliebiger Tools für spezifische Probleme kann so unterstützt werden (siehe Punkt 2.3). Herkömmliche Lösungen wie Veracode oder SonarQube verwenden eine eingebaute und vorgegebene Code Analyse.
 \item Aufgrund der Verwendung einer Web-Applikation ist das Springen, automatische Ausbessern und Navigieren zu den Fehlern im Unterschied zu Entwicklungsumgebungen nicht möglich. Die Fehler werden daher auch nicht direkt in der Entwicklungsumgebung markiert.
 \item Im Frontend können Meldung gezielt ignoriert werden (siehe Punkt 4.6.2.5). Dazu muss die bestimmte Meldung angegeben werden. In anderen Lösungen gibt es verschiedene Konzepte für diese Funktion, zum Beispiel das Hinzufügen von bestimmten Modulen mit denen man im Code Fehler ignorieren kann, mit Annotations oder mit Kommentaren. In anderen Lösungen können auch Code-Blöcke für die Analyse ausgenommen werden.
-\item Mit dem Hinzufügen von Recommendations können Fehler vermieden werden. Das Ziel hierbei ist es auch, einen Lernprozess bei den Benutzerinnen und Benutzern zu ermöglichen. Herkömmliche Lösungen ermöglichen das automatische Ausbessern der Fehler oder geben zusätzliche  Informationen bei den Meldungen an.
+\item Mit dem Hinzufügen von Recommendations können Fehler vermieden werden (siehe Recommendation-Link in Abbildung \ref{fig:tableRec}). Das Ziel hierbei ist es auch, einen Lernprozess bei den Benutzerinnen und Benutzern zu ermöglichen. Herkömmliche Lösungen ermöglichen das automatische Ausbessern der Fehler oder geben zusätzliche  Informationen bei den Meldungen an.
+
+
+
 \item Im Frontend können verschiedene Charts zur Unterstützung angezeigt werden. Auch andere Web-Lösungen wie SonarQube und Veracode ermöglichen das Anzeigen von Charts mit Informationen wie Anzahl der Fehlertypen oder Charts zur Komplexität der Fehler. In Entwicklungsumgebungen werden hingegen keine Charts angezeigt.
 \end{itemize}
 \section{Evaluierung der Visualisierung und der Webapplikation} 

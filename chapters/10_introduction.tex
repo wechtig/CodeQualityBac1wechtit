@@ -1,7 +1,18 @@
 \chapter{Einleitung}
 
 \section{Problemstellung}
-Code Quality ist ein oft unterschätzter Teil der Softwareentwicklung. Viele Bugs und Sicherheitslücken können durch eine gesteigerte Code Quality vermieden werden. Um die Code Quality in einem Software-Projekt zu verbessern, werden Hilfsmittel eingesetzt, wie Tools für die Statische Code Analyse. Statische Code Analysen überprüfen den Code während der Übersetzungszeit (Compiler Übersetzung) und zeigen auftretende Fehler und verschiedene Warnungen auf. Die daraus folgenden Informationen sind aber rudimentär, d.h. text-basiert und unübersichtlich. Ebenso wird eine Verbesserung des Codestils nur schwer erreicht, da die Informationen nicht dauerhaft verfügbar sind. Die Analysen gestalten sich daher nur als Momentaufnahme aus dem Code. 
+Code Quality ist ein oft unterschätzter Teil der Softwareentwicklung. Viele Bugs und Sicherheitslücken können durch eine gesteigerte Code Quality vermieden werden. Um die Code Quality in einem Software-Projekt zu verbessern, werden Hilfsmittel eingesetzt, wie Tools für die Statische Code Analyse. Statische Code Analysen überprüfen den Code während der Übersetzungszeit (Compiler Übersetzung) und zeigen auftretende Fehler und verschiedene Warnungen auf. Für die Anzeige der Ergebnisse der Statischen Code Analyse gibt es verschiedene Möglichkeiten: Direkte Anzeige in der Entwicklungsumgebung, Anzeige in einer eigenen (Web-)Applikation oder in einer Ausgabe als Report. Die daraus folgenden Informationen sind aber rudimentär, d.h. text-basiert und unübersichtlich (siehe Abbildung \ref{fig:findingsInIDE}). Ebenso wird eine Verbesserung des Codestils nur schwer erreicht, da die Informationen nicht dauerhaft verfügbar sind. Die Analysen gestalten sich daher nur als Momentaufnahme aus dem Code. 
+
+\begin{figure}[tp]
+  \centering
+  \includegraphics[height=5cm]{images/ideChecks.PNG}
+  % The short caption should be capitalised
+  % The full caption should hold a full sentence. 
+ \caption[Anzeige von Fehler in der Entwicklungsumgebung Intellij IDEA]{Anzeige von Fehler in der Entwicklungsumgebung Intellij IDEA.}
+  \label{fig:findingsInIDE}
+\end{figure}
+
+Ein Problem bei Applikationen, die am Desktop oder am Server installiert werden können, ist die fehlende Individualität, da die eingesetzten Tools  und Techniken nicht selbst angegeben werden können. Hingegen muss die vorgegebene Code Analyse verwendet werden. Das Problem dabei ist, dass einzelne Tools für bestimmte Probleme und Einsatzgebiete besser geeignet sind.
 
 \section{Zielsetzung und Forschungsfragen}
 
@@ -28,5 +39,5 @@ Testpersonen evaluieren die Arbeit anhand folgender Kriterien und Punkte:
 \item Verständlichkeit \\ Die Visualisierungen und Funktionalitäten sollen für die Benutzerinnen und Benutzer ohne Hilfestellungen verständlich sein und sollen daher ohne Probleme verwendet und angewandt werden können.
 \end{itemize}
 
-Ebenso werden anhand dieser Kriterien die Unterschiede zu herkömmlichen Lösungen erarbeitet. Die Arbeit ist erfolgreich, wenn diese Kriterien für die Testpersonen zutreffen. 
+Ebenso werden anhand dieser Kriterien die Unterschiede zu herkömmlichen Lösungen erarbeitet. Die Arbeit ist erfolgreich, wenn diese Kriterien zutreffen. 
 

@@ -2199,15 +2199,14 @@
     <bcf:citekey order="13">goseva2015capability</bcf:citekey>
     <bcf:citekey order="14">jung2014sensitive</bcf:citekey>
     <bcf:citekey order="15">comparativeAnalysisTools</bcf:citekey>
-    <bcf:citekey order="16">mongoDbManual</bcf:citekey>
-    <bcf:citekey order="17">spotBugsUsage</bcf:citekey>
-    <bcf:citekey order="18">checkstylePlugin</bcf:citekey>
-    <bcf:citekey order="19">anardu2014maven</bcf:citekey>
-    <bcf:citekey order="20">gonzalezMavenTutorial</bcf:citekey>
-    <bcf:citekey order="21">walls2016spring</bcf:citekey>
-    <bcf:citekey order="22">lowagie2011itext</bcf:citekey>
-    <bcf:citekey order="23">chartJsHelder</bcf:citekey>
-    <bcf:citekey order="24">wieczorek2014mode</bcf:citekey>
+    <bcf:citekey order="16">spotBugsUsage</bcf:citekey>
+    <bcf:citekey order="17">checkstylePlugin</bcf:citekey>
+    <bcf:citekey order="18">anardu2014maven</bcf:citekey>
+    <bcf:citekey order="19">gonzalezMavenTutorial</bcf:citekey>
+    <bcf:citekey order="20">walls2016spring</bcf:citekey>
+    <bcf:citekey order="21">lowagie2011itext</bcf:citekey>
+    <bcf:citekey order="22">chartJsHelder</bcf:citekey>
+    <bcf:citekey order="23">wieczorek2014mode</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

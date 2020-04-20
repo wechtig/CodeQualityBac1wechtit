@@ -4,15 +4,7 @@
 Das Ziel des praktischen Teils der Bachelorarbeit ist es, die Informationen der Statischen Code Analyse übersichtlicher, dauerhafter und benutzerfreundlicher zu präsentieren. Hierbei gibt es ähnliche bereits bestehende Lösungen, deren Probleme im Punkt 2.3.2 Probleme aufgezeigt werden: 
 
 \subsection{Entwicklungsumgebungen}
-Bestehende Entwicklungsumgebungen zeigen die Informationen und Warnung bezüglich Fehler und Regelverletzungen zur Übersetzungszeit auf. Dies geschieht in der Zeile bzw. bei der Fehlerquelle, in der sich der Fehler befindet. Die Informationen werden hierbei in einem kleinen Textfeld angezeigt oder gesammelt in einem Ausgabefenster angezeigt  (siehe Abbildung ~\ref{fig:findingsInIDEA}). Weitere Funktionen  sind in einigen Entwicklungsumgebungen extra ergänzt, zum Beispiel die Funktion des automatischen Navigierens von der Übersichtsliste in die Fehlerzeile. Beim Durchführen der Statischen Code Analyse in Entwicklungsumgebungen spricht man von einem \textit{On-Demand-Scan}, da der Entwickler oder die Entwicklerin das Tool für die Analyse manuell startet. Um die Statische Code Analyse in einer Entwicklungsumgebung verwenden zu können, müssen spezifische Tools installiert werden. So bieten Entwicklungsumgebung wie IntelliJ IDEA oder Visual Studio die Möglichkeit Plugins wie SonarLint oder Checkstyle zu installieren. ~\parencite{sonarLint}
-\begin{figure}[tp]
-  \centering
-  \includegraphics[height=7cm]{images/ideChecks.PNG}
-  % The short caption should be capitalised
-  % The full caption should hold a full sentence. 
- \caption[Anzeige von Fehler in der Entwicklungsumgebung Intellij IDEA]{Anzeige von Fehler in der Entwicklungsumgebung Intellij IDEA.}
-  \label{fig:findingsInIDEA}
-\end{figure}
+Bestehende Entwicklungsumgebungen zeigen die Informationen und Warnung bezüglich Fehler und Regelverletzungen zur Übersetzungszeit auf. Dies geschieht in der Zeile bzw. bei der Fehlerquelle, in der sich der Fehler befindet. Die Informationen werden hierbei in einem kleinen Textfeld angezeigt oder gesammelt in einem Ausgabefenster angezeigt  (siehe Abbildung ~\ref{fig:findingsInIDE}). Weitere Funktionen  sind in einigen Entwicklungsumgebungen extra ergänzt, zum Beispiel die Funktion des automatischen Navigierens von der Übersichtsliste in die Fehlerzeile. Beim Durchführen der Statischen Code Analyse in Entwicklungsumgebungen spricht man von einem \textit{On-Demand-Scan}, da der Entwickler oder die Entwicklerin das Tool für die Analyse manuell startet. Um die Statische Code Analyse in einer Entwicklungsumgebung verwenden zu können, müssen spezifische Tools installiert werden. So bieten Entwicklungsumgebung wie IntelliJ IDEA oder Visual Studio die Möglichkeit Plugins wie SonarLint oder Checkstyle zu installieren. ~\parencite{sonarLint}
 \subsection{Build-Server und Continuous Integration (CI)-Pipeline}
 Die Statische Code Analyse wird auch bei Build-Server in der CI-Pipeline verwendet. \parencite{zampetti2017open} Der Vorteil dabei ist, dass der Entwickler die Tools nicht lokal installieren muss. Die Tools oder die Plugins werden direkt am Build-Server installiert. Die Code Analyse wird direkt beim automatischen Build durchgeführt. Um diese Option verwenden zu können, gibt es auf Build-Server verfügbare Plugins, wie zum Beispiel das Plugin \textit{Fortify}, dass auf der Build-Server Lösung Jenkins installiert werden kann.
 \subsection{SonarQube}
@@ -77,12 +69,21 @@ Security ist ein wichtiger Punkt in Programmen. Tools wie FindBugs, Protecode un
 Um die einzelnen Tools bewerten und vergleichen zu können, müssen sie daher in verschiedene Anwendungsbereiche geteilt werden. Bei einer Bewertung der Tools sind aber auch andere Metriken ausschlaggebend wie: Möglichkeit der Erweiterbarkeit der Tools (Open-Source), letztes Release und Art und Vielfalt der Reports. ~\parencite{comparativeAnalysisTools}
 
 \section{Visualisierungen} 
-In den vorgestellten Lösungen gibt es mehrere Arten die Analyseergebnisse anzeigen zu lasen:
+In den vorgestellten Lösungen gibt es mehrere Arten die Analyseergebnisse einsehen zu können:
 \begin{itemize}
 \item \textbf{Anzeige in der Entwicklungsumgebung}
+\item \textbf{Anzeigen in eigenen Desktop-Applikation}
 \item \textbf{Anzeige in Webbrowsern}
 Besonders bei der Integration der Statischen Code Analyse in Build-Servern.
-\item \textbf{Anzeige als Report (XML oder HTML)}
+\item \textbf{Anzeige als Report: XML oder HTML (siehe Abbildung \ref{fig:checkstyleHTMLReport}}
+\begin{figure}[tp]
+  \centering
+  \includegraphics[height=5cm]{images/checkstyleHTMLReport.PNG}
+  % The short caption should be capitalised
+  % The full caption should hold a full sentence. 
+ \caption[Auszug aus dem automatisch generierten CheckStyle-Report der Ergebnisse der Analyse. (vgl. Abbildung in der Entwicklungsumgebung \ref{fig:findingsInIDE})]{Auszug aus dem automatisch generierten CheckStyle-Report der Ergebnisse der Analyse. (vgl. Abbildung in der Entwicklungsumgebung \ref{fig:findingsInIDE})}
+  \label{fig:checkstyleHTMLReport}
+\end{figure}
 \end{itemize}
 \subsection{Probleme} 
 

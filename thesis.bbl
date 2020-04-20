@@ -606,20 +606,6 @@
       \endverb
       \warn{\item Entry 'sonarLint' (references.bib): Invalid format '20.02.2020' of date field 'urldate' - ignoring}
     \endentry
-    \entry{mongoDbManual}{online}{}
-      \field{sortinit}{M}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
-      \field{labeldatesource}{nodate}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{https://docs.mongodb.com/manual/}
-      \field{title}{MongoDB Manual}
-      \verb{urlraw}
-      \verb https://docs.mongodb.com/manual/
-      \endverb
-      \verb{url}
-      \verb https://docs.mongodb.com/manual/
-      \endverb
-    \endentry
     \entry{palomba2014they}{inproceedings}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=b55e247c53ee6ca1acadfe03ce3549c1}{%
@@ -850,6 +836,7 @@
       \range{pages}{11}
     \endentry
   \enddatalist
+  \missing{mongoDbManual}
 \endrefsection
 \endinput
 
