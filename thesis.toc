@@ -129,8 +129,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.7.1.1}Testpersonen}{36}{subsubsection.4.7.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Ergebnisse}{40}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Evaluierung}{40}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{41}{chapter.6}%
+\contentsline {section}{\numberline {5.1}Testergebnisse}{40}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Fazit und Ausblick}{41}{chapter.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{References}{44}{chapter*.13}%
