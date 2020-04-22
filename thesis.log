@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  22 APR 2020 20:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  22 APR 2020 20:15
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1583,51 +1583,13 @@ Overfull \hbox (36.69363pt too wide) in paragraph at lines 556--559
  [][] 
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.600 ...P/Basics_of_HTTP/MIME_types/Common_types}
-                                                  . Mit dem MIME-Type (Media...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.600 ...P/Basics_of_HTTP/MIME_types/Common_types}
-                                                  . Mit dem MIME-Type (Media...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.600 ...P/Basics_of_HTTP/MIME_types/Common_types}
-                                                  . Mit dem MIME-Type (Media...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra }, or forgotten \endgroup.
-\@makefntext ...out #1\ifFN@hangfoot \par \egroup 
-                                                  \fi 
-l.600 ...P/Basics_of_HTTP/MIME_types/Common_types}
-                                                  . Mit dem MIME-Type (Media...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
 ) [33 <./images/mostCommonErrors.PNG>] [34 <./images/mostCommonClasses.PNG>]
 [35]
 \openout2 = `chapters/80_evaluation.aux'.
 
  (chapters/80_evaluation.tex
 Kapitel 5.
-<images/tableRec.PNG, id=615, 773.13844pt x 416.30531pt>
+<images/tableRec.PNG, id=612, 773.13844pt x 416.30531pt>
 File: images/tableRec.PNG Graphic file (type png)
 <use images/tableRec.PNG>
 Package pdftex.def Info: images/tableRec.PNG  used on input line 10.
@@ -1733,18 +1695,15 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30394 strings out of 480900
- 545834 string characters out of 2917036
- 1305842 words of memory out of 3000000
+ 30388 strings out of 480900
+ 545792 string characters out of 2917036
+ 1305838 words of memory out of 3000000
  45337 multiletter control sequences out of 15000+200000
- 607065 words of font info for 120 fonts, out of 3000000 for 9000
+ 603696 words of font info for 115 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
  73i,7n,68p,1849b,2686s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exi
+st, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist
 , replaced by a fixed one
@@ -1770,15 +1729,14 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-{D:/MikTex/fonts/enc/dvips/base/8r.enc}<D:/MikTex/fonts/type1/public/amsfonts/c
-m/cmmi10.pfb><D:/MikTex/fonts/type1/urw/courier/ucrb8a.pfb><D:/MikTex/fonts/typ
-e1/urw/courier/ucrr8a.pfb><D:/MikTex/fonts/type1/urw/helvetic/uhvr8a.pfb><D:/Mi
-kTex/fonts/type1/urw/times/utmb8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.p
-fb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times
-/utmri8a.pfb>
-Output written on thesis.pdf (51 pages, 583857 bytes).
+{D:/MikTex/fonts/enc/dvips/base/8r.enc}<D:/MikTex/fonts/type1/urw/courier/ucrb8
+a.pfb><D:/MikTex/fonts/type1/urw/courier/ucrr8a.pfb><D:/MikTex/fonts/type1/urw/
+helvetic/uhvr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/MikTex/font
+s/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/Mi
+kTex/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (51 pages, 576226 bytes).
 PDF statistics:
- 792 PDF objects out of 1000 (max. 8388607)
- 269 named destinations out of 1000 (max. 500000)
+ 786 PDF objects out of 1000 (max. 8388607)
+ 268 named destinations out of 1000 (max. 500000)
  272 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -561,7 +561,7 @@ In diesem Chart werden die Klassen mit den meisten Fehlern angezeigt (siehe Abbi
 \end{figure}
 
 \textbf{Export der Daten als PDF} \\
-Eine weitere Möglichkeit im Frontend die Daten anzeigen zu können, ist der PDF-Report. Der Report verwendet dabei die gleichen Daten, die für die anderen Darstellungen ausgewählt wurden. Der Report kann in über einen Download-Button heruntergeladen werden. Erstellt wird der Report im Backend (siehe 4.6.1.4). Um den Report erstellen zu können, wird ein Request versendet, der Report wird daraufhin am Backend generiert und an das Frontend zurückgegeben. Um im Frontend das PDF herunterladen zu können, wird die Blob-Funktionalität verwendet. \footnote{https://developer.mozilla.org/de/docs/Web/API/Blob}
+Eine weitere Möglichkeit die Daten anzeigen zu können, ist der PDF-Report. Der Report verwendet dabei die gleichen Daten, die für die anderen Darstellungen ausgewählt wurden. Der Report kann in der Weboberfläche über einen Download-Button heruntergeladen werden. Erstellt wird der Report im Backend (siehe 4.6.1.4). Um den Report erstellen zu können wird ein Request versendet, der Report wird  am Backend generiert und an das Frontend im Response übermittelt. Um im Frontend das PDF herunterladen zu können, wird die Blob-Funktionalität verwendet. \footnote{https://developer.mozilla.org/de/docs/Web/API/Blob}
 
 \lstset{
   caption={Herunterladen eines PDF-Files in Javascript mit Blob.}, 
@@ -597,4 +597,4 @@ Eine weitere Möglichkeit im Frontend die Daten anzeigen zu können, ist der PDF
 	\end{lstlisting}
 \end{samepage}
 
-Blob(Binary Large Object) bietet die Möglichkeit Dateien zu speichern. Zusätzlich zu Dateidaten speichert Blob einen MIME-Type. Mit dem MIME-Type (Media Type) kann die Art der Daten angegeben werden, in diesem Beispiel hat der MIME-Type den Wert \textit{application/pdf}. Hierbei wird der Reponse bei einem erfolgreichen Request zu einem blob-Objekt konvertiert. Um einen Download durchführen zu können, wird ein Url-Objekt und ein Link erstellt. Der Link wird automatisch geklickt und es erfolgt der Download. Dieser automatisch erstellte Link wird nach dem Download wieder gelöscht.
+Blob(Binary Large Object) bietet die Möglichkeit Dateien in einem Obejekt zu speichern. Zusätzlich zu Dateidaten speichert Blob einen MIME-Type. Mit dem MIME-Type (Media Type) kann die Art der Daten angegeben werden, in diesem Beispiel hat der MIME-Type den Wert \textit{application/pdf}. Hierbei wird der Reponse bei einem erfolgreichen Request zu einem blob-Objekt konvertiert. Um einen Download durchführen zu können, wird ein Url-Objekt und ein Link erstellt. Der Link wird automatisch geklickt und es erfolgt der Download. Dieser automatisch erstellte Link wird nach dem Download wieder gelöscht.
