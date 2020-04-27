@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  26 APR 2020 20:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  27 APR 2020 09:47
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1633,12 +1633,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
-) [40]
+[40]) [41]
 \openout2 = `chapters/90_conclusion.aux'.
 
  (chapters/90_conclusion.tex
 Kapitel 6.
-[41
+[42
 
 
 
@@ -1667,11 +1667,11 @@ tm/m/it/12 tssicherung in he-te-ro-ge-nen Pro-jek-ten \T1/ptm/m/n/12 (o.D.). Av
 aila-
  []
 
-[42
+[43
 
 
 
-] [43] [44]
+] [44] [45]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
  (thesis.aux (chapters/01_titlepage.aux)
@@ -1695,8 +1695,8 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30388 strings out of 480900
- 545792 string characters out of 2917036
+ 30390 strings out of 480900
+ 545820 string characters out of 2917036
  1305838 words of memory out of 3000000
  45337 multiletter control sequences out of 15000+200000
  603696 words of font info for 115 fonts, out of 3000000 for 9000
@@ -1734,9 +1734,9 @@ a.pfb><D:/MikTex/fonts/type1/urw/courier/ucrr8a.pfb><D:/MikTex/fonts/type1/urw/
 helvetic/uhvr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/MikTex/font
 s/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/Mi
 kTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (51 pages, 578809 bytes).
+Output written on thesis.pdf (52 pages, 581099 bytes).
 PDF statistics:
- 786 PDF objects out of 1000 (max. 8388607)
- 268 named destinations out of 1000 (max. 500000)
+ 791 PDF objects out of 1000 (max. 8388607)
+ 270 named destinations out of 1000 (max. 500000)
  272 words of extra memory for PDF output out of 10000 (max. 10000000)
 
