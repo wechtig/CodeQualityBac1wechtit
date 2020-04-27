@@ -9,15 +9,18 @@
 \BOOKMARK [1][-]{section.2.3}{2.3 Tools f\374r die Statische Code Analyse}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.4}{2.4 Visualisierungen}{chapter.2}% 10
 \BOOKMARK [0][-]{chapter.3}{3 Konzept}{}% 11
-\BOOKMARK [0][-]{chapter.4}{4 Umsetzung}{}% 12
-\BOOKMARK [1][-]{section.4.1}{4.1 Technologien und Tools f\374r Umsetzung }{chapter.4}% 13
-\BOOKMARK [1][-]{section.4.2}{4.2 Infrastruktur und Aufbau der Applikationen}{chapter.4}% 14
-\BOOKMARK [1][-]{section.4.3}{4.3 Demo-Projekt und Bugreport}{chapter.4}% 15
-\BOOKMARK [1][-]{section.4.4}{4.4 Speichern der Daten}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.5}{4.5 Datenbank Importer Plugin}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.6}{4.6 Webapplikation}{chapter.4}% 18
-\BOOKMARK [0][-]{chapter.5}{5 Evaluierung}{}% 19
-\BOOKMARK [1][-]{section.5.1}{5.1 Vergleiche mit anderen L\366sungen}{chapter.5}% 20
-\BOOKMARK [1][-]{section.5.2}{5.2 Evaluierung der Visualisierung und der Webapplikation}{chapter.5}% 21
-\BOOKMARK [0][-]{chapter.6}{6 Fazit und Ausblick}{}% 22
-\BOOKMARK [0][-]{chapter*.13}{References}{}% 23
+\BOOKMARK [1][-]{section.3.1}{3.1 Datenbank und Testdaten}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.2}{3.2 Funktionalit\344ten}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.3}{3.3 Art der Applikation}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.4}{3.4 Infrastruktur und Aufbau der Applikationen}{chapter.3}% 15
+\BOOKMARK [0][-]{chapter.4}{4 Umsetzung}{}% 16
+\BOOKMARK [1][-]{section.4.1}{4.1 Technologien und Tools f\374r Umsetzung }{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.2}{4.2 Demo-Projekt und Bugreport}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.3}{4.3 Speichern der Daten}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.4}{4.4 Datenbank Importer Plugin}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.5}{4.5 Webapplikation}{chapter.4}% 21
+\BOOKMARK [0][-]{chapter.5}{5 Evaluierung}{}% 22
+\BOOKMARK [1][-]{section.5.1}{5.1 Vergleiche mit anderen L\366sungen}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.2}{5.2 Evaluierung der Visualisierung und der Webapplikation}{chapter.5}% 24
+\BOOKMARK [0][-]{chapter.6}{6 Fazit und Ausblick}{}% 25
+\BOOKMARK [0][-]{chapter*.13}{References}{}% 26

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  27 APR 2020 09:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  27 APR 2020 12:16
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1214,17 +1214,26 @@ LaTeX Info: Redefining \nameref on input line 53.
 
 \openout2 = `chapters/01_titlepage.aux'.
 
- (chapters/01_titlepage.tex [1
+ (chapters/01_titlepage.tex
+<images/logo_FHJ_100mm_cmyk.pdf, id=110, 285.065pt x 58.2175pt>
+File: images/logo_FHJ_100mm_cmyk.pdf Graphic file (type pdf)
+<use images/logo_FHJ_100mm_cmyk.pdf>
+Package pdftex.def Info: images/logo_FHJ_100mm_cmyk.pdf  used on input line 14.
+
+(pdftex.def)             Requested size: 139.31769pt x 28.45274pt.
+ [1
 
 
 
 
 
-{C:/Users/luweh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
+{C:/Users/luweh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/lo
+go_FHJ_100mm_cmyk.pdf>])
 \openout2 = `chapters/02_declaration.aux'.
 
- (chapters/02_declaration.texpdfTeX warning (ext4): destination with the same i
-dentifier (name{page.1}) has been already used, duplicate ignored
+
+(chapters/02_declaration.texpdfTeX warning (ext4): destination with the same id
+entifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.83 \end{titlepage}
@@ -1338,7 +1347,7 @@ LaTeX Warning: Font shape declaration has incorrect series value `mc'.
                Found on input line 47.
 
 )
-<images/ideChecks.PNG, id=203, 453.19313pt x 135.50626pt>
+<images/ideChecks.PNG, id=221, 453.19313pt x 135.50626pt>
 File: images/ideChecks.PNG Graphic file (type png)
 <use images/ideChecks.PNG>
 Package pdftex.def Info: images/ideChecks.PNG  used on input line 8.
@@ -1373,7 +1382,7 @@ Kapitel 2.
 
 
 ]
-<images/sonarQube.PNG, id=234, 951.555pt x 676.02562pt>
+<images/sonarQube.PNG, id=252, 951.555pt x 676.02562pt>
 File: images/sonarQube.PNG Graphic file (type png)
 <use images/sonarQube.PNG>
 Package pdftex.def Info: images/sonarQube.PNG  used on input line 15.
@@ -1397,7 +1406,7 @@ n. Hier-bei kön-nen Feh-
  []
 
 [8] [9]
-<images/checkstyleHTMLReport.PNG, id=289, 502.87875pt x 158.84344pt>
+<images/checkstyleHTMLReport.PNG, id=307, 502.87875pt x 158.84344pt>
 File: images/checkstyleHTMLReport.PNG Graphic file (type png)
 <use images/checkstyleHTMLReport.PNG>
 Package pdftex.def Info: images/checkstyleHTMLReport.PNG  used on input line 81
@@ -1413,39 +1422,26 @@ Overfull \hbox (37.86552pt too wide) in paragraph at lines 81--84
 
  (chapters/40_concept.tex
 Kapitel 3.
-<images/chartERD.PNG, id=306, 363.60844pt x 262.73157pt>
+<images/chartERD.PNG, id=324, 363.60844pt x 262.73157pt>
 File: images/chartERD.PNG Graphic file (type png)
 <use images/chartERD.PNG>
-Package pdftex.def Info: images/chartERD.PNG  used on input line 9.
+Package pdftex.def Info: images/chartERD.PNG  used on input line 11.
 (pdftex.def)             Requested size: 236.27055pt x 170.71652pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--17
-
- []
-
 [12
 
 
 
-] [13 <./images/chartERD.PNG>])
+] [13 <./images/chartERD.PNG>]
+<images/infrastruktur.PNG, id=336, 329.73187pt x 237.13594pt>
+File: images/infrastruktur.PNG Graphic file (type png)
+<use images/infrastruktur.PNG>
+Package pdftex.def Info: images/infrastruktur.PNG  used on input line 27.
+(pdftex.def)             Requested size: 276.94771pt x 199.16928pt.
+ [14 <./images/infrastruktur.PNG>])
 \openout2 = `chapters/60_implementation.aux'.
 
- (chapters/60_implementation.tex
+
+(chapters/60_implementation.tex
 Kapitel 4.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
@@ -1453,143 +1449,136 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
-[14
+[15
 
 
 
 
-] [15]
-<images/infrastruktur.PNG, id=344, 329.73187pt x 237.13594pt>
-File: images/infrastruktur.PNG Graphic file (type png)
-<use images/infrastruktur.PNG>
-Package pdftex.def Info: images/infrastruktur.PNG  used on input line 44.
-(pdftex.def)             Requested size: 316.51382pt x 227.62204pt.
- [16 <./images/infrastruktur.PNG>]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 61
+] [16]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 46
 .
-
-(D:\MikTex\tex/latex/psnfss\t1pcr.fd
+ (D:\MikTex\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 
-LaTeX Warning: Reference `fig:phase' on page 17 undefined on input line 64.
+LaTeX Warning: Reference `fig:phase' on page 17 undefined on input line 49.
 
 (D:\MikTex\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 82.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 82.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
  [17] [18] [19]
-Overfull \hbox (26.63484pt too wide) in paragraph at lines 157--157
+Overfull \hbox (26.63484pt too wide) in paragraph at lines 142--142
 []\T1/pcr/m/n/12 "source" : "checkstyle.checks.blocks.AvoidNestedBlocksCheck",[
 ] 
  []
 
 
-Overfull \hbox (48.23483pt too wide) in paragraph at lines 168--168
+Overfull \hbox (48.23483pt too wide) in paragraph at lines 153--153
 []\T1/pcr/m/n/12 db.findings.find({"_id" : ObjectId("5e1209881a2dff20ab6ee6c6")
 })[] 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 234--238
+Underfull \hbox (badness 10000) in paragraph at lines 219--223
 
  []
 
 [22]
-<images/structure.PNG, id=425, 201.75375pt x 512.66531pt>
+<images/structure.PNG, id=438, 201.75375pt x 512.66531pt>
 File: images/structure.PNG Graphic file (type png)
 <use images/structure.PNG>
-Package pdftex.def Info: images/structure.PNG  used on input line 274.
+Package pdftex.def Info: images/structure.PNG  used on input line 259.
 (pdftex.def)             Requested size: 111.97157pt x 284.52756pt.
  [23 <./images/structure.PNG>]
-Overfull \hbox (2.93103pt too wide) in paragraph at lines 285--286
+Overfull \hbox (2.93103pt too wide) in paragraph at lines 270--271
 \T1/ptm/m/n/12 ein-zel-nen Me-tho-den des Con-trol-lers wer-den zu-sätz-lich an
 -no-tiert um die Me-tho-de (GET,
  []
 
 [24]
-<images/seqGeneratePdf.PNG, id=453, 472.76625pt x 247.67531pt>
+<images/seqGeneratePdf.PNG, id=460, 472.76625pt x 247.67531pt>
 File: images/seqGeneratePdf.PNG Graphic file (type png)
 <use images/seqGeneratePdf.PNG>
-Package pdftex.def Info: images/seqGeneratePdf.PNG  used on input line 354.
+Package pdftex.def Info: images/seqGeneratePdf.PNG  used on input line 339.
 (pdftex.def)             Requested size: 434.48854pt x 227.62204pt.
 
-Overfull \hbox (21.92357pt too wide) in paragraph at lines 354--357
+Overfull \hbox (21.92357pt too wide) in paragraph at lines 339--342
  [][] 
  []
 
 [25] [26 <./images/seqGeneratePdf.PNG>] [27]
-<images/recommendation.PNG, id=504, 258.21469pt x 74.52844pt>
+<images/recommendation.PNG, id=521, 258.21469pt x 74.52844pt>
 File: images/recommendation.PNG Graphic file (type png)
 <use images/recommendation.PNG>
-Package pdftex.def Info: images/recommendation.PNG  used on input line 425.
+Package pdftex.def Info: images/recommendation.PNG  used on input line 410.
 (pdftex.def)             Requested size: 197.15929pt x 56.9055pt.
-<images/ignoreTable.PNG, id=506, 468.24937pt x 161.10187pt>
+ [28 <./images/recommendation.PNG>]
+<images/ignoreTable.PNG, id=530, 468.24937pt x 161.10187pt>
 File: images/ignoreTable.PNG Graphic file (type png)
 <use images/ignoreTable.PNG>
-Package pdftex.def Info: images/ignoreTable.PNG  used on input line 440.
+Package pdftex.def Info: images/ignoreTable.PNG  used on input line 425.
 (pdftex.def)             Requested size: 330.8089pt x 113.81102pt.
- [28 <./images/recommendation.PNG>] [29 <./images/ignoreTable.PNG>]
-<images/pagination.PNG, id=527, 749.04843pt x 416.30531pt>
+[29 <./images/ignoreTable.PNG>] [30]
+<images/pagination.PNG, id=571, 749.04843pt x 416.30531pt>
 File: images/pagination.PNG Graphic file (type png)
 <use images/pagination.PNG>
-Package pdftex.def Info: images/pagination.PNG  used on input line 502.
+Package pdftex.def Info: images/pagination.PNG  used on input line 487.
 (pdftex.def)             Requested size: 460.77063pt x 256.0748pt.
 
-Overfull \hbox (48.20566pt too wide) in paragraph at lines 502--505
+Overfull \hbox (48.20566pt too wide) in paragraph at lines 487--490
  [][] 
  []
 
-[30]
-<images/findingsPerProject.PNG, id=557, 406.51875pt x 378.66469pt>
+<images/findingsPerProject.PNG, id=573, 406.51875pt x 378.66469pt>
 File: images/findingsPerProject.PNG Graphic file (type png)
 <use images/findingsPerProject.PNG>
-Package pdftex.def Info: images/findingsPerProject.PNG  used on input line 516.
+Package pdftex.def Info: images/findingsPerProject.PNG  used on input line 501.
 
 (pdftex.def)             Requested size: 274.91556pt x 256.0748pt.
-<images/findingsPerPackage.PNG, id=559, 525.46312pt x 457.71pt>
+[31 <./images/pagination.PNG>]
+<images/findingsPerPackage.PNG, id=582, 525.46312pt x 457.71pt>
 File: images/findingsPerPackage.PNG Graphic file (type png)
 <use images/findingsPerPackage.PNG>
-Package pdftex.def Info: images/findingsPerPackage.PNG  used on input line 530.
+Package pdftex.def Info: images/findingsPerPackage.PNG  used on input line 515.
 
 (pdftex.def)             Requested size: 293.99275pt x 256.0748pt.
-<images/mostCommonErrors.PNG, id=561, 733.99219pt x 361.35pt>
+<images/mostCommonErrors.PNG, id=584, 733.99219pt x 361.35pt>
 File: images/mostCommonErrors.PNG Graphic file (type png)
 <use images/mostCommonErrors.PNG>
-Package pdftex.def Info: images/mostCommonErrors.PNG  used on input line 544.
+Package pdftex.def Info: images/mostCommonErrors.PNG  used on input line 529.
 (pdftex.def)             Requested size: 462.36153pt x 227.62204pt.
 
-Overfull \hbox (49.79655pt too wide) in paragraph at lines 544--547
+Overfull \hbox (49.79655pt too wide) in paragraph at lines 529--532
  [][] 
  []
 
-[31 <./images/pagination.PNG>] [32 <./images/findingsPerProject.PNG> <./images/
-findingsPerPackage.PNG>]
-<images/mostCommonClasses.PNG, id=578, 564.60938pt x 286.06876pt>
+<images/mostCommonClasses.PNG, id=590, 564.60938pt x 286.06876pt>
 File: images/mostCommonClasses.PNG Graphic file (type png)
 <use images/mostCommonClasses.PNG>
-Package pdftex.def Info: images/mostCommonClasses.PNG  used on input line 556.
+Package pdftex.def Info: images/mostCommonClasses.PNG  used on input line 541.
 (pdftex.def)             Requested size: 449.2586pt x 227.62204pt.
 
-Overfull \hbox (36.69363pt too wide) in paragraph at lines 556--559
+Overfull \hbox (36.69363pt too wide) in paragraph at lines 541--544
  [][] 
  []
 
-) [33 <./images/mostCommonErrors.PNG>] [34 <./images/mostCommonClasses.PNG>]
-[35]
+[32 <./images/findingsPerProject.PNG>] [33 <./images/findingsPerPackage.PNG> <.
+/images/mostCommonErrors.PNG>]) [34 <./images/mostCommonClasses.PNG>] [35]
 \openout2 = `chapters/80_evaluation.aux'.
 
- (chapters/80_evaluation.tex
+
+(chapters/80_evaluation.tex
 Kapitel 5.
-<images/tableRec.PNG, id=612, 773.13844pt x 416.30531pt>
+<images/tableRec.PNG, id=630, 773.13844pt x 416.30531pt>
 File: images/tableRec.PNG Graphic file (type png)
 <use images/tableRec.PNG>
 Package pdftex.def Info: images/tableRec.PNG  used on input line 10.
@@ -1682,7 +1671,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 3560337F111BCDF0C1C31FA94D0A13D1;1564.
+(rerunfilecheck)             Checksum: 255D17B2D130D6166BF86E733A8272FC;1778.
 
 
 LaTeX Warning: There were undefined references.
@@ -1695,13 +1684,13 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30390 strings out of 480900
- 545820 string characters out of 2917036
- 1305838 words of memory out of 3000000
- 45337 multiletter control sequences out of 15000+200000
+ 30402 strings out of 480900
+ 546107 string characters out of 2917036
+ 1316841 words of memory out of 3000000
+ 45345 multiletter control sequences out of 15000+200000
  603696 words of font info for 115 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 73i,7n,68p,1849b,2686s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 73i,7n,68p,1423b,2686s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1734,9 +1723,9 @@ a.pfb><D:/MikTex/fonts/type1/urw/courier/ucrr8a.pfb><D:/MikTex/fonts/type1/urw/
 helvetic/uhvr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/MikTex/font
 s/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/Mi
 kTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (52 pages, 581099 bytes).
+Output written on thesis.pdf (52 pages, 589259 bytes).
 PDF statistics:
- 791 PDF objects out of 1000 (max. 8388607)
- 270 named destinations out of 1000 (max. 500000)
- 272 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 810 PDF objects out of 1000 (max. 8388607)
+ 273 named destinations out of 1000 (max. 500000)
+ 301 words of extra memory for PDF output out of 10000 (max. 10000000)
 

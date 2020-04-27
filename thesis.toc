@@ -51,75 +51,81 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Konzept}{12}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Umsetzung}{14}{chapter.4}%
+\contentsline {section}{\numberline {3.1}Datenbank und Testdaten}{12}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Technologien und Tools für Umsetzung }{14}{section.4.1}%
+\contentsline {section}{\numberline {3.2}Funktionalitäten}{13}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Java}{14}{subsection.4.1.1}%
+\contentsline {section}{\numberline {3.3}Art der Applikation}{13}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Spring}{14}{subsection.4.1.2}%
+\contentsline {section}{\numberline {3.4}Infrastruktur und Aufbau der Applikationen}{14}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}Maven}{14}{subsection.4.1.3}%
+\contentsline {chapter}{\numberline {4}Umsetzung}{15}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.4}PMD}{14}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.1}Technologien und Tools für Umsetzung }{15}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.5}Checkstyle}{15}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.1}Java}{15}{subsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.6}MongoDB}{15}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.2}Spring}{15}{subsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.7}MongoDB Java Driver}{15}{subsection.4.1.7}%
+\contentsline {subsection}{\numberline {4.1.3}Maven}{15}{subsection.4.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.8}JavaScript und Frameworks}{15}{subsection.4.1.8}%
+\contentsline {subsection}{\numberline {4.1.4}PMD}{15}{subsection.4.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.9}IntelliJ}{16}{subsection.4.1.9}%
+\contentsline {subsection}{\numberline {4.1.5}Checkstyle}{16}{subsection.4.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Infrastruktur und Aufbau der Applikationen}{16}{section.4.2}%
+\contentsline {subsection}{\numberline {4.1.6}MongoDB}{16}{subsection.4.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Demo-Projekt und Bugreport}{17}{section.4.3}%
+\contentsline {subsection}{\numberline {4.1.7}MongoDB Java Driver}{16}{subsection.4.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Maven Plugins}{17}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.1.8}JavaScript und Frameworks}{16}{subsection.4.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1.1}CheckStyle-Plugin}{17}{subsubsection.4.3.1.1}%
+\contentsline {subsection}{\numberline {4.1.9}IntelliJ}{17}{subsection.4.1.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1.2}PMD-Plugin}{17}{subsubsection.4.3.1.2}%
+\contentsline {section}{\numberline {4.2}Demo-Projekt und Bugreport}{17}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Speichern der Daten}{18}{section.4.4}%
+\contentsline {subsection}{\numberline {4.2.1}Maven Plugins}{17}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Vorteil vom Einsatz einer nicht-relationalen Datenbank gegenüber einer relationalen Datenbanke }{18}{subsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.1}CheckStyle-Plugin}{17}{subsubsection.4.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}Typen der nicht-relationale Datenbanken}{19}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1.2}PMD-Plugin}{17}{subsubsection.4.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.3}Aufbau der Datenbank}{19}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.3}Speichern der Daten}{18}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Datenbank Importer Plugin}{20}{section.4.5}%
+\contentsline {subsection}{\numberline {4.3.1}Vorteil vom Einsatz einer nicht-relationalen Datenbank gegenüber einer relationalen Datenbanke }{18}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Apache Maven Plugin}{21}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.3.2}Typen der nicht-relationale Datenbanken}{19}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}MongoDB-Java-Driver und Datenbank-Import}{22}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.3.3}Aufbau der Datenbank}{19}{subsection.4.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Webapplikation}{23}{section.4.6}%
+\contentsline {section}{\numberline {4.4}Datenbank Importer Plugin}{21}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.1}Backend}{23}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.4.1}Apache Maven Plugin}{21}{subsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.1.1}API und Controller}{24}{subsubsection.4.6.1.1}%
+\contentsline {subsection}{\numberline {4.4.2}MongoDB-Java-Driver und Datenbank-Import}{22}{subsection.4.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.1.2}Services und MongoDB-Java-Driver}{24}{subsubsection.4.6.1.2}%
+\contentsline {section}{\numberline {4.5}Webapplikation}{23}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.1.3}IText und PDF-Export}{25}{subsubsection.4.6.1.3}%
+\contentsline {subsection}{\numberline {4.5.1}Backend}{24}{subsection.4.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.2}Frontend}{25}{subsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.5.1.1}API und Controller}{24}{subsubsection.4.5.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.2.1}Kommunikation mit dem Backend}{25}{subsubsection.4.6.2.1}%
+\contentsline {subsubsection}{\numberline {4.5.1.2}Services und MongoDB-Java-Driver}{24}{subsubsection.4.5.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.2.2}Auswahl und Filterung}{26}{subsubsection.4.6.2.2}%
+\contentsline {subsubsection}{\numberline {4.5.1.3}IText und PDF-Export}{25}{subsubsection.4.5.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.2.3}Recommendations}{27}{subsubsection.4.6.2.3}%
+\contentsline {subsection}{\numberline {4.5.2}Frontend}{26}{subsection.4.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.2.4}Ignorieren von Meldungen}{28}{subsubsection.4.6.2.4}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}Kommunikation mit dem Backend}{26}{subsubsection.4.5.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.2.5}Erstellen von Grafiken}{29}{subsubsection.4.6.2.5}%
+\contentsline {subsubsection}{\numberline {4.5.2.2}Auswahl und Filterung}{27}{subsubsection.4.5.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.2.6}Präsentation der Daten}{30}{subsubsection.4.6.2.6}%
+\contentsline {subsubsection}{\numberline {4.5.2.3}Recommendations}{28}{subsubsection.4.5.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.5.2.4}Ignorieren von Meldungen}{28}{subsubsection.4.5.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.5.2.5}Erstellen von Grafiken}{29}{subsubsection.4.5.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.5.2.6}Präsentation der Daten}{30}{subsubsection.4.5.2.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Evaluierung}{36}{chapter.5}%
 \defcounter {refsection}{0}\relax 

@@ -36,21 +36,6 @@ Für das Frontend der Webapplikation wird JavaScript eingesetzt. Um zusätzliche
 \subsection{IntelliJ}
 IntelliJ IDEA wurde als Entwicklungsumgebung für das Backend und Frontend verwendet, da es mehrere Programmiersprachen und Frameworks unterstützt.
 
-\section{Infrastruktur und Aufbau der Applikationen} 
-Im Rahmen dieser Arbeit wurde mehrere Applikationen und Systeme verwendet. Die Arbeit setzt sich aus folgenden Teilen zusammen:
-
-\begin{figure}[tp]
-  \centering
-  \includegraphics[height=8cm]{images/infrastruktur.PNG}
-  % The short caption should be capitalised
-  % The full caption should hold a full sentence. 
- \caption[Aufbau der Teilsysteme und Projekte der Arbeit]{Aufbau der Teilsysteme und Projekte der Arbeit.}
-  \label{fig:engine}
-\end{figure}
-
-Das \textit{Project} ist das Softwareprojekt, welches analysiert werden soll. In diesem Projekt wird auch ein Tool für die Statische Code Analyse eingesetzt. Dieses Tool speichert die Daten (Errors, Warnungen, Informationen) extern. Um diese Daten für die Analyse verwenden zu können, wurde im Rahmen der Arbeit ein \textit{Plugin}, welches das Projekt einsetzten kann, entwickelt. Dieses Plugin greift auf die Daten Statische Code Analyse zu. der Um das Plugin verwenden zu können, muss auch eine \textit{Datenbank} angegeben werden, in welche das Plugin die Daten der Statische Code Analyse des Projekts speichern kann. Die nicht-relationale Datenbank wird auf einem Server gehostet. Um in der Weboberfläche die Daten der Datenbank anzeigen zu können, wird auch ein \textit{Backend} benötigt. Das Backend liest die Daten aus und gibt sie an die Weboberfläche weiter. In der \textit{Weboberfläche} werden die Daten in verschiedenen Diagrammen und Tabellen ausgewertet. Auch ein PDF-Export ist möglich. (siehe Punkt 4.6.2.6 Präsentation der Daten)
-
-
 \section{Demo-Projekt und Bugreport}
 Um den Bugreport(Testdaten) generieren zu können, werden verschiedene existierende Projekte verwendet. In diesen Projekten werden für die Generierung der Testdaten die Tools für die Statische Code Analyse eingesetzt. Diese Tools können in den Entwicklungsumgebung als Extension installiert oder als Plugin eingebunden werden.
 \subsection{Maven Plugins}
