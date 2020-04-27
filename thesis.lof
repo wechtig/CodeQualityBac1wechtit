@@ -7,13 +7,13 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Anzeige von Fehler in der Entwicklungsumgebung Intellij IDEA}}{2}{figure.1.1}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Anzeige von Fehlern in der Entwicklungsumgebung Intellij IDEA}}{2}{figure.1.1}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Anzeige von Fehlern und Problemen eines Projekts im SonarQube}}{6}{figure.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Auszug aus dem automatisch generierten CheckStyle-Report der Ergebnisse der Analyse. (vgl. Abbildung in der Entwicklungsumgebung \ref {fig:findingsInIDE})}}{10}{figure.2.2}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Auszug aus dem automatisch generierten CheckStyle-Report der Ergebnisse der Analyse.}}{10}{figure.2.2}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -37,12 +37,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Chart für die Verteilung der Fehler in den Packages.}}{33}{figure.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Am meisten vorkommende Fehler in den ausgewählten Projekte. (vgl. Fehler in den den Abbildungen \ref {fig:checkstyleHTMLReport} und \ref {fig:findingsInIDE})}}{33}{figure.4.8}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Am meisten vorkommende Fehler in den ausgewählten Projekten.}}{33}{figure.4.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Klassen mit den meisten Fehlern. Neben den Klassennamen wird das jeweilige Projekt angegeben.}}{34}{figure.4.9}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Klassen mit den meisten Fehlern.}}{34}{figure.4.9}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Am meisten vorkommende Fehler in den ausgewählten Projekte. (vgl. Fehler in den den Abbildungen \ref {fig:checkstyleHTMLReport} und \ref {fig:findingsInIDE})}}{37}{figure.5.1}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Am häufigsten vorkommende Fehler in den ausgewählten Projekten.}}{37}{figure.5.1}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

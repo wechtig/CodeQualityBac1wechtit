@@ -141,7 +141,7 @@ Beispiel eines JSON-Datensatzs in der Collection:
 "date" : ISODate("2020-01-05T00:00:00Z") }
 \end{verbatim}
 
-In einer relationalen Datenbanken mit einem starken Schema und einer ausgeprägten Konsistenz, könnte dieser Datensatz in mehrere Tabellen verteilt gespeichert werden, zum Beispiel eine eigene Tabelle für \textit{severity}. Aufgrund der schwachen Konsistenz in nicht-relationalen Datenbanken wird hierbei nur eine Collection (Tabelle) verwendet. So können in dieser Collection auch Datensätze gespeichert werden, die keine \textit{severity} besitzen: NULL-Werte können so nicht auftreten. \\
+In einer relationalen Datenbank mit einem starken Schema und einer stark ausgeprägten Konsistenz, könnte dieser Datensatz in mehrere Tabellen verteilt gespeichert werden, zum Beispiel eine eigene Tabelle für \textit{severity}. Aufgrund der schwachen Konsistenz in nicht-relationalen Datenbanken wird hierbei nur eine Collection (Tabelle) verwendet. So können in dieser Collection auch Datensätze gespeichert werden, die keine \textit{severity} besitzen: NULL-Werte können so nicht auftreten. \\
 Die Datensätze können mit dem Mongo-Service ausgelesen werden: 
 
 \begin{verbatim}
@@ -247,7 +247,7 @@ db = mongoClient.getDatabase(databaseName);
 	\end{lstlisting}
 \end{samepage}
 
-Der Typ \textit{MongoCollection<Document>} kann nun verwendet werden um Dokumente zu speichern, löschen oder auszulesen. Diese Operationen werden beim MongoDB-Java-Driver direkt auf die betreffenden Collections angewendet. Ein Commit oder eine andere Operation ist dabei nicht notwendig.
+Der Typ \textit{MongoCollection<Document>} kann nun verwendet werden um Dokumente zu speichern, zu löschen oder auszulesen. Diese Operationen werden beim MongoDB-Java-Driver direkt auf die betreffenden Collections angewendet. Ein Commit oder eine andere Operation ist dabei nicht notwendig.
 
 % \includegraphics{dbpluginSave}    
 
@@ -303,7 +303,7 @@ Der Konverter wird in allen Service-Methoden verwendet, wo Daten aus den Collect
 
 \subsubsection{IText und PDF-Export}
 Der PDF-Export ist eine weitere Funktion, die das Backend bietet. Ein PDF-Export kann für ein bestimmtes Projekt in einem bestimmten Zeitraum erstellt werden. Im Report werden die wichtigsten Informationen der Analyse in Textform dargestellt, dazu auch die einzelnen gefundenen Fehler und Warnungen. \\
-Dazu wird das Tool IText zur Erstellung von Reports verwendet.  ~\parencite{lowagie2011itext} Um IText zu verwenden, kann aus verschiedenen Preismodellen gewählt werden, eine kostenlose Version wird aber auch zur Verfügung gestellt und in dieser Arbeit verwendet.  \\
+Dafür wird das Tool IText zur Erstellung von Reports verwendet.  ~\parencite{lowagie2011itext} Um IText zu verwenden, kann aus verschiedenen Preismodellen gewählt werden, eine kostenlose Version wird aber auch zur Verfügung gestellt und in dieser Arbeit verwendet.  \\
 Über das Service liest der PDF-Generator die angegeben Daten aus.
 
 \lstset{
@@ -332,7 +332,7 @@ document.add(new Paragraph(
 \end{samepage}
 
 Für alle im Service ausgelesen Daten wird ein eigener Paragraph erstellt. Um die Überschrift und die Daten entsprechend zu formatieren, kann mittels \textit{IText} auch ein Font erstellt werden. Mit der \textit{FontFactory} wird hierbei ein Font mit bestimmter Schriftart, Schriftgröße und Farbe erstellt.
-Nach der Erstellung des PDF-Dokument muss das Ergebnis weiter an den Client geschickt werden. Um das PDF-Dokumente im \textit{Response} der HTTP-Anfrage zu übertragen, wird das Dokument in ein \textit{byte-array} konvertiert. Dies geschieht mit der Verwendung des \textit{ByteArrayOutputStream} und dessen Methode \textit{toByteArray}. 
+Nach der Erstellung des PDF-Dokument muss das Ergebnis weiter an den Client geschickt werden. Um das PDF-Dokument im \textit{Response} der HTTP-Anfrage zu übertragen, wird das Dokument in ein \textit{byte-array} konvertiert. Dies geschieht mit der Verwendung des \textit{ByteArrayOutputStream} und dessen Methode \textit{toByteArray}. 
 
 \begin{figure}[tp]
   \centering
@@ -493,7 +493,7 @@ In der Übersichtstabelle werden alle geladenen Daten angezeigt. Da die möglich
 
 Über das Input-Feld \textit{search} können alle verwendeten Felder durchsucht werden: File (File, in dem der Error gefunden wurde), Project (ausgewähltes Projekt), Message (Meldung), Severity (Schwerer der Fehler), Line (Zeilen, in dem der Fehler auftritt) und Date. \\ In der Übersichtstabelle werden zusätzlich die Recommendations angezeigt. (siehe Punkt 4.6.2.3) 
 
-\textbf{Verteilung der gefunden Fehler und Bugs in den Projekten} \\
+\textbf{Verteilung der gefundenen Fehler und Bugs in den Projekten} \\
 In diesem Chart wird die Verteilung der Fehler auf die Projekte visualisiert (siehe \ref{fig:findingsProject}). Dieses Chart wird nur angezeigt, wenn bei der Filterung mehr als ein Projekt ausgewählt wurde. 
 
 \begin{figure}[tp]
@@ -505,9 +505,9 @@ In diesem Chart wird die Verteilung der Fehler auf die Projekte visualisiert (si
   \label{fig:findingsProject}
 \end{figure}
 
-Bei einem \textit{Mouseover} über das einzelne Projekte wird die genaue Anzahl der gefunden Fehler angezeigt.
+Bei einem \textit{Mouseover} über das einzelne Projekte wird die genaue Anzahl der gefundenen Fehler angezeigt.
 
-\textbf{Verteilung der gefunden Fehler und Bugs in den Packages} \\
+\textbf{Verteilung der gefundenen Fehler und Bugs in den Packages} \\
 In diesem Chart wird die Verteilung der Fehler auf die Packages eines Projekts angezeigt.(siehe \ref{fig:findingsPackage}). Dieses Chart wird nur angezeigt, wenn bei der Filterung mehr als ein Projekt ausgewählt wurde.
 
 \begin{figure}[tp]
@@ -522,14 +522,14 @@ In diesem Chart wird die Verteilung der Fehler auf die Packages eines Projekts a
 Bei einem \textit{Mouseover} über ein Package wird die genaue Anzahl der gefunden Fehler angezeigt.
 
 \textbf{Am häufigsten vorkommende Fehler} \\
-In diesem Chart werden die häufigsten Fehler der ausgewählten Projekte angezeigt (siehe Abbildung \ref{fig:mostCommonErrors}). Meldungen, die ignoriert wurden, werden nicht in das Chart miteinbezogen. Auf den einzelnen Achsen werden die Fehlermeldungen und die Häufigkeit der Fehler angezeigt .
+In diesem Chart werden die häufigsten Fehler der ausgewählten Projekte angezeigt (siehe Abbildung \ref{fig:mostCommonErrors}). Meldungen, die ignoriert wurden, werden nicht in das Chart miteinbezogen. Auf den einzelnen Achsen werden die Fehlermeldungen und die Häufigkeiten der Fehler angezeigt .
 
 \begin{figure}[tp]
   \centering
   \includegraphics[height=8cm]{images/mostCommonErrors.PNG}
   % The short caption should be capitalised
   % The full caption should hold a full sentence. 
- \caption[Am meisten vorkommende Fehler in den ausgewählten Projekte. (vgl. Fehler in den den Abbildungen \ref{fig:checkstyleHTMLReport} und \ref{fig:findingsInIDE})]{Am meisten vorkommende Fehler in den ausgewählten Projekte. (vgl. Fehler in den den Abbildungen \ref{fig:findingsInIDE} und \ref{fig:checkstyleHTMLReport})}
+ \caption[Am meisten vorkommende Fehler in den ausgewählten Projekten.]{Am meisten vorkommende Fehler in den ausgewählten Projekten. (vgl. Fehler in den Abbildungen \ref{fig:findingsInIDE} und \ref{fig:checkstyleHTMLReport})}
   \label{fig:mostCommonErrors}
 \end{figure}
 
@@ -541,7 +541,7 @@ In diesem Chart werden die Klassen mit den meisten Fehlern angezeigt (siehe Abbi
   \includegraphics[height=8cm]{images/mostCommonClasses.PNG}
   % The short caption should be capitalised
   % The full caption should hold a full sentence. 
- \caption[Klassen mit den meisten Fehlern. Neben den Klassennamen wird das jeweilige Projekt angegeben.]{Klassen mit den meisten Fehlern. Neben den Klassennamen wird das jeweilige Projekt angegeben.}
+ \caption[Klassen mit den meisten Fehlern.]{Klassen mit den meisten Fehlern. Neben den Klassennamen wird das jeweilige Projekt angegeben.}
   \label{fig:mostCommonClasses}
 \end{figure}
 
