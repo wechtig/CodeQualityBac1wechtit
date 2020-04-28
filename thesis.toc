@@ -61,7 +61,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Umsetzung}{15}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Technologien und Tools für Umsetzung }{15}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Technologien und Tools für die Umsetzung }{15}{section.4.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.1}Java}{15}{subsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
@@ -91,7 +91,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Speichern der Daten}{18}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Vorteil vom Einsatz einer nicht-relationalen Datenbank gegenüber einer relationalen Datenbanke }{18}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.1}Vorteil vom Einsatz einer nicht-relationalen Datenbank gegenüber einer relationalen Datenbank }{18}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.2}Typen der nicht-relationale Datenbanken}{19}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
@@ -139,4 +139,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Fazit und Ausblick}{42}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{45}{chapter*.13}%
+\contentsline {chapter}{Literatur}{45}{chapter*.13}%

@@ -1,9 +1,9 @@
 
 \chapter{Umsetzung}
-\section{Technologien und Tools für Umsetzung } 
+\section{Technologien und Tools für die Umsetzung } 
 
 \subsection{Java} 
-Die drei Teilprojekte der Arbeit wurden in Java entwickelt. Die verwendete Java Version ist Java 11. Java wird als Sprache in der Arbeit verwendet, da eine große Anzahl von Tools für die Statische Code Analyse auf Java passieren und eine plattformunabhängige und robuste Programmiersprache ist. Als Alternative zu Java könnte C-Sharp oder eine JavaScript basierende Webserver-Lösung wie Node.js fungieren.
+Die drei Teilprojekte der Arbeit wurden in Java entwickelt. Die verwendete Java Version ist Java 11. Java wird als Sprache in der Arbeit verwendet, da eine große Anzahl von Tools für die Statische Code Analyse auf Java passieren und eine plattformunabhängige und diese auch eine robuste Programmiersprache ist. Als Alternative zu Java könnte C-Sharp oder eine JavaScript basierende Webserver-Lösung wie Node.js fungieren.
 
 \subsection{Spring} 
 Spring Boot ist ein Java Framework, das im Zuge der Projektarbeit zur Entwicklung der Web-Applikation verwendet wurde.
@@ -12,13 +12,13 @@ Spring Boot ist ein Java Framework, das im Zuge der Projektarbeit zur Entwicklun
 Maven ist ein Versionsverwaltungstool mit dem Abhängigkeiten und JARs verwaltet und heruntergeladen werden können.
 
 \subsection{PMD} 
-Checkstyle ist ein open-source Tool für die Statische Code Analyse für Java, JavaScript und XML, auf Probleme und CodeSmells untersucht. Es unterstützt eine API, mit der eigene Regeln erstellt werden können. \footnote{https://pmd.github.io/latest/}
+Checkstyle ist ein open-source Tool für die Statische Code Analyse für Java, JavaScript und XML, das den Code auf Probleme und CodeSmells untersucht. Es unterstützt eine API, mit der eigene Regeln erstellt werden können. \footnote{https://pmd.github.io/latest/}
 
 \subsection{Checkstyle} 
-Checkstyle ist ein open-source Tool für die Statische Code Analyse. Checkstyle ist für die Verwendung in Java Applikationen entwickelt worden. Hierbei werden eine Vielzahl an Fehler und Bugs analysiert und beachtet. Checkstyle kann konfiguriert und an spezifische Probleme angepasst werden.\footnote{https://checkstyle.sourceforge.io/}
+Checkstyle ist ein open-source Tool für die Statische Code Analyse. Checkstyle ist für die Verwendung in Java Applikationen entwickelt worden. Hierbei werden eine Vielzahl an Fehlern und Bugs analysiert und beachtet. Checkstyle kann konfiguriert und an spezifische Probleme angepasst werden.\footnote{https://checkstyle.sourceforge.io/}
 
 \subsection{MongoDB} 
-Als Datenbank wird die nicht-relationale Lösung MongoDB verwendet, da es verschiedene Vorteile gegenüber relationales Datenbankmanagementsystem bietet. (siehe Punkt 4.4.1) Es gehört zu den dokumentorientierten Datenbanken.
+Als Datenbank wird die nicht-relationale Lösung MongoDB verwendet, da es verschiedene Vorteile gegenüber relationales Datenbankmanagementsystem bietet (siehe Punkt 4.4.1). Es gehört zu den dokumentorientierten Datenbanken.
 MongoDB kann über die offiziele Website heruntergeladen und installiert werden.\footnote{https://docs.mongodb.com/manual/}
 
 \subsection{MongoDB Java Driver}
@@ -37,16 +37,16 @@ Für das Frontend der Webapplikation wird JavaScript eingesetzt. Um zusätzliche
 IntelliJ IDEA wurde als Entwicklungsumgebung für das Backend und Frontend verwendet, da es mehrere Programmiersprachen und Frameworks unterstützt.
 
 \section{Demo-Projekt und Bugreport}
-Um den Bugreport(Testdaten) generieren zu können, werden verschiedene existierende Projekte verwendet. In diesen Projekten werden für die Generierung der Testdaten die Tools für die Statische Code Analyse eingesetzt. Diese Tools können in den Entwicklungsumgebung als Extension installiert oder als Plugin eingebunden werden.
+Um den Bugreport (Testdaten) generieren zu können, werden verschiedene existierende Projekte verwendet. In diesen Projekten werden für die Generierung der Testdaten die Tools für die Statische Code Analyse eingesetzt. Diese Tools können in den Entwicklungsumgebungen als Extension installiert oder als Plugin eingebunden werden.
 \subsection{Maven Plugins}
 Viele Tools für die Statische Code Analyse bieten die Möglichkeit, XML-Reports zu genieren. Dies ist möglich mit dem Verwenden der spezifischen Maven-Plugins. ~\parencite{spotBugsUsage} ~\parencite{checkstylePlugin} 
 Diese Plugins bieten build-Optionen an, mit dem die XML oder Doc-Reports generiert werden können. Die daraus entstehenden XML-Reports bilden die Datengrundlagen für die Analysen und Visualisierungen im Frontend.
 \subsubsection{CheckStyle-Plugin}
-Um Checkstyle verwenden zu können, muss das CheckStyle-Plugin nicht verwendet werden. Das Plugin dient unter anderem zum Export der Daten als XML. Dieses generierte XML bildet den Grundstock für die unterschiedlichen Präsentationen der Daten im Frontend gibt. Um die Daten zu exportieren muss folgender Befehl ausgeführt werden:
+Um Checkstyle verwenden zu können, muss das CheckStyle-Plugin nicht verwendet werden. Das Plugin dient unter anderem zum Export der Daten als XML. Die Daten, dieser von den Tools generierten XMLs, bilden den Grundstock für die unterschiedlichen Präsentationen der Daten, die es im Frontend gibt. Um die Daten zu exportieren muss folgender Befehl ausgeführt werden:
 \begin{verbatim}
 mvn checkstyle:checkstyle
 \end{verbatim}
-Dieser Befehl muss von der Benutzerin oder dem Benutzer manuell ausgeführt werden. Um den Report automatisch zu erstellen, kann beim Einbinden des Plugin die Maven-Lifecycle-Phase angegeben werden (siehe \ref{fig:phase}).
+Dieser Befehl muss von der Benutzerin oder dem Benutzer manuell ausgeführt werden. Um den Report automatisch zu erstellen, kann beim Einbinden des Plugin die Maven-Lifecycle-Phase angegeben werden (siehe \ref{lst:phase}).
 
 \lstset{
   caption={Das Plugin wird automatisch in der install-Phase ausgeführt.}, 
@@ -89,19 +89,19 @@ Wie beim CheckStyle-Plugin kann auch bei diesem Plugin die Maven-Lifecycle-Phase
 
 \section{Speichern der Daten} 
 
-Zum Speichern der Daten wird eine Datenbank benötigt. Aufgrund der stark variierenden Daten und da es bei großen Projekten auf einem längeren Zeitraum große Datenmengen an Fehler und Warnungen gefunden werden, wird eine nicht-relationale Datenbank (NoSQL) verwendet. 
+Zum Speichern der Daten wird eine Datenbank benötigt. Aufgrund der stark variierenden Daten und da es bei großen Projekten auf einem längeren Zeitraum große Datenmengen an Fehlern und Warnungen gefunden werden, wird eine nicht-relationale Datenbank (NoSQL) verwendet. 
 
-\subsection{Vorteil vom Einsatz einer nicht-relationalen Datenbank gegenüber einer relationalen Datenbanke }
+\subsection{Vorteil vom Einsatz einer nicht-relationalen Datenbank gegenüber einer relationalen Datenbank }
 Der Vorteil einer nicht-relationalen Datenbank wie MongoDB besteht in der unterschiedlichen Lösung des CAP-Theorem. CAP ist eine für Abkürzung:
 
 \begin{itemize}
 \item C = Consistency (Konsistenz)
 \item A = Availability (Verfügbarkeit) 
-\item P = Partition Tolerance (Fehlertoleranz))
+\item P = Partition Tolerance (Fehlertoleranz)
 \end{itemize}
 
 Das CAP-Theorem besagt, dass nur zwei dieser Eigenschaften gleichzeitig gelten können. 
-Relationale Datenbanken sind im CA Bereich beheimatet, sie legen einen hohen Wert auf Konsistenz. Bei NoSQL und Big Data muss  auf die Fehlertoleranz geachten werden und gleicherweise müssen die Datenbanken hochverfügbar sein, so sind sie im AP Bereich beheimatet. Das garantiert eine hohe Verfügbarkeit und Fehlertoleranz. Konsistenz ist bei den vielen Analysen der Statischen Code Analyse weniger von nutzen, da die Daten der verschiedenen Tools auch stark varrieren. Zusätzlich garantiert die Verwendung einer nicht-relationalen Datenbank eine einfache Query-Language und ein freies Schema.\\
+Relationale Datenbanken sind im CA Bereich beheimatet, sie legen einen hohen Wert auf Konsistenz. Bei NoSQL und Big Data muss  auf die Fehlertoleranz geachten werden und gleicherweise müssen die Datenbanken hochverfügbar sein, so sind sie im AP Bereich beheimatet. Das garantiert eine hohe Verfügbarkeit und Fehlertoleranz. Konsistenz ist bei den vielen Analysen der Statischen Code Analyse weniger von Nutzen, da die Daten der verschiedenen Tools auch stark varrieren. Zusätzlich garantiert die Verwendung einer nicht-relationalen Datenbank eine einfache Query-Language und ein freies Schema.\\
 Die Verwendung von nicht-relationalen Datenbanken stellt daher eine Möglichkeit da, die Herausforderungen im Bereich von BigData zu lösen:
 \begin{itemize}
 \item Größe der Daten (Volume) 
@@ -111,7 +111,7 @@ Die Verwendung von nicht-relationalen Datenbanken stellt daher eine Möglichkeit
 
 
 \subsection{Typen der nicht-relationale Datenbanken}
-NoSQL bedeutet nicht \emph{Kein SQL}, sondern \emph{Not only SQL}. Der Aufbau ist hierbei nicht auf relationale Datenbanken beschränkt, sondern kann seine Datenbankstruktur erweitert. 
+NoSQL bedeutet nicht \emph{Kein SQL}, sondern \emph{Not only SQL}. Der Aufbau ist hierbei nicht auf relationale Datenbanken beschränkt, sondern es kann seine Datenbankstruktur erweitern. 
 So gibt es in diesem Umfeld viele Anbieter von NoSQL Lösungen. Diese Lösungen für Datenbanken werden in folgende Kategorien unterteilt:
 
 \begin{itemize}
@@ -141,7 +141,7 @@ Beispiel eines JSON-Datensatzs in der Collection:
 "date" : ISODate("2020-01-05T00:00:00Z") }
 \end{verbatim}
 
-In einer relationalen Datenbank mit einem starken Schema und einer stark ausgeprägten Konsistenz, könnte dieser Datensatz in mehrere Tabellen verteilt gespeichert werden, zum Beispiel eine eigene Tabelle für \textit{severity}. Aufgrund der schwachen Konsistenz in nicht-relationalen Datenbanken wird hierbei nur eine Collection (Tabelle) verwendet. So können in dieser Collection auch Datensätze gespeichert werden, die keine \textit{severity} besitzen: NULL-Werte können so nicht auftreten. \\
+In einer relationalen Datenbank mit einem starken Schema und einer stark ausgeprägten Konsistenz könnte dieser Datensatz in mehrere Tabellen verteilt gespeichert werden, zum Beispiel in einer eigenen Tabelle für \textit{severity}. Aufgrund der schwachen Konsistenz in nicht-relationalen Datenbanken wird hierbei nur eine Collection (Tabelle) verwendet: \textit{findings}. So können in dieser Collection auch Datensätze gespeichert werden, die keine \textit{severity} besitzen: NULL-Werte können so nicht auftreten. \\
 Die Datensätze können mit dem Mongo-Service ausgelesen werden: 
 
 \begin{verbatim}
@@ -154,9 +154,9 @@ db.findings.find({"_id" : ObjectId("5e1209881a2dff20ab6ee6c6")})
 
 Eine zweite Collection \textit{recommendations} wird für das Speichern der Vorschläge für die Fehler und Warnungen verwendet. Benutzer können hierbei über die Webapplikation Tutorials und nützliche Links zu den einzelnen Fehlern und Warnungen speichern.
 In dieser Collection werden daher Objekte mit nur zwei Datenfeldern gespeichert: \textit{error} und \textit{link}. \\
-In einer dritten Collection \textit{ignoredFindings} werden Errors und Warnungen gespeichert, die von der Anzeige im Frontend ausgenommen werden. In den Objekten gibt es nur ein Datenfeld \textit{message}, für die ausgenommen Meldungen.
+In einer dritten Collection \textit{ignoredFindings} werden Errors und Warnungen gespeichert, die von der Anzeige im Frontend ausgenommen werden. In den Objekten gibt es nur ein Datenfeld \textit{message}, für die ausgenommenen Meldungen.
 \section{Datenbank Importer Plugin} 
-Die Statischen Code Analyse wird auf dem Rechner des Entwicklers oder der Entwicklerin ausgeführt. Diese Daten müssen in der Datenbank gespeichert werden, um sie in einem längeren Zeitraum einsehen und auswerten zu können. Eine eigene Lösung wird daher benötigt, um die Daten in der Datenbank speichern zu können. 
+Die Statischen Code Analyse wird auf dem Rechner der Entwicklerin oder des Entwicklers ausgeführt. Diese Daten müssen in der Datenbank gespeichert werden, um sie in einem längeren Zeitraum einsehen und auswerten zu können. Eine eigene Lösung wird daher benötigt, um die Daten in der Datenbank speichern zu können. 
 \subsection{Apache Maven Plugin}
 Mit Apache Maven können verschiedene Plugins eingebunden und im Projekt verwendet werden. Apache Maven bietet aber auch die Möglichkeit, eigene Plugins zu entwickeln.~\parencite{anardu2014maven}
 
@@ -393,7 +393,7 @@ Treten beim Request Fehler auf, so werden die Anweisungen im \textit{catch}-Bloc
 
 \subsubsection{Auswahl und Filterung}
 Um eine genaue Auswahl der Daten zu bekommen, gibt es die Möglichkeit zur Filterung der Daten. Dazu gibt es zwei Attribute. Das erste Attribut ist der Zeitraum, aus dem die Daten stammen sollen. Das andere Attribut ist das Projekt. Hierbei besteht auch die Möglichkeit die Daten aus allen Projekten zu beziehen. \\
-Die Filterung ist auch wichtig, da ein Import der Daten der Statischen Code Analyse mit dem Plugin bei jedem \textit{mvn install} geschehen kann (siehe Punkt 4.5) und so eine große Datenmenge erstellt werden kann, die das Ergebnis möglicherweise verfälscht. Da einige Bugs und Probleme auch ausgebessert werden, ist es wichtig einen Datumsfilter zu verwenden, um nur den gewünschten Zeitraum zu verwenden. \\ Mit dem Projektfilter können gezielt einzelne Projekte betrachtet werden, aber auch eine Übersicht über alle Projekte kann erreicht werden. So kann die Benutzerin  oder der Benutzer einen Überblick bekommen und die Zusammenhänge zwischen den einzelnen Projekten einsehen: Genau Verteilung der Fehler in den Projekten und häufigste Fehler (siehe Punkt 4.6.2.7).
+Die Filterung ist auch wichtig, da ein Import der Daten der Statischen Code Analyse mit dem Plugin bei jedem \textit{mvn install} geschehen kann (siehe Punkt 4.5) und so eine große Datenmenge erstellt werden kann, die das Ergebnis möglicherweise verfälscht. Da einige Bugs und Probleme auch ausgebessert werden, ist es wichtig einen Datumsfilter zu verwenden, um nur den gewünschten Zeitraum zu verwenden. \\ Mit dem Projektfilter können gezielt einzelne Projekte betrachtet werden, aber auch eine Übersicht über alle Projekte kann erreicht werden. So kann die Benutzerin  oder der Benutzer einen Überblick bekommen und die Zusammenhänge zwischen den einzelnen Projekten einsehen.
 
 \subsubsection{Recommendations}
 In der Weboberfläche können gezielt Vorschläge (Recommendations) für einzelne Fehlermeldungen und Warnungen hinterlegt werden. Um eine Recommendation zu erstellen, muss in der Weboberfläche in der Recommendations-Section ein neuer Eintrag mit einer Fehlermeldung und einem Link auf eine Lösung hinterlegt werden. Diese Lösungen können beispielsweise Tutorials, Dokumentationen oder andere gezielte Hilfsstellungen für die Meldung sein. Diese Recommendations werden in der Datenbank gespeichert.
