@@ -116,8 +116,8 @@ So gibt es in diesem Umfeld viele Anbieter von NoSQL Lösungen. Diese Lösungen 
 
 \begin{itemize}
 \item Key Value Datenbanken: Abfragen nur über einen Schlüssel
-\item Spaltenorientierte Datenbanken (Dynamische Spalten)
-\item Graph-Datenbanken (Verwaltung und Arbeiten mit Knoten)
+\item Spaltenorientierte Datenbanken: Dynamische Spalten
+\item Graph-Datenbanken: Verwaltung und Arbeiten mit Knoten
 \item Dokumentorientierte Datenbanken: Besteht aus mehreren Dokumenten (JSONs)
 \end{itemize}
 
@@ -158,9 +158,9 @@ In einer dritten Collection \textit{ignoredFindings} werden Errors und Warnungen
 \section{Datenbank Importer Plugin} 
 Die Statischen Code Analyse wird auf dem Rechner der Entwicklerin oder des Entwicklers ausgeführt. Diese Daten müssen in der Datenbank gespeichert werden, um sie in einem längeren Zeitraum einsehen und auswerten zu können. Eine eigene Lösung wird daher benötigt, um die Daten in der Datenbank speichern zu können. 
 \subsection{Apache Maven Plugin}
-Mit Apache Maven können verschiedene Plugins eingebunden und im Projekt verwendet werden. Apache Maven bietet aber auch die Möglichkeit, eigene Plugins zu entwickeln.~\parencite{anardu2014maven}
+Mit Apache Maven können verschiedene Plugins eingebunden und im Projekt verwendet werden. Apache Maven bietet aber auch die Möglichkeit eigene Plugins zu entwickeln.~\parencite{anardu2014maven}
 
-Die Dependency \textit{maven-plugin-api} gibt Klassen und Funktionen vor, die benutzt werden können um ein eigenes Plugin zu entwickeln
+Die Dependency \textit{maven-plugin-api} gibt Klassen und Funktionen vor, die benutzt werden können um ein eigenes Plugin zu entwickeln.
 \begin{verbatim}
  <dependency>
       <groupId>org.apache.maven</groupId>
@@ -170,10 +170,10 @@ Die Dependency \textit{maven-plugin-api} gibt Klassen und Funktionen vor, die be
  </dependency>
 \end{verbatim}
 
-Mit dieser Dependency kann nun eine Mojo-Klasse erstellt (siehe Listing  \ref{lst:mainexecuter}). Die Klasse \textit{MainExecuter.java} stellt den Kern des Plugins da, die der Verwendung des Plugins zuerst ausgeführt wird.  ~\parencite{gonzalezMavenTutorial}
+Mit dieser Dependency kann nun eine Mojo(Maven plain Old Java Object)-Klasse erstellt werden (siehe Listing  \ref{lst:mainexecuter}). Im entwickelten Plugin stellt die Klasse \textit{MainExecuter.java} den Kern des Plugins da, die bei der Verwendung des Plugins zuerst ausgeführt wird.  ~\parencite{gonzalezMavenTutorial}
 
 \lstset{
-  caption={Kopf der Executor-Klasse: Sie wird mit dem Aufruf des Plugins zuerst gestartet.}, 
+  caption={Kopf der Executor-Klasse: Sie wird beim Aufruf des Plugins zuerst gestartet.}, 
   basicstyle=\small\ttfamily, 
   label=lst:mainexecuter, 
   %float=tbhp, % float image to top/bottom/here/page
@@ -197,11 +197,11 @@ public class MainExecutor extends AbstractMojo {
 \end{samepage}
 	
 
-Um die Klasse \textit{MainExecuter.java} als Mojo-Klasse zu kennzeichen, muss von \textit{AbstractMojo} abgeleitet und mit \textit{@Mojo} annotiert werden.
+Um die Klasse \textit{MainExecuter.java} als Mojo-Klasse zu kennzeichnen, muss von \textit{AbstractMojo} abgeleitet und mit \textit{@Mojo} annotiert werden.
 
 %\includegraphics{/dbpluginConnect.PNG}
 
-Mit der Option \textit{defaultPhase} kann festgelegt werden, in welcher Maven-Lifecycle-Phase das Plugin ausgeführt werden soll. Mit dieser Einstellung wird das Plugin während des install-Prozesses ausgeführt. Weitere Möglichkeiten sind unter anderen die Phasen  \textit{deploy},  \textit{clean} und  \textit{compile}. \\
+Mit der Option \textit{defaultPhase} kann festgelegt werden, in welcher Maven-Lifecycle-Phase das Plugin ausgeführt werden soll. Mit dieser Einstellung wird das Plugin während des install-Prozesses ausgeführt. Weitere Möglichkeiten sind unter anderem die Phasen  \textit{deploy},  \textit{clean} und  \textit{compile}. 
 
 Das Plugin wird mit bestimmten Parametern aufgerufen. Diese können beim Einbinden des Plugins angegeben werden. Folgende Parameter werden benötigt, um das Plugin auszuführen:
 
@@ -216,8 +216,8 @@ Das Plugin wird mit bestimmten Parametern aufgerufen. Diese können beim Einbind
 In der Mojo-Klasse muss die Methode \textit{execute} implementiert werden, die zu Beginn, beim Start des Plugins, ausgeführt wird. Mithilfe der oben definierten Parameter und des Projektnamens, der mit dem Maven-Lifecycle ausgelesen werden kann, wird nun der Import in die Datenbank gestartet. 
 
 \subsection{MongoDB-Java-Driver und Datenbank-Import}
-Der Importer speichert die Daten des XML-Reports in Datenbanken. Dazu wird das XML-File ausgelesen und die einzelnen gefundenen Fehler und Informationen werden in Java-Objekte umgewandelt. Das Speichern der Java-Objekte in den Collections ist ohne Konvertierung, im Vergleich zu anderen herkömmlichen Tools wie Hibernate, nicht möglich. Um Daten zu speichern, müssen die Java-Objekte in Dokumente umgewandelt werden. Daher muss ein Konverter implementiert werden: \textit{DBObjectConverter}
-Bei steigender Komplexität und Größe der Datenbank können die Konverter sehr komplex werden. Der Typ \textit{org.bson.Document} wird vom MongoDB-Java-Driver vorgegeben. Ein BSON-Dokument unterscheidet sich nur von der Kodierung zu Json-Objekte. (BSON=Binary Json) 
+Der Importer speichert die Daten des XML-Reports in Datenbanken. Dazu wird das XML-File ausgelesen und die einzelnen gefundenen Fehler und Informationen werden in Java-Objekte umgewandelt. Das Speichern der Java-Objekte in den Collections ist ohne Konvertierung, im Vergleich zu anderen herkömmlichen Tools wie Hibernate, nicht möglich. Um Daten zu speichern, müssen die Java-Objekte in Dokumente umgewandelt werden. Daher muss ein Konverter implementiert werden: \textit{DBObjectConverter}.
+Bei steigender Vielfalt und Größe der Datenbank können die Konverter sehr komplex werden. Der Typ \textit{org.bson.Document} wird vom MongoDB-Java-Driver vorgegeben. Ein BSON-Dokument unterscheidet sich nur von der Kodierung zu einem Json-Objekt. (BSON=Binary Json) 
 Diese Dokumente können nun für die Datenbank-Transaktionen verwendet werden. Bei steigender Komplexität und Größe der Datenbank werden auch die Konverter komplexer, da alle Felder, Datentypen und Object-Arrays beachtet werden müssen.
  \\
 
@@ -264,10 +264,10 @@ Die Webapplikation bildet den zentralen Teil der Applikation. Das Ziel ist es, d
 \end{figure}
 
 \subsection{Backend}
-Im Backend werden die Daten aus der Datenbank in Services ausgelesen. Die ausgelesen Daten werden in Beans umgewandelt. Über die REST-Schnittstelle können Daten an das Frontend übergeben werden. Das Backend bzw. die Webapplikation verwendet das Framework Spring-Boot als Alternative zu Java EE. ~\parencite{walls2016spring} Spring Boot bietet einen Standalone-Server und kann daher ohne Konfigurationen verwendet werden. Zusätzlich bietet Spring Boot die Möglichkeit zur Erstellung von Spring Beans und REST-Controller.  
+Im Backend werden die Daten aus der Datenbank in Services ausgelesen. Die ausgelesen Daten werden in Beans umgewandelt. Über die REST-Schnittstelle können Daten an das Frontend übergeben werden. Das Backend bzw. die Webapplikation verwendet das Framework Spring-Boot als Alternative zu Java EE ~\parencite{walls2016spring}. Spring Boot bietet einen Standalone-Server und kann daher ohne Konfigurationen verwendet werden. Zusätzlich bietet Spring Boot die Möglichkeit zur Erstellung von Spring Beans und REST-Controller.  
 
 \subsubsection{API und Controller}
-Über den Controller können HTTP-Requests an das Backend geschickt werden. Mit Spring können die Controller als \textit{RestController} annotiert und verwendet werden. Die einzelnen Methoden des Controllers werden zusätzlich annotiert um die Methode (GET, POST, DELETE, PUT, PATCH) und den Pfad zu definieren. Im Pfad können zusätzlich Parameter als \textit{PathVariable} definiert werden. Im Controller werden  Methoden verwendet um bestimmte Projektanalysedaten auszulesen, Daten als PDF zu exportieren und um Vorschläge zu speichern und auszulesen. Im \textit{FindingsController} werden die Anfragen aus dem Frontend bearbeitet und Daten an des Frontend übermittelt. Im Controller sind dazu die verschiedenen Services eingebunden.
+Über den Controller können HTTP-Requests an das Backend geschickt werden. Mit Spring können die Controller als \textit{RestController} annotiert und verwendet werden. Die einzelnen Methoden des Controllers werden zusätzlich annotiert um die Methode (GET, POST, DELETE, PUT, PATCH) und den Pfad zu definieren. Im Pfad können zusätzlich Parameter als \textit{PathVariable} definiert werden. Im Controller werden  Methoden verwendet um bestimmte Projektanalysedaten auszulesen, Daten als PDF zu exportieren und um Vorschläge zu speichern und auszulesen. Im \textit{FindingsController} werden die Anfragen aus dem Frontend bearbeitet und Daten an das Frontend übermittelt. Im Controller sind dazu die verschiedenen Services eingebunden.
 \subsubsection{Services und MongoDB-Java-Driver}
 In den Services werden Methoden bereitgestellt, die die Daten der Datenbank auslesen. Dies geschieht mit dem MongoDB-Java-Driver. Für das Verwenden des MongoDB-Java-Driver ist ein spezifischer Converter notwendig. Wie im Importer-Plugin müssen die Daten konvertiert werden, daher wird ein Konverter \textit{DBObjectConverter.java} auch im Backend verwendet.
 \lstset{
@@ -304,7 +304,7 @@ Der Konverter wird in allen Service-Methoden verwendet, wo Daten aus den Collect
 \subsubsection{IText und PDF-Export}
 Der PDF-Export ist eine weitere Funktion, die das Backend bietet. Ein PDF-Export kann für ein bestimmtes Projekt in einem bestimmten Zeitraum erstellt werden. Im Report werden die wichtigsten Informationen der Analyse in Textform dargestellt, dazu auch die einzelnen gefundenen Fehler und Warnungen. \\
 Dafür wird das Tool IText zur Erstellung von Reports verwendet.  ~\parencite{lowagie2011itext} Um IText zu verwenden, kann aus verschiedenen Preismodellen gewählt werden, eine kostenlose Version wird aber auch zur Verfügung gestellt und in dieser Arbeit verwendet.  \\
-Über das Service liest der PDF-Generator die angegeben Daten aus.
+Über das Service liest der PDF-Generator die angegebenen Daten aus.
 
 \lstset{
   caption={Initialisierung des Writers um im Dokument einen Paragraph zu erstellen.}, 
@@ -332,7 +332,7 @@ document.add(new Paragraph(
 \end{samepage}
 
 Für alle im Service ausgelesen Daten wird ein eigener Paragraph erstellt. Um die Überschrift und die Daten entsprechend zu formatieren, kann mittels \textit{IText} auch ein Font erstellt werden. Mit der \textit{FontFactory} wird hierbei ein Font mit bestimmter Schriftart, Schriftgröße und Farbe erstellt.
-Nach der Erstellung des PDF-Dokument muss das Ergebnis weiter an den Client geschickt werden. Um das PDF-Dokument im \textit{Response} der HTTP-Anfrage zu übertragen, wird das Dokument in ein \textit{byte-array} konvertiert. Dies geschieht mit der Verwendung des \textit{ByteArrayOutputStream} und dessen Methode \textit{toByteArray}. 
+Nach der Erstellung des PDF-Dokuments muss das Ergebnis weiter an den Client geschickt werden. Um das PDF-Dokument im \textit{Response} der HTTP-Anfrage zu übertragen, wird das Dokument in ein \textit{byte-array} konvertiert. Dies geschieht mit der Verwendung des \textit{ByteArrayOutputStream} und dessen Methode \textit{toByteArray}. 
 
 \begin{figure}[tp]
   \centering
@@ -388,7 +388,7 @@ fetch(urlProjects)
 \end{samepage}
 
 Im Listing werden allgemeine Daten der Projekte abgefragt (siehe Listing \ref{lst:fetchApiGet}). Da bei der Abfrage keine Daten am Server verändert werden, wird ein GET-Requests erstellt. Ist die Abfrage erfolgreich, so werden die einzelnen \textit{then}-Blöcke ausgeführt. Im ersten Block werden die Daten des Response zu JSON-Objekte konvertiert. Um die Daten verwenden zu können, werden die einzelnen JSON-Objekte in einem Result-Array gespeichert.  \\
-Im Gegensatz zum GET-Request steht der POST-Request. Hierbei werden Daten an den Server übermittelt. Im Frontend werden diese Anfragen für das Erstellen von Recommendations und zum Ignorieren von Meldungen verwendetet. Um einen POST-Request zu erstellen, müssen die Attribute \textit{param} und \textit{method: 'POST'} angegeben werden. Die Daten können mittels dem Attribut \textit{param} übergeben werden. \\
+Im Gegensatz zum GET-Request steht der POST-Request. Hierbei werden Daten an den Server übermittelt. Im Frontend werden diese Anfragen für das Erstellen von Recommendations und zum Ignorieren von Meldungen verwendet. Um einen POST-Request zu erstellen, müssen die Attribute \textit{param} und \textit{method: 'POST'} angegeben werden. Die Daten können mittels dem Attribut \textit{param} übergeben werden. \\
 Treten beim Request Fehler auf, so werden die Anweisungen im \textit{catch}-Block ausgeführt.
 
 \subsubsection{Auswahl und Filterung}
@@ -398,7 +398,7 @@ Die Filterung ist auch wichtig, da ein Import der Daten der Statischen Code Anal
 \subsubsection{Recommendations}
 In der Weboberfläche können gezielt Vorschläge (Recommendations) für einzelne Fehlermeldungen und Warnungen hinterlegt werden. Um eine Recommendation zu erstellen, muss in der Weboberfläche in der Recommendations-Section ein neuer Eintrag mit einer Fehlermeldung und einem Link auf eine Lösung hinterlegt werden. Diese Lösungen können beispielsweise Tutorials, Dokumentationen oder andere gezielte Hilfsstellungen für die Meldung sein. Diese Recommendations werden in der Datenbank gespeichert.
 
-Um zur einer bestimmte Meldung einen Link zu speichern, muss nicht die ganze Meldung gespeichert werden. Es kann auch nur ein Teil aus der Meldung gespeichert werden. Diese Funktionalität unterstützt so auch das Erstellen von Recommendations für spezifische Meldungen:
+Um zu einer bestimmte Meldung einen Link zu speichern, muss nicht die ganze Meldung gespeichert werden. Es kann auch nur ein Teil aus der Meldung gespeichert werden. Diese Funktionalität unterstützt so auch das Erstellen von Recommendations für spezifische Meldungen:
 
 \textit{Die Variable 'name' verbirgt ein Feld.}\\
 \textit{Die Variable 'artist' verbirgt ein Feld.}
@@ -410,7 +410,7 @@ Wird in diesem Beispiel die Meldung \textit{verbirgt ein Feld} als Recommendatio
   \includegraphics[height=2cm]{images/recommendation.PNG}
   % The short caption should be capitalised
   % The full caption should hold a full sentence. 
- \caption[Anzeige der Meldung mit dem hinterlegten Recommendation-Link. Der Link führt in diesem Beispiel zur genauen Beschreibung des Fehlers in einer Dokumentation]{Anzeige der Meldung mit dem hinterlegten Recommendation-Link. Der Link führt in diesem Beispiel zur genauen Beschreibung des Fehlers in einer Dokumentation}
+ \caption[Anzeige der Meldung mit dem hinterlegten Recommendation-Link. Der Link führt in diesem Beispiel zur genauen Beschreibung des Fehlers in einer Dokumentation]{Anzeige der Meldung mit dem hinterlegten Recommendation-Link. Der Link führt in diesem Beispiel zur genauen Beschreibung des Fehlers in einer Dokumentation.}
   \label{fig:recommendations}
 \end{figure}
 
@@ -425,15 +425,15 @@ Die Meldung wird in der Datenbank gespeichert und im Backend aus den Abfrageerge
   \includegraphics[height=4cm]{images/ignoreTable.PNG}
   % The short caption should be capitalised
   % The full caption should hold a full sentence. 
- \caption[Übersichtstabelle mit ignorierten Meldungen. Diese Meldungen, oder Meldungen die diese Texte beinhaltet, werden ignoriert. Die Meldungen können aus der Ignore-Table gelöscht und im oberen Textfeld gespeichert werden.]{Übersichtstabelle mit ignorierten Meldungen. Diese Meldungen, oder Meldungen die diese Texte beinhaltet, werden ignoriert. Die Meldungen können aus der Ignore-Table gelöscht und im oberen Textfeld gespeichert werden}
+ \caption[Übersichtstabelle mit ignorierten Meldungen. Diese Meldungen, oder Meldungen die diese Texte beinhaltet, werden ignoriert. Die Meldungen können aus der Ignore-Table gelöscht und im oberen Textfeld gespeichert werden.]{Übersichtstabelle mit ignorierten Meldungen. Diese Meldungen, oder Meldungen die diese Texte beinhaltet, werden ignoriert. Die Meldungen können aus der Ignore-Table gelöscht und im oberen Textfeld gespeichert werden.}
   \label{fig:ignoredMessages}
 \end{figure}
 
 \subsubsection*{Algorithmus}
-Um die ignorierten Meldung zu filtern, müssen alle Meldungen mit allen ignorierten Meldungen verglichen werden. Um die Meldungen zu filtern ergibt sich daher ein Algorithmus mit der Laufzeit \textit{O(n)}. Wird die Anzahl an ignorierten Meldungen aber erhöht, so erhöht sich auch die Laufzeit des Algorithmus stark. Bei der Erstellung der Recommendations wird der gleiche Algorithmus verwendet.
+Um die ignorierten Meldungen zu filtern, müssen alle Meldungen mit allen ignorierten Meldungen verglichen werden. Um die Meldungen zu filtern ergibt sich daher ein Algorithmus mit der Laufzeit \textit{O(n)}. Wird die Anzahl an ignorierten Meldungen aber erhöht, so erhöht sich auch die Laufzeit des Algorithmus stark. Bei der Erstellung der Recommendations wird der gleiche Algorithmus verwendet.
 
 \subsubsection{Erstellen von Grafiken}
-Ein zentraler Bestandteil des Frontends sind die Visualisierungen. Hierbei werden die Fehler und Bugs in verschiedenen Grafiken aufbereitet. Um Grafiken(Charts) zu erstellen, wird die open-source Library Chart.js verwendet. Chart.js unterstützt das Erstellen von verschiedenen Grafiktypen wie Balken, Linien, Kreis oder Netzdiagramme. ~\parencite{chartJsHelder} Um eine Grafik mit Chart.js erstellen zu können, werden zwei Datenquellen benötigt: Ein Datenset für die Datenquelle und ein weiteres Set für die dazugehörigen Labels. Diese zwei Sets müssen von gleicher Länge sein, da die Zuordnung der Datenquellen mit den Labels stellenweise erfolgt (siehe Abbildung \ref{lst:pieChart}).
+Ein zentraler Bestandteil des Frontends sind die Visualisierungen. Hierbei werden die Fehler und Bugs in verschiedenen Grafiken aufbereitet. Um Grafiken (Charts) zu erstellen, wird die open-source Library Chart.js verwendet. Chart.js unterstützt das Erstellen von verschiedenen Grafiktypen wie Balken, Linien, Kreis oder Netzdiagramme. ~\parencite{chartJsHelder} Um eine Grafik mit Chart.js erstellen zu können, werden zwei Datenquellen benötigt: Ein Datenset für die Datenquelle und ein weiteres Set für die dazugehörigen Labels. Diese zwei Sets müssen von gleicher Länge sein, da die Zuordnung der Datenquellen mit den Labels stellenweise erfolgt (siehe Abbildung \ref{lst:pieChart}).
 
 \lstset{
   caption={Erstellen eines Kreisdiagramms mit Chart.js.}, 
@@ -476,7 +476,7 @@ Bei der Konfiguration des Charts können auch mehrere Attribute angegeben werden
 
 Bei der Erstellung eines Balken-Diagramms muss der Typ \textit{horizontalBar} gesetzt werden. Weitere Konfigurationsmöglichkeiten bei Balkendiagrammen sind Werte wie die Größe der Balken (barThickness), der Startwert der Achsen (beginAtZero) oder das Stapeln der Balken. (stack)
 
-Um die erstellten Charts wieder zu löschen und bei neuen Requests neu erstellen zu können müssen die Charts mit der Funktion \textit{destroy} gelöscht werden, auch damit die Referenzen und Cache-Daten verworfen werden können. \footnote{https://www.chartjs.org/docs} Dazu werden die Charts im globalen JavaScript-Objekt \textit{window} gespeichert und wieder entfernt. 
+Um die erstellten Charts wieder zu löschen und bei neuen Requests neu erstellen zu können, müssen die Charts mit der Funktion \textit{destroy} gelöscht werden, auch damit die Referenzen und Cache-Daten verworfen werden können. \footnote{https://www.chartjs.org/docs} Dazu werden die Charts im globalen JavaScript-Objekt \textit{window} gespeichert und wieder entfernt. 
 
 \subsubsection{Präsentation der Daten}
 \textbf{Übersichtstabelle} \\
@@ -582,4 +582,4 @@ Eine weitere Möglichkeit die Daten anzeigen zu können, ist der PDF-Report. Der
 	\end{lstlisting}
 \end{samepage}
 
-Blob(Binary Large Object) bietet die Möglichkeit Dateien in einem Obejekt zu speichern. Zusätzlich zu Dateidaten speichert Blob einen MIME-Type. Mit dem MIME-Type (Media Type) kann die Art der Daten angegeben werden, in diesem Beispiel hat der MIME-Type den Wert \textit{application/pdf}. Hierbei wird der Reponse bei einem erfolgreichen Request zu einem blob-Objekt konvertiert. Um einen Download durchführen zu können, wird ein Url-Objekt und ein Link erstellt. Der Link wird automatisch geklickt und es erfolgt der Download. Dieser automatisch erstellte Link wird nach dem Download wieder gelöscht.
+Blob (Binary Large Object) bietet die Möglichkeit Dateien in einem Objekt zu speichern. Zusätzlich zu Dateidaten speichert Blob einen MIME-Type. Mit dem MIME-Type (Media Type) kann die Art der Daten angegeben werden, in diesem Beispiel hat der MIME-Type den Wert \textit{application/pdf}. Hierbei wird der Reponse bei einem erfolgreichen Request zu einem blob-Objekt konvertiert. Um einen Download durchführen zu können, wird ein URL-Objekt und ein Link erstellt. Der Link wird automatisch geklickt und es erfolgt der Download. Dieser automatisch erstellte Link wird nach dem Download wieder gelöscht.

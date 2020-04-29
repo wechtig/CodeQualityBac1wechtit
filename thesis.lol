@@ -1,7 +1,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {lstlisting}{\numberline {4.1}Das Plugin wird automatisch in der install-Phase ausgeführt.}{18}{lstlisting.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.2}Kopf der Executor-Klasse: Sie wird mit dem Aufruf des Plugins zuerst gestartet.}{21}{lstlisting.4.2}%
+\contentsline {lstlisting}{\numberline {4.2}Kopf der Executor-Klasse: Sie wird beim Aufruf des Plugins zuerst gestartet.}{21}{lstlisting.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {lstlisting}{\numberline {4.3}Benötigte Attribute, um sich mit der Datenbank verbinden und die Collections verwenden.}{23}{lstlisting.4.3}%
 \defcounter {refsection}{0}\relax 
