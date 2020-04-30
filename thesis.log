@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  29 APR 2020 17:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.14)  30 APR 2020 19:48
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -956,6 +956,11 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count438
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 4421.
+
 Package hyperref Info: Option `breaklinks' set `true' on input line 4421.
 Package hyperref Info: Option `bookmarks' set `true' on input line 4421.
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4421
@@ -974,7 +979,6 @@ Package hyperref Info: Bookmarks ON on input line 4800.
 \c@Hy@tempcnt=\count439
 LaTeX Info: Redefining \url on input line 5159.
 \XeTeXLinkMargin=\dimen286
-
 (D:\MikTex\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
@@ -1669,7 +1673,7 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 Here is how much of TeX's memory you used:
  30400 strings out of 480900
  546080 string characters out of 2917036
- 1316538 words of memory out of 3000000
+ 1316514 words of memory out of 3000000
  45344 multiletter control sequences out of 15000+200000
  603696 words of font info for 115 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1706,7 +1710,7 @@ a.pfb><D:/MikTex/fonts/type1/urw/courier/ucrr8a.pfb><D:/MikTex/fonts/type1/urw/
 helvetic/uhvr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/MikTex/font
 s/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/Mi
 kTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (52 pages, 614629 bytes).
+Output written on thesis.pdf (52 pages, 614612 bytes).
 PDF statistics:
  805 PDF objects out of 1000 (max. 8388607)
  272 named destinations out of 1000 (max. 500000)
